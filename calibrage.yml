@@ -1,0 +1,63 @@
+# ============================================================
+# BORÉALE — CALIBRAGE
+# Ce fichier EST le cerveau réglable. On le modifie en parlant
+# à Fable (jamais besoin de coder). Le pipeline le lit à chaque
+# passage ; le site l'affiche dans l'onglet Coulisses.
+# ============================================================
+
+version: 2
+
+volume_cible: [15, 20]      # offres/jour visées — pousse à chercher plus loin
+passages_paris: ["07:00", "17:00"]
+
+# --- Poids du score (total 100) ---
+poids:
+  epargne: 35               # net à deux sur la saison. 15K viable / 20K content / 50K jackpot
+  logement: 20              # chambre privée = quasi-exigence
+  planque_pression: 15      # présence rémunérée, temps libre, compatible TDAH
+  cadre: 10                 # nature > tout ; mer/forêt/neige gagnent
+  fit_couple: 10            # poste couple explicite ou 2 postes même toit
+  travail_aime: 5           # service à la personne, cuisine maisonnée (pondération douce)
+  friction: 5               # visa, délais, certifs → baisse sans supprimer
+
+# --- Portes (règles dures, appliquées AVANT l'IA) ---
+portes:
+  non_paye: exclure                          # échanges/bénévolat → dehors, listé en Écartées
+  fenetre: "octobre -> avril"                # hors fenêtre → dehors
+  cdi: exclure_sauf_hors_du_commun           # règle v2 (ex. d'exception : Saumur 69-77K logé)
+  duree_mois: [1, 6]                         # plus long ok si vraiment intéressant
+  recurrence_ecartees: jamais                # une offre écartée ne revient JAMAIS (mémoire data/rejects.json)
+
+# --- Géographie ---
+geo:
+  priorite: [fr, eu]         # France & Schengen d'abord
+  secondaire: [far]          # Laponie & lointain = onglet ✈️, jamais en tête
+  hors_schengen: malus_lourd
+
+# --- Nuances ---
+logement_dortoir: malus_lourd_sauf_remuneration_enorme
+cuisine_de_resto: malus_sauf_remuneration_exceptionnelle
+animaux: neutre
+langue: "FR à fond ; EN ok ; autres langues tolérées si EN fonctionne"
+
+# --- Modèles (le bon modèle au bon endroit) ---
+modeles:
+  coarse: claude-haiku-4-5-20251001   # tri grossier, en lot, texte tronqué
+  fin: claude-sonnet-5                # top offres uniquement : score fin + « pourquoi »
+  top_n_fin: 6                        # combien d'offres passent au modèle fort / passage
+
+# --- Journal de calibrage (le plus récent en premier) ---
+journal:
+  - date: 2026-07-09
+    v: 2
+    par: Jo
+    regle: >
+      CDI exclus sauf hors du commun · missions 1-6 mois (plus si intéressant) ·
+      Europe/Schengen prioritaire, lointain secondaire · onglets France/Europe ·
+      jamais de récurrence d'une offre écartée.
+  - date: 2026-07-09
+    v: 1
+    par: brief
+    regle: >
+      Barème initial : argent roi, logé indispensable, nature > ville,
+      basse pression/planque, couple, transparence du classement.

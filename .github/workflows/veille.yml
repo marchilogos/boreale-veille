@@ -1,0 +1,59 @@
+name: Boréale — veille
+
+on:
+  schedule:
+    - cron: "0 5,15 * * *"   # ≈ 07:00 & 17:00 Paris (heure d'été)
+  workflow_dispatch: {}       # bouton « lancer maintenant »
+  push:
+    branches: [main]
+    paths: ["docs/**", "calibrage.yml", "sources.yml", "pipeline/**", ".github/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: veille
+  cancel-in-progress: false
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Passage de veille (collecte + scoring)
+        if: github.event_name != 'push'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python pipeline/collect.py
+
+      - name: Committer les données du passage
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "boreale-bot"
+          git config user.email "bot@boreale"
+          git add -A data docs/data
+          git diff --cached --quiet || git commit -m "passage $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git push
+
+      - name: Configurer GitHub Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Empaqueter le site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Déployer
+        uses: actions/deploy-pages@v4

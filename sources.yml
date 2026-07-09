@@ -1,0 +1,81 @@
+# ============================================================
+# BORÉALE — CONSORTIUM DE SOURCES
+# Ajouter/retirer une source = ajouter/retirer un bloc (ou le
+# dire à Fable). enabled:true = collectée automatiquement.
+# enabled:false + statut:watch = repérée, collecteur à écrire.
+# Santé suivie dans data/health.json (muette => alerte).
+# ============================================================
+
+sources:
+  # ---- Collectées automatiquement (palier 1) ----
+  - id: madameestservie
+    nom: Madame est Servie — couples de gardiens
+    url: https://www.madameestservie.net/offres-d-emploi-couple-de-gardiens-7.htm
+    collector: links
+    link_contains: "offre-d-emploi"
+    title_any: [couple, gardien]
+    geo: fr
+    enabled: true
+
+  - id: morganmallet
+    nom: Morgan & Mallet — board France
+    url: https://www.personneldemaison.agency/jobs/
+    collector: links
+    link_contains: "offres-d-emplois/"
+    title_any: [couple, gardien, intendant, régisseur, cuisini]
+    geo: fr
+    enabled: true
+
+  - id: laplandstaff
+    nom: Lapland Hotels & Safaris (ATS Talentadore)
+    url: https://laplandstaff.fi/en/job-openings/
+    collector: links
+    link_contains: "talentadore.com/apply"
+    title_any: [chef, waiter, housekeeper, receptionist, guide, host, coordinator]
+    geo: far
+    enabled: true
+
+  - id: skijobs_couk
+    nom: Ski-Jobs.co.uk
+    url: https://www.ski-jobs.co.uk/
+    collector: links
+    link_contains: "/job"
+    title_any: [couple, chalet, host, chef, manager]
+    geo: fr
+    enabled: true
+
+  - id: francegardiennage
+    nom: France Gardiennage Propriétés
+    url: https://www.francegardiennageproprietes.com/gardien-de-propriete-privee-offres-d-emploi/
+    collector: links
+    link_contains: "emploi"
+    title_any: [gardien, couple]
+    geo: fr
+    enabled: true
+
+  - id: gestioncamping
+    nom: Gestion-Camping — gardiens
+    url: https://www.gestion-camping.com/gardien-agent-securite-camping.html
+    collector: links
+    link_contains: "emploi"
+    title_any: [gardien]
+    geo: fr
+    enabled: true
+
+  # ---- Repérées, collecteur à écrire (palier 3) ----
+  - {id: stararctic, nom: Star Arctic Hotel Saariselkä, url: "https://stararctichotel.com/careers/", geo: far, enabled: false, statut: watch}
+  - {id: ranch, nom: Northern Lights Ranch Levi, url: "https://theranch.fi/about-us/jobs/", geo: far, enabled: false, statut: watch}
+  - {id: wilderness, nom: Wilderness Hotels, url: "https://jobs.wildernesshotels.fi/en", geo: far, enabled: false, statut: watch}
+  - {id: hunterchalets, nom: Hunter Chalets Morzine, url: "https://hunterchalets.com/ski-season-jobs/", geo: fr, enabled: false, statut: watch}
+  - {id: alpinium, nom: Alpinium Chalet Couple, url: "https://www.alpinium.co.uk/work-for-us/chalet-chef-host-chalet-couple", geo: fr, enabled: false, statut: watch}
+  - {id: skiworld, nom: Skiworld recruitment, url: "https://www.skiworld.co.uk/recruitment/ski-season-jobs", geo: fr, enabled: false, statut: watch}
+  - {id: workingcouples, nom: WorkingCouples.com, url: "https://workingcouples.com", geo: eu, enabled: false, statut: watch}
+  - {id: indeed_ch, nom: "Indeed CH — saisonnier hiver logé (grappe Suisse)", url: "https://ch-fr.indeed.com/q-suisse-saisonnier-hiver,-log%C3%A9-emplois.html", geo: eu, enabled: false, statut: watch, note: anti-bot probable}
+  - {id: lhotellerie, nom: "L'Hôtellerie-Restauration Suisse", url: "https://www.lhotellerie-restauration.fr/emploi/suisse", geo: eu, enabled: false, statut: watch}
+  - {id: greycoat, nom: Greycoat Lumleys couples, url: "https://www.greycoatlumleys.co.uk", geo: eu, enabled: false, statut: watch}
+
+  # ---- Canaux humains (jamais automatisés — actions guidées) ----
+  - {id: fb_ski2627, nom: "FB · Ski Season Jobs 26/27 Alps", url: "https://www.facebook.com/groups/skiseasonjobs/", enabled: false, statut: humain}
+  - {id: fb_saisonniers, nom: "FB · JOBS SAISONNIERS + Jobs logés France", url: "https://www.facebook.com/groups/jobsaisonniers/", enabled: false, statut: humain}
+  - {id: snowheads, nom: "Snowheads — fil couples", url: "https://snowheads.com/ski-forum/viewtopic.php?t=79816", enabled: false, statut: humain}
+  - {id: sno_operateurs, nom: "SNO — liste d'opérateurs (mail direct)", url: "https://www.sno.co.uk", enabled: false, statut: humain}

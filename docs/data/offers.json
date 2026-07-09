@@ -1,0 +1,476 @@
+{
+ "meta": {
+  "run_at": "2026-07-09T14:30:00+02:00",
+  "run_type": "seed (session Fable)",
+  "examined": 31,
+  "kept": 11,
+  "humans": 4,
+  "rejected": 6,
+  "calibrage": "v2",
+  "alerts": []
+ },
+ "offers": [
+  {
+   "id": 1,
+   "tier": "top",
+   "score": 86,
+   "geo": "fr",
+   "cat": [
+    "maison",
+    "couple",
+    "planque"
+   ],
+   "title": "Couple de gardiens — demeure XVIIIe, 4 ha, Saumur (49)",
+   "emitter": "Morgan & Mallet pour une propriétaire écrivain",
+   "src": "personneldemaison.agency",
+   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-couple-gardiens-propriete-saumur-france/",
+   "verif": {
+    "lvl": "ok",
+    "txt": "✓ vérifiée — page ouverte le 9 juil., formulaire actif"
+   },
+   "canal": "Agence",
+   "badges": [
+    "💰 69-77K€ brut/an à deux (≈ 26-29K net / 7 mois)",
+    "🏠 Logé sur le domaine",
+    "📅 prise de poste sept. 2026",
+    "🌳 Verger, coteau boisé, piscine",
+    "🐱 1 chat, ânes voisins",
+    "🇫🇷 réf. 4118 PAC · postée 26 juin"
+   ],
+   "hot": "Recruteur identifié (C. Lebreton) — dossier couple à soigner",
+   "why": "Le meilleur ratio argent/vie trouvé aujourd'hui : quasi-jackpot au prorata, logés dans un cadre nature, travail varié à deux (jardin/maison/présence) sans cadence de resto. Propriétaire sur place mais supervision décrite comme « bienveillante », homme d'entretien pour les travaux lourds.",
+   "caveat": "⚖️ CDI — normalement exclu par ta règle, gardé au titre de l'exception « hors du commun » (quasi-jackpot logé). S'y engager = dépasser avril. Exige permis B ×2, outils thermiques, vraies bases jardinage.",
+   "bars": {
+    "Épargne": 90,
+    "Logement": 95,
+    "Planque/pression": 68,
+    "Cadre": 85,
+    "Fit couple": 95,
+    "Travail aimé": 80,
+    "Friction": 85
+   }
+  },
+  {
+   "id": 3,
+   "tier": "flow",
+   "score": 70,
+   "geo": "far",
+   "cat": [
+    "nordique",
+    "couple"
+   ],
+   "title": "Saison 2026-27 — Star Arctic Hotel, Saariselkä (20+ postes)",
+   "emitter": "Star Arctic Hotel — hôtel design, sommet de Kaunispää",
+   "src": "stararctichotel.com",
+   "url": "https://stararctichotel.com/careers/",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — recrutement 26-27 confirmé en recherche, page carrières à ouvrir"
+   },
+   "canal": "Employeur direct",
+   "badges": [
+    "💰 convention hôtelière FI (~2 000-2 500 €/brut/mois/pers.)",
+    "🏠 logement staff (chambre à vérifier)",
+    "📅 ~nov → avril",
+    "❄️ aurores, Laponie finlandaise",
+    "🗣️ EN ok, FR = atout (clientèle FR)"
+   ],
+   "hot": "Recrute maintenant pour 26-27 — Saariselkä est aussi un hub physique (pop-up saisonniers en nov., cf. ta base)",
+   "why": "Deux postes au même endroit très plausibles = ~17-20K net à deux, dépenses quasi nulles, nature maximale. Classée « lointain secondaire » depuis ton calibrage (Schengen, mais à 3 500 km) — remonte si tu dis « la Laponie compte comme Europe ».",
+   "caveat": "À vérifier avant candidature : chambre privée staff possible pour un couple ?",
+   "bars": {
+    "Épargne": 76,
+    "Logement": 70,
+    "Planque/pression": 62,
+    "Cadre": 100,
+    "Fit couple": 85,
+    "Travail aimé": 80,
+    "Friction": 88
+   }
+  },
+  {
+   "id": 4,
+   "tier": "flow",
+   "score": 69,
+   "geo": "far",
+   "cat": [
+    "nordique",
+    "couple"
+   ],
+   "title": "Chef + Serveuse/Housekeeper — Lapland Hotels, saison 2026-27",
+   "emitter": "Lapland Hotels via Lapland Staff (ATS Talentadore)",
+   "src": "laplandstaff.fi",
+   "url": "https://laplandstaff.fi/en/job-openings/",
+   "verif": {
+    "lvl": "ok",
+    "txt": "✓ vérifiée — 3 annonces 2026-27 ouvertes aujourd'hui, candidature en ligne active"
+   },
+   "canal": "Employeur direct",
+   "badges": [
+    "💰 grille TES FI ~2 000-2 400 €/brut/mois/pers.",
+    "🏠 logement staff aidé",
+    "📅 saisons 2026-2027, Nord Finlande",
+    "❄️ Levi, Ylläs, Saariselkä, Pallas…",
+    "👥 stratégie : 2 candidatures, même destination"
+   ],
+   "why": "La plus grosse chaîne lapone recrute en ce moment même : Chef (lui — cuisine d'hôtel ≠ rush de resto étoilé, à cadrer à l'entretien) + Waiter/Housekeeper (elle). En visant la même destination wilderness, vous vous retrouvez le soir — exactement ton critère.",
+   "caveat": "Candidature uniquement en ligne (pas d'email). Préciser « couple, même site » dans les deux dossiers.",
+   "bars": {
+    "Épargne": 72,
+    "Logement": 72,
+    "Planque/pression": 58,
+    "Cadre": 95,
+    "Fit couple": 82,
+    "Travail aimé": 78,
+    "Friction": 90
+   }
+  },
+  {
+   "id": 5,
+   "tier": "top",
+   "score": 82,
+   "geo": "fr",
+   "cat": [
+    "montagne",
+    "couple"
+   ],
+   "title": "Chalet Couple (chef + host) — Alpes françaises 26/27",
+   "emitter": "Alpinium (opérateur chalets)",
+   "src": "alpinium.co.uk",
+   "url": "https://www.alpinium.co.uk/work-for-us/chalet-chef-host-chalet-couple",
+   "verif": {
+    "lvl": "ok",
+    "txt": "✓ vérifiée — page « Chalet Couple » dédiée, candidatures 26/27 ouvertes"
+   },
+   "canal": "Employeur direct",
+   "badges": [
+    "💰 ~£950-1 200/mois/pers. + logé nourri + forfaits + pourboires",
+    "🏠 logement couple",
+    "📅 déc → avril",
+    "🏔️ stations Alpes FR",
+    "👥 poste couple par conception"
+   ],
+   "why": "Le poste pensé pour un couple : lui cuisine pour la même maisonnée toute la semaine (ta préférence exacte), elle host/relation clients. Épargne réelle ~14-17K à deux + pourboires, zéro dépense. Fenêtre de recrutement : maintenant.",
+   "caveat": "Jours d'arrivée = grosses journées ; vérifier le rythme réel à l'entretien (ta ligne rouge pression).",
+   "bars": {
+    "Épargne": 66,
+    "Logement": 85,
+    "Planque/pression": 52,
+    "Cadre": 82,
+    "Fit couple": 100,
+    "Travail aimé": 85,
+    "Friction": 88
+   }
+  },
+  {
+   "id": 6,
+   "tier": "top",
+   "score": 78,
+   "geo": "fr",
+   "cat": [
+    "montagne",
+    "couple"
+   ],
+   "title": "Saison 26/27 Morzine/Les Gets — couples bienvenus",
+   "emitter": "Hunter Chalets",
+   "src": "hunterchalets.com",
+   "url": "https://hunterchalets.com/ski-season-jobs/",
+   "verif": {
+    "lvl": "ok",
+    "txt": "✓ vérifiée — recrutement 26/27 ouvert"
+   },
+   "canal": "Direct (email)",
+   "badges": [
+    "💰 logé + nourri + forfait + salaire (montant à demander)",
+    "📅 déc → avril",
+    "📧 jobs@hunterchalets.com — pas de formulaire, un mail humain"
+   ],
+   "why": "Petit opérateur = décision humaine rapide. « If applying as a couple, make this clear » écrit noir sur blanc. Un bon mail à deux voix vaut ici plus qu'un CV parfait — pile le terrain du kit candidature.",
+   "bars": {
+    "Épargne": 60,
+    "Logement": 82,
+    "Planque/pression": 55,
+    "Cadre": 85,
+    "Fit couple": 90,
+    "Travail aimé": 78,
+    "Friction": 90
+   }
+  },
+  {
+   "id": 13,
+   "tier": "top",
+   "score": 76,
+   "geo": "eu",
+   "cat": [
+    "montagne",
+    "couple"
+   ],
+   "title": "Saison hiver logé-nourri — hôtels Valais & Grisons (25+ postes)",
+   "emitter": "Hôtels suisses (réception, service, cuisine)",
+   "src": "ch-fr.indeed.com",
+   "url": "https://ch-fr.indeed.com/q-suisse-saisonnier-hiver,-log%C3%A9-emplois.html",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — 25+ annonces vues en recherche, à ouvrir une à une au prochain passage"
+   },
+   "canal": "Board",
+   "badges": [
+    "💰 salaires les plus hauts d'Europe (~2 300-2 800 CHF net/mois/pers.)",
+    "🏠 logé-nourri (300-600 CHF/mois déduits)",
+    "📅 déc → avril — pile la cible 1-6 mois",
+    "🏔️ villages d'altitude",
+    "🇨🇭 accord CH-UE, zéro visa"
+   ],
+   "hot": "Candidater dès fin août (les hôtels valaisans recrutent 4-5 mois avant)",
+   "why": "Le levier « argent roi » version Schengen : ~22-28K net à deux sur la saison une fois logés-nourris. Durée exacte de ta cible, friction quasi nulle, FR parlé. Deux postes dans le même hôtel = pratique courante.",
+   "caveat": "Carte « grappe » : je n'ai pas encore ouvert les annonces individuelles — demande « ouvre la Suisse » et je sors les 5 meilleures.",
+   "bars": {
+    "Épargne": 92,
+    "Logement": 85,
+    "Planque/pression": 55,
+    "Cadre": 80,
+    "Fit couple": 85,
+    "Travail aimé": 72,
+    "Friction": 95
+   }
+  },
+  {
+   "id": 8,
+   "tier": "flow",
+   "score": 66,
+   "geo": "far",
+   "cat": [
+    "nordique"
+   ],
+   "title": "Saison 26/27 — Northern Lights Ranch, Levi",
+   "emitter": "Northern Lights Ranch (lodge vitré, huskies & rennes voisins)",
+   "src": "theranch.fi",
+   "url": "https://theranch.fi/about-us/jobs/",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — « recruitment for winter 26-27 has begun » confirmé en recherche"
+   },
+   "canal": "Employeur direct",
+   "badges": [
+    "💰 grille FI",
+    "🏠 logement staff",
+    "📅 hiver 26-27",
+    "❄️ cabins vitrées sous aurores"
+   ],
+   "why": "Petite structure premium en pleine nature : service/host pour deux possible, clientèle internationale aisée. Cadre irréel, équipe réduite = ambiance qui compte double.",
+   "bars": {
+    "Épargne": 68,
+    "Logement": 70,
+    "Planque/pression": 60,
+    "Cadre": 100,
+    "Fit couple": 75,
+    "Travail aimé": 80,
+    "Friction": 86
+   }
+  },
+  {
+   "id": 9,
+   "tier": "top",
+   "score": 73,
+   "geo": "fr",
+   "cat": [
+    "montagne",
+    "couple"
+   ],
+   "title": "Ski season 26/27 — couples & amis ensemble",
+   "emitter": "Skiworld (plus gros indépendant UK)",
+   "src": "skiworld.co.uk",
+   "url": "https://www.skiworld.co.uk/recruitment/ski-season-jobs",
+   "verif": {
+    "lvl": "ok",
+    "txt": "✓ vérifiée — candidatures ouvertes, pic de recrutement mai-août"
+   },
+   "canal": "Opérateur",
+   "badges": [
+    "💰 logé nourri forfait + salaire UK",
+    "📅 déc → avril",
+    "👥 « couples and friends welcome »"
+   ],
+   "why": "Gros volume de postes couple (beaucoup de chalets à deux). Moins charmant qu'un petit opérateur mais taux de réussite élevé et process carré.",
+   "bars": {
+    "Épargne": 62,
+    "Logement": 80,
+    "Planque/pression": 52,
+    "Cadre": 80,
+    "Fit couple": 88,
+    "Travail aimé": 70,
+    "Friction": 85
+   }
+  },
+  {
+   "id": 10,
+   "tier": "flow",
+   "score": 71,
+   "geo": "fr",
+   "cat": [
+    "montagne",
+    "couple"
+   ],
+   "title": "Chalet Host Pair / Couple — Alpe d'Huez & Les Arcs 26/27",
+   "emitter": "annonces multiples",
+   "src": "skijobs.com",
+   "url": "https://www.skijobs.com/jobs/search/chalet-host-jobs",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — postes « pair/couple 26/27 » vus en recherche"
+   },
+   "canal": "Board",
+   "badges": [
+    "💰 logé nourri + salaire",
+    "📅 déc → avril",
+    "👥 annonces explicitement « pair/couple »"
+   ],
+   "why": "Board spécialisé avec filtre couple naturel. À ouvrir pour comparer les packages — je peux le faire au prochain passage.",
+   "bars": {
+    "Épargne": 60,
+    "Logement": 80,
+    "Planque/pression": 52,
+    "Cadre": 80,
+    "Fit couple": 90,
+    "Travail aimé": 70,
+    "Friction": 85
+   }
+  },
+  {
+   "id": 11,
+   "tier": "flow",
+   "score": 56,
+   "geo": "far",
+   "cat": [
+    "nordique"
+   ],
+   "title": "Wilderness Hotels Inari — resto & activités 26/27",
+   "emitter": "Wilderness Hotels",
+   "src": "jobs.wildernesshotels.fi",
+   "url": "https://jobs.wildernesshotels.fi/en",
+   "verif": {
+    "lvl": "ok",
+    "txt": "✓ vérifiée — portail carrières actif"
+   },
+   "canal": "Employeur direct",
+   "badges": [
+    "💰 grille FI",
+    "🏠 logement staff meublé… mais chambre PARTAGÉE 200-250€/mois",
+    "📅 hiver"
+   ],
+   "why": "Employeur solide, cadre superbe — mais le logement standard est en chambre partagée : ton quasi-veto. Descendu pour ça, pas éliminé : un couple obtient parfois une chambre à deux — question à poser avant tout.",
+   "caveat": "Malus logement appliqué (-18 pts). Dis « demande-leur » et je rédige le mail de clarification.",
+   "bars": {
+    "Épargne": 70,
+    "Logement": 35,
+    "Planque/pression": 58,
+    "Cadre": 98,
+    "Fit couple": 70,
+    "Travail aimé": 75,
+    "Friction": 88
+   }
+  },
+  {
+   "id": 12,
+   "tier": "flow",
+   "score": 44,
+   "geo": "far",
+   "cat": [
+    "planque",
+    "couple",
+    "maison"
+   ],
+   "title": "Caretaker couple — île de Quadra, Colombie-Britannique",
+   "emitter": "Famille propriétaire, 30 acres en bord de mer",
+   "src": "workingcouples.com",
+   "url": "https://workingcouples.com/job_opening/caretaker-couple-position-quadra-island-bc",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — ancienneté de l'annonce à confirmer"
+   },
+   "canal": "Board couples",
+   "badges": [
+    "💰 payé + logé sur place",
+    "🌊 waterfront, vergers, ateliers",
+    "🍁 Canada : permis de travail requis",
+    "⏱ « hiver très libre » écrit dans l'annonce"
+   ],
+   "why": "La planque absolue sur le papier (hiver = présence + temps libre, au bord de l'eau)… mais hors Schengen : permis canadien = double malus depuis ton calibrage (friction + lointain non-Europe). On baisse fort, on ne supprime pas — tu as dit vouloir tenter même à faible chance.",
+   "bars": {
+    "Épargne": 55,
+    "Logement": 90,
+    "Planque/pression": 95,
+    "Cadre": 95,
+    "Fit couple": 100,
+    "Travail aimé": 75,
+    "Friction": 12
+   }
+  }
+ ],
+ "humans": [
+  {
+   "id": 101,
+   "title": "Ski Season Jobs 26/27 — French & Swiss Alps (groupe Facebook)",
+   "emitter": "groupe actif dédié pile à votre saison",
+   "url": "https://www.facebook.com/groups/skiseasonjobs/",
+   "todo": "<b>Action :</b> rejoindre + poster une annonce « couple FR/EN, host+cook/gestion, dispo oct→avril, logés » avec photo. Les petits chalets qui ne publient jamais d'annonce répondent là. Je rédige le post quand tu veux.",
+   "why": "Les opérateurs boutique recrutent par ces groupes avant de payer un board."
+  },
+  {
+   "id": 102,
+   "title": "JOBS SAISONNIERS + Saisonniers 2026 Jobs logés (groupes FB, FR)",
+   "emitter": "les deux gros groupes FR, offres logées quotidiennes",
+   "url": "https://www.facebook.com/groups/jobsaisonniers/",
+   "todo": "<b>Action :</b> activer les notifications mots-clés (« couple », « gardien », « logé ») et répondre dans l'heure — sur FB la vitesse fait tout. Second groupe : <i>Saisonniers 2026 - Jobs logés partout en France</i>.",
+   "why": "Employeurs en direct, souvent des particuliers et petites structures hors radar."
+  },
+  {
+   "id": 103,
+   "title": "Snowheads — fil « ski season jobs for couples »",
+   "emitter": "forum ski UK, fil dédié couples toujours vivant",
+   "url": "https://snowheads.com/ski-forum/viewtopic.php?t=79816",
+   "todo": "<b>Action :</b> poster votre profil couple sur le fil + demander « who's still hiring couples for 26/27? ». Les vétérans y balancent des noms d'employeurs qui n'annoncent nulle part.",
+   "why": "L'info non publiée circule entre saisonniers — exactement l'esprit « forums » de ta base."
+  },
+  {
+   "id": 104,
+   "title": "Mail direct à deux voix — Hunter Chalets & petits opérateurs",
+   "emitter": "jobs@hunterchalets.com + liste SNO d'opérateurs à démarcher",
+   "url": "https://www.sno.co.uk",
+   "todo": "<b>Action :</b> un seul mail-type couple (chaleureux, 10 lignes, photo, dispo oct→avril), décliné pour 10-15 petits opérateurs de la liste SNO. Hors formulaire = hors concurrence. Je le rédige avec vous.",
+   "why": "Sortir du format standard de postulation, comme tu l'as demandé — c'est ici que ça se joue."
+  }
+ ],
+ "rejected": [
+  {
+   "title": "Couple de gardiens — Chalon-sur-Saône (postée 9 juil.)",
+   "src": "Morgan & Mallet",
+   "reason": "CDI + salaire non affiché (règle v2) — récupérable : « ouvre Chalon »"
+  },
+  {
+   "title": "Couple de gardiens — château, Eure (27)",
+   "src": "Madame est Servie",
+   "reason": "CDI + salaire non affiché (règle v2)"
+  },
+  {
+   "title": "Série « couple de gardiens » CDI (Sologne, Liège, Madrid…)",
+   "src": "M&M / Madame est Servie",
+   "reason": "CDI à l année — surveillées : remontent si salaire hors du commun"
+  },
+  {
+   "title": "House-sits Alpes & Pyrénées",
+   "src": "TrustedHousesitters / Nomador",
+   "reason": "Non payé — l argent est roi"
+  },
+  {
+   "title": "Équipage transat ARC (Las Palmas, nov.)",
+   "src": "Ocean Crew Link",
+   "reason": "Échange / partage de frais, 0 salaire"
+  },
+  {
+   "title": "Aide-gardien de refuge",
+   "src": "refuges.info",
+   "reason": "Saison été — hors fenêtre oct-avril"
+  }
+ ]
+}
