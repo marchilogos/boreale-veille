@@ -466,10 +466,14 @@ async function boot(){
     document.getElementById('rejlist').innerHTML = REJECTED.map(r=>`<div class="rej"><b>${r.title}</b> — ${r.src} · <span class="reason">${r.reason}</span></div>`).join('');
     let FB=[];
     try{ FB = await fetch(SUPA+'/rest/v1/feedback?select=*&order=id.asc',{headers:{apikey:ANON,Authorization:'Bearer '+ANON}}).then(r=>r.json()); }catch(e){}
-    const dead = new Set(FB.filter(f=>f.type==='non_jamais').map(f=>String(f.offer_id)));
-    OFFERS = OFFERS.filter(o=>!dead.has(String(o.id)));
-    document.getElementById('m-kept').textContent = OFFERS.length;
+    if(!Array.isArray(FB)){ console.warn('Feedback Supabase inattendu:', FB); document.getElementById('m-alerts').textContent='⚠️ feedback distant illisible (voir console)'; FB=[]; }
+    try{
+      const dead = new Set(FB.filter(f=>f.type==='non_jamais').map(f=>String(f.offer_id)));
+      OFFERS = OFFERS.filter(o=>!dead.has(String(o.id)));
+      document.getElementById('m-kept').textContent = OFFERS.length;
+    }catch(e){ console.warn(e); }
     render();
+    try{
     const starred = new Set(FB.filter(f=>f.type==='shortlist').map(f=>String(f.offer_id)));
     const lastVote = {};
     FB.filter(f=>f.type==='vote').forEach(f=>lastVote[f.offer_id+'|'+f.who]=f.value);
@@ -483,6 +487,7 @@ async function boot(){
         box.insertAdjacentHTML('beforeend',`<div class="comment"><b>${f.who==='elle'?'Elle':'Jo'}</b> · ${(f.note||'').replace(/</g,'&lt;')}</div>`);
       });
     });
+    }catch(e){ console.warn('décor feedback:', e); }
     try{ const w=localStorage.getItem('boreale_who'); if(w) document.getElementById('who').value=w; }catch(e){}
   }catch(e){
     document.getElementById('top').innerHTML = '<div class="rej">Données introuvables ('+e+'). Le premier passage du pipeline les créera.</div>';
