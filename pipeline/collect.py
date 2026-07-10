@@ -159,7 +159,10 @@ def json_block(txt):
 
 BAREME = (
     "Tu scores des offres d'emploi saisonnier pour un couple FR (elle: cheffe de projet; lui: hospitality/cuisine "
-    "maisonnée, fuit la cuisine de resto; TDAH: éviter forte pression). Barème /100 : épargne 35 (net à deux/saison: "
+    "maisonnée, fuit la cuisine de resto; TDAH: éviter forte pression). MÉTIERS ÉLARGIS bienvenus: veilleur de nuit/"
+    "night audit (planque idéale), intendance/conciergerie de chalets, événementiel d'hiver (marchés de Noël, "
+    "festivals, séminaires), resort couple (Club Med & co), gîte/chambres d'hôtes manager, domaine viticole hors "
+    "vendanges, résidence d'artistes/phare/île/refuge d'hiver gardé, assistant musher. Barème /100 : épargne 35 (net à deux/saison: "
     "15K viable, 20K content, 50K jackpot), logement 20 (chambre privée quasi-exigée, dortoir malus lourd), "
     "planque/basse pression 15, cadre nature 10, fit couple 10, travail aimé 5, friction 5. "
     "PORTES: non payé=exclure; hors fenêtre oct-avril=exclure; CDI=exclure sauf rémunération hors du commun (le noter); "
@@ -190,7 +193,9 @@ if kept and API_KEY:
 
 if kept and not scored:  # repli heuristique (pas de clé, ou échec API)
     BONUS = {"couple": 14, "gardien": 12, "logé": 12, "loge": 8, "saison": 8, "château": 6, "domaine": 6,
-             "chef": 5, "host": 5, "chalet": 5, "propriété": 6, "caretaker": 10}
+             "chef": 5, "host": 5, "chalet": 5, "propriété": 6, "caretaker": 10, "veilleur": 10,
+             "night": 8, "intendan": 8, "conciergerie": 8, "manager": 5, "animateur": 6,
+             "événement": 6, "event": 5, "musher": 7, "phare": 8, "refuge": 5}
     for o in kept:
         s = 40 + sum(v for w, v in BONUS.items() if w in o["title"].lower())
         s -= 10 if o["geo"] == "far" else 0
@@ -227,9 +232,24 @@ if API_KEY:
             alerts.append(f"Passe fine en échec sur « {o['title'][:50]} » ({str(e)[:80]})")
 
 # ------------------------------------------------------------------- fusion
+CATS = {"planque": ["gardien", "caretaker", "veilleur", "night", "présence"],
+        "maison": ["domaine", "château", "propriété", "estate", "intendan"],
+        "montagne": ["chalet", "ski", "station", "alpes"],
+        "nordique": ["lapland", "arctic", "laponie", "musher"],
+        "evenementiel": ["événement", "event", "festival", "séminaire", "animation", "coordinat", "régie"],
+        "nuit": ["night", "veilleur", "nuit"],
+        "insolite": ["phare", "île", "monastère", "refuge", "observatoire", "résidence d'artistes"],
+        "couple": ["couple", "pair"]}
+
+
+def categorize(title):
+    t = title.lower()
+    return [c for c, kws in CATS.items() if any(k in t for k in kws)]
+
+
 for o in scored:
     o.setdefault("tier", "top" if o["score"] >= 76 else "flow")
-    o.setdefault("cat", ["couple"] if "couple" in o["title"].lower() else [])
+    o.setdefault("cat", categorize(o["title"]))
     o.setdefault("canal", "Board")
     o.setdefault("verif", {"lvl": "listed", "txt": "◌ listée — trouvée au passage automatique, page non ouverte"})
     o.setdefault("badges", [])
@@ -253,6 +273,16 @@ def fresh_enough(o):
 
 merged = [o for o in merged if fresh_enough(o)]
 merged.sort(key=lambda o: -o.get("score", 0))
+
+# plafond par catégorie : une vague d'annonces ne noie pas le reste
+cap = (CAL.get("volume") or {}).get("max_par_categorie", 8)
+counts, capped = {}, []
+for o in merged:
+    c = (o.get("cat") or ["autre"])[0]
+    counts[c] = counts.get(c, 0) + 1
+    if counts[c] <= cap:
+        capped.append(o)
+merged = capped
 
 rejected_list = (current.get("rejected", []) + auto_rej)[-25:]
 

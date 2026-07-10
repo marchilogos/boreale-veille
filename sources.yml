@@ -40,7 +40,7 @@ sources:
     url: https://www.ski-jobs.co.uk/
     collector: links
     link_contains: "/job"
-    title_any: [couple, chalet, host, chef, manager]
+    title_any: [couple, chalet, host, chef, manager, night, rep, coordinator, spa]
     geo: fr
     enabled: true
 
@@ -58,7 +58,7 @@ sources:
     url: https://www.gestion-camping.com/gardien-agent-securite-camping.html
     collector: links
     link_contains: "emploi"
-    title_any: [gardien]
+    title_any: [gardien, veilleur, intendant]
     geo: fr
     enabled: true
 
@@ -73,6 +73,15 @@ sources:
   - {id: indeed_ch, nom: "Indeed CH — saisonnier hiver logé (grappe Suisse)", url: "https://ch-fr.indeed.com/q-suisse-saisonnier-hiver,-log%C3%A9-emplois.html", geo: eu, enabled: false, statut: watch, note: anti-bot probable}
   - {id: lhotellerie, nom: "L'Hôtellerie-Restauration Suisse", url: "https://www.lhotellerie-restauration.fr/emploi/suisse", geo: eu, enabled: false, statut: watch}
   - {id: greycoat, nom: Greycoat Lumleys couples, url: "https://www.greycoatlumleys.co.uk", geo: eu, enabled: false, statut: watch}
+
+  # ---- Nouvelles pistes v3 — out of the box (watch → collecteurs au palier 3) ----
+  - {id: clubmed, nom: "Club Med Jobs (resorts hiver, couples logés nourris)", url: "https://www.clubmedjobs.fr", geo: fr, enabled: false, statut: watch}
+  - {id: profilculture, nom: "ProfilCulture (événementiel/culture, régie, festivals)", url: "https://www.profilculture.com", geo: fr, enabled: false, statut: watch}
+  - {id: planetanim, nom: "Planet'Anim (animation, colonies neige, coordinateurs)", url: "https://www.planetanim.fr", geo: fr, enabled: false, statut: watch}
+  - {id: gitesdefrance, nom: "Gîtes de France & conciergeries de chalets (couples managers)", url: "https://www.gites-de-france.com", geo: fr, enabled: false, statut: watch}
+  - {id: vinjobs, nom: "Vitijob (domaines viticoles — chai/accueil hors vendanges)", url: "https://www.vitijob.com", geo: fr, enabled: false, statut: watch}
+  - {id: residencesartistes, nom: "Res Artis / résidences d'artistes gardées (musique + gardiennage)", url: "https://resartis.org", geo: eu, enabled: false, statut: watch}
+  - {id: nightaudit, nom: "Requête transverse « veilleur de nuit logé station » (via boards actifs)", url: "https://fr.indeed.com/q-veilleur-de-nuit-log%C3%A9-emplois.html", geo: fr, enabled: false, statut: watch}
 
   # ---- Canaux humains (jamais automatisés — actions guidées) ----
   - {id: fb_ski2627, nom: "FB · Ski Season Jobs 26/27 Alps", url: "https://www.facebook.com/groups/skiseasonjobs/", enabled: false, statut: humain}

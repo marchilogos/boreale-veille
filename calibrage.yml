@@ -5,9 +5,25 @@
 # passage ; le site l'affiche dans l'onglet Coulisses.
 # ============================================================
 
-version: 2
+version: 3
 
-volume_cible: [15, 20]      # offres/jour visées — pousse à chercher plus loin
+volume:
+  global: [15, 25]          # offres/jour visées — pousse à chercher plus loin
+  max_par_categorie: 8      # une vague d'annonces d'un coup ne noie pas les autres catégories
+
+# --- Métiers du possible (élargis v3 — think out of the box) ---
+metiers_possibles:
+  coeur: [couple de gardiens, gardien de propriété, house/estate manager, chalet host/cook,
+          private chef maisonnée, réception hôtel, intendant, majordome]
+  planques: [veilleur de nuit / night audit hôtel, gardiennage résidence secondaire,
+             gardien de camping hors saison, gardien de refuge d'hiver, phare/île/monastère gardé,
+             résidence d'artistes avec gardiennage]
+  elle: [coordination événementiel station, conciergerie/property management de chalets,
+         resort rep / tour leader francophone, coordination séminaires & mariages d'hiver, spa/accueil]
+  lui: [cuisine de maisonnée/staff (pas de rush resto), animation après-ski, skiman/magasin,
+        assistant musher / ferme nordique (Jura, Vercors, Laponie)]
+  ensemble: [couple manager de gîte/chambres d'hôtes, resort couple (Club Med & co),
+             régie de lieu événementiel d'hiver, domaine viticole hors vendanges (chai + accueil)]
 passages_paris: ["07:00", "17:00"]
 
 # --- Poids du score (total 100) ---
@@ -48,6 +64,13 @@ modeles:
 
 # --- Journal de calibrage (le plus récent en premier) ---
 journal:
+  - date: 2026-07-09
+    v: 3
+    par: Jo
+    regle: >
+      Élargir le volume par catégorie (plafond 8/cat pour absorber les vagues) ·
+      élargir les métiers possibles et ajouter des catégories out of the box
+      (nuit calme, événementiel d'hiver, conciergerie, insolite) — carte blanche Fable.
   - date: 2026-07-09
     v: 2
     par: Jo
