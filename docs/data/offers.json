@@ -1,26 +1,25 @@
 {
  "meta": {
-  "run_at": "2026-07-10T01:59+00:00",
-  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "run_at": "2026-07-10T02:15+00:00",
+  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 306,
-  "new": 306,
+  "new": 0,
   "kept": 21,
   "humans": 4,
   "rejected": 11,
   "calibrage": "v3",
   "alerts": [
-   "Supabase illisible (403 Client Error: Forbidden for url: https://bljvehfncafnqrzetjyb.supabase.co/re)",
-   "Scoring coarse en échec (Extra data: line 1 column 78 (char 77)) — repli heuristique"
+   "Supabase illisible (403 Client Error: Forbidden for url: https://bljvehfncafnqrzetjyb.supabase.co/re)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "1 échecs",
+   "morganmallet": "2 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "1 échecs",
+   "skijobs_couk": "2 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "1 échecs"
+   "gestioncamping": "2 échecs"
   }
  },
  "offers": [
