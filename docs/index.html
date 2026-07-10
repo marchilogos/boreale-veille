@@ -145,6 +145,7 @@
   .fbbar{display:flex; gap:8px; margin:0 0 14px; flex-wrap:wrap;}
   .fbbar input{flex:1; min-width:240px; border:1px solid var(--line2); border-radius:12px; padding:10px 14px; font-size:.86rem; background:var(--card); color:var(--ink);}
   .fbbar input:focus{outline:none; border-color:var(--aurora2);}
+  .fbbar select{border:1px solid var(--line2); border-radius:12px; background:var(--card); color:var(--ink); padding:0 12px; font-size:.86rem;}
   .fbcopy{border-color:rgba(157,123,255,.5); color:var(--aurora3);}
   .toast{position:fixed; bottom:22px; left:50%; transform:translateX(-50%); background:#e8ecf4; color:#0b1220; border-radius:99px; padding:10px 20px; font-size:.85rem; font-weight:600; opacity:0; transition:.3s; pointer-events:none; white-space:nowrap; z-index:9;}
   .toast.show{opacity:1;}
@@ -170,6 +171,7 @@
 </div>
 
 <div class="fbbar">
+  <select id="who" title="Qui interagit ?"><option value="jo">👤 Jo</option><option value="elle">👤 Elle</option></select>
   <input id="fbinput" placeholder="🎛️ Recalibre en une phrase — ex. « moins de chalets, plus de planques, remonte la Suisse »" onkeydown="if(event.key==='Enter')addFb()">
   <button class="btn" onclick="addFb()">Noter</button>
   <button class="btn fbcopy" onclick="copyFb()">📋 Copier le feedback du jour</button>
@@ -260,8 +262,7 @@
     <h3>Honnêteté du jour</h3>
     <div class="note">· Toutes les offres affichées sont <b>réelles et trouvées aujourd'hui</b> ; les ✓ vérifiées ont leur page ouverte et un formulaire/contact de candidature actif.<br>
     · Les salaires « ~net à deux/saison » sont <b>mes conversions</b> (brut→net, prorata saison) — la fourchette source est toujours affichée.<br>
-    · <b>Boucle de feedback (POC)</b> : chaque vote, rejet, shortlist et consigne libre est journalisé → bouton « 📋 Copier le feedback du jour » → tu me le colles → je recalibre et régénère la page. Dans la version hébergée, cette boucle devient <b>autonome</b> : les signaux nourrissent le scoring IA à chaque passage, sans copier-coller.<br>
-    · Ce fichier ne mémorise pas encore entre deux ouvertures ni entre vous deux — ça vient avec l'hébergement.<br>
+    · <b>Boucle de feedback : AUTONOME.</b> Chaque vote, rejet, shortlist, commentaire et consigne part instantanément en base (Supabase), visible par vous deux, et le pipeline l'applique à chaque passage : les « non jamais » disparaissent pour toujours, les consignes entrent dans le prompt de scoring, chaque ★ crée sa page Notion. Le bouton 📋 reste un plan B hors ligne.<br>
     · Facebook demande un compte connecté : je repère les groupes, vous gardez la main pour y poster.</div>
   </div>
 </div>
@@ -386,29 +387,45 @@ function shortlist(id,btn){
   shortlisted+=on?1:-1;
   document.getElementById('shortcount').innerHTML=`<b>${shortlisted}</b> shortlistée${shortlisted>1?'s':''}`;
   logFb(on?'shortlist':'retrait shortlist', offerName(id));
+  const oo=OFFERS.find(x=>x.id===id)||{};
+  if(on) sendFb('shortlist',{offer_id:String(id),offer_title:oo.title||'',note:oo.url||''});
   if(on) toast('★ Shortlistée — prochain palier : page Notion créée automatiquement');
 }
 function reject(id){
   const card=document.getElementById('card-'+id);
   card.classList.add('gone'); setTimeout(()=>card.style.display='none',400);
   logFb('non jamais', offerName(id));
+  const or_=OFFERS.find(x=>x.id===id)||{};
+  sendFb('non_jamais',{offer_id:String(id),offer_title:or_.title||''});
   toast('✕ Écartée — mémorisée dans le feedback pour ne jamais revenir');
 }
 function vote(id,who,btn){
   const pair=[...btn.parentElement.querySelectorAll('.vote')].slice(who*2,who*2+2);
   pair.forEach(b=>b.classList.remove('on')); btn.classList.add('on');
   logFb('vote', `${who===0?'Jo':'Elle'} ${btn.textContent} — ${offerName(id)}`);
+  sendFb('vote',{offer_id:String(id),offer_title:offerName(id),who:who===0?'jo':'elle',value:btn.classList.contains('up')?'up':'down'});
   toast('Signal noté — il servira à recalibrer le barème');
 }
 function comment(id,input){
   const t=input.value.trim(); if(!t)return;
-  document.getElementById('comments-'+id).insertAdjacentHTML('beforeend',`<div class="comment"><b>Jo</b> · ${t}</div>`);
+  document.getElementById('comments-'+id).insertAdjacentHTML('beforeend',`<div class="comment"><b>${whoAmI()==='elle'?'Elle':'Jo'}</b> · ${t}</div>`);
   logFb('commentaire', `${offerName(id)} : « ${t} »`);
+  sendFb('commentaire',{offer_id:String(id),offer_title:offerName(id),note:t});
   input.value='';
 }
 let tt; function toast(m){const e=document.getElementById('toast'); e.textContent=m; e.classList.add('show'); clearTimeout(tt); tt=setTimeout(()=>e.classList.remove('show'),2800);}
 
-/* ---- Boucle de feedback ---- */
+/* ---- Boucle de feedback (autonome via Supabase) ---- */
+const SUPA='https://bljvehfncafnqrzetjyb.supabase.co';
+const ANON='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJsanZlaGZuY2FmbnFyemV0anliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM2MDk3NjIsImV4cCI6MjA5OTE4NTc2Mn0.oS_9Kh9t1GMqPYgKrh1TWv-JuVNt4SpyUpX4aWw0lVc';
+function whoAmI(){const w=document.getElementById('who').value; try{localStorage.setItem('boreale_who',w);}catch(e){} return w;}
+async function sendFb(type,extra){
+  try{
+    await fetch(SUPA+'/rest/v1/feedback',{method:'POST',
+      headers:{apikey:ANON,Authorization:'Bearer '+ANON,'Content-Type':'application/json',Prefer:'return=minimal'},
+      body:JSON.stringify(Object.assign({type,who:whoAmI()},extra))});
+  }catch(e){ toast('⚠️ Hors ligne — signal gardé dans le paquet à copier'); }
+}
 const fbLog=[];
 function offerName(id){const o=OFFERS.find(x=>x.id===id)||HUMANS.find(x=>x.id===id); return o?o.title:('#'+id);}
 function logFb(type,detail){fbLog.push({t:new Date().toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}),type,detail}); updateFbCount();}
@@ -416,6 +433,7 @@ function updateFbCount(){document.getElementById('fbcount').textContent=fbLog.le
 function addFb(){
   const i=document.getElementById('fbinput'); const v=i.value.trim(); if(!v)return;
   logFb('consigne',v); i.value='';
+  sendFb('consigne',{note:v});
   toast('🎛️ Consigne notée — elle partira dans le paquet de feedback');
 }
 function copyFb(){
@@ -446,7 +464,26 @@ async function boot(){
     document.getElementById('m-cal').textContent = 'calibrage '+(META.calibrage||'');
     document.getElementById('m-alerts').textContent = (META.alerts&&META.alerts.length)?('⚠️ '+META.alerts.join(' · ')):'santé sources OK';
     document.getElementById('rejlist').innerHTML = REJECTED.map(r=>`<div class="rej"><b>${r.title}</b> — ${r.src} · <span class="reason">${r.reason}</span></div>`).join('');
+    let FB=[];
+    try{ FB = await fetch(SUPA+'/rest/v1/feedback?select=*&order=id.asc',{headers:{apikey:ANON,Authorization:'Bearer '+ANON}}).then(r=>r.json()); }catch(e){}
+    const dead = new Set(FB.filter(f=>f.type==='non_jamais').map(f=>String(f.offer_id)));
+    OFFERS = OFFERS.filter(o=>!dead.has(String(o.id)));
+    document.getElementById('m-kept').textContent = OFFERS.length;
     render();
+    const starred = new Set(FB.filter(f=>f.type==='shortlist').map(f=>String(f.offer_id)));
+    const lastVote = {};
+    FB.filter(f=>f.type==='vote').forEach(f=>lastVote[f.offer_id+'|'+f.who]=f.value);
+    OFFERS.forEach(o=>{
+      const card=document.getElementById('card-'+o.id); if(!card) return;
+      if(starred.has(String(o.id))||o.shortlisted){ card.classList.add('shortlisted'); const b=card.querySelector('.btn.star'); if(b){b.classList.add('on'); b.textContent='★ Shortlistée';} }
+      const vs=card.querySelectorAll('.vote');
+      [['jo',0],['elle',2]].forEach(([w,off])=>{ const v=lastVote[o.id+'|'+w]; if(v==='up')vs[off].classList.add('on'); if(v==='down')vs[off+1].classList.add('on'); });
+      const box=document.getElementById('comments-'+o.id);
+      if(box) FB.filter(f=>f.type==='commentaire'&&String(f.offer_id)===String(o.id)).forEach(f=>{
+        box.insertAdjacentHTML('beforeend',`<div class="comment"><b>${f.who==='elle'?'Elle':'Jo'}</b> · ${(f.note||'').replace(/</g,'&lt;')}</div>`);
+      });
+    });
+    try{ const w=localStorage.getItem('boreale_who'); if(w) document.getElementById('who').value=w; }catch(e){}
   }catch(e){
     document.getElementById('top').innerHTML = '<div class="rej">Données introuvables ('+e+'). Le premier passage du pipeline les créera.</div>';
   }

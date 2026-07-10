@@ -42,12 +42,73 @@ def jsave(rel, obj):
         json.dump(obj, f, ensure_ascii=False, indent=1)
 
 
+alerts = []
+
+# ---- Boucle de feedback (palier 2) : Supabase + Notion ----
+SUPA_URL = "https://bljvehfncafnqrzetjyb.supabase.co"
+SUPA_ANON = ("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJsanZlaGZuY2FmbnFyemV0anliIiwi"
+             "cm9sZSI6ImFub24iLCJpYXQiOjE3ODM2MDk3NjIsImV4cCI6MjA5OTE4NTc2Mn0.oS_9Kh9t1GMqPYgKrh1TWv-JuVNt4SpyUpX4aWw0lVc")
+SUPA_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "").strip() or SUPA_ANON
+NOTION_TOKEN = os.environ.get("NOTION_TOKEN", "").strip()
+NOTION_SHORTLIST_PAGE = "398c7660-640d-81b5-8b84-f6c7561c41f5"
+
+
+def fetch_feedback():
+    try:
+        r = requests.get(SUPA_URL + "/rest/v1/feedback?select=*&order=id.asc",
+                         headers={"apikey": SUPA_KEY, "Authorization": "Bearer " + SUPA_KEY}, timeout=30)
+        r.raise_for_status()
+        return r.json()
+    except Exception as e:
+        alerts.append(f"Supabase illisible ({str(e)[:80]})")
+        return []
+
+
+def notion_shortlist_page(o):
+    if not NOTION_TOKEN:
+        return False
+    blocks = [{"object": "block", "type": "paragraph", "paragraph": {"rich_text": [{"text": {"content": t[:1900]}}]}}
+              for t in [f"Score {o.get('score', '?')} · {o.get('emitter', '')}",
+                        "Lien : " + o.get("url", ""),
+                        "Pourquoi : " + (o.get("why", "") or "—"),
+                        "Repères : " + " · ".join(o.get("badges", [])[:6]),
+                        "Réserve : " + (o.get("caveat", "") or "—")] if t.strip(" ·:—")]
+    try:
+        r = requests.post("https://api.notion.com/v1/pages",
+                          headers={"Authorization": "Bearer " + NOTION_TOKEN,
+                                   "Notion-Version": "2022-06-28", "Content-Type": "application/json"},
+                          json={"parent": {"page_id": NOTION_SHORTLIST_PAGE},
+                                "properties": {"title": {"title": [{"text": {"content": ("⭐ " + o["title"])[:180]}}]}},
+                                "children": blocks}, timeout=30)
+        if not r.ok:
+            alerts.append(f"Notion refuse la page ({r.status_code}) — intégration connectée à la page Boréale ?")
+        return r.ok
+    except Exception as e:
+        alerts.append(f"Notion inaccessible ({str(e)[:80]})")
+        return False
+
+
+FEEDBACK = fetch_feedback()
+fb_state = None  # chargé après jload plus bas
+
 CAL = yaml.safe_load(open(p("calibrage.yml"), encoding="utf-8"))
 SRC = yaml.safe_load(open(p("sources.yml"), encoding="utf-8"))["sources"]
 seen = jload("data/seen.json", {})
 rejects = jload("data/rejects.json", [])          # titres/urls écartés par Jo & Elle -> jamais de récurrence
 health = jload("data/health.json", {})
 current = jload("docs/data/offers.json", {"meta": {}, "offers": [], "humans": [], "rejected": []})
+fb_state = jload("data/feedback_state.json", {"last_id": 0, "shortlisted": []})
+
+# Dépouillement du feedback
+CONSIGNES = [f.get("note", "") for f in FEEDBACK if f.get("type") == "consigne"][-10:]
+FB_REJECT_IDS = {str(f.get("offer_id")) for f in FEEDBACK if f.get("type") == "non_jamais"}
+FB_REJECT_TITLES = [f.get("offer_title", "") for f in FEEDBACK if f.get("type") == "non_jamais" and f.get("offer_title")]
+for t in FB_REJECT_TITLES:
+    if t.lower() not in {r.lower() for r in rejects}:
+        rejects.append(t)
+NEW_SHORTLIST = [f for f in FEEDBACK
+                 if f.get("type") == "shortlist" and f.get("id", 0) > fb_state["last_id"]
+                 and str(f.get("offer_id")) not in {str(x) for x in fb_state["shortlisted"]}]
 
 
 # ------------------------------------------------------------------ collecte
@@ -82,7 +143,7 @@ def collect_links(src):
     return out
 
 
-collected, alerts = [], []
+collected = []
 for src in SRC:
     if not src.get("enabled"):
         continue
@@ -167,7 +228,8 @@ BAREME = (
     "planque/basse pression 15, cadre nature 10, fit couple 10, travail aimé 5, friction 5. "
     "PORTES: non payé=exclure; hors fenêtre oct-avril=exclure; CDI=exclure sauf rémunération hors du commun (le noter); "
     "durée cible 1-6 mois. GÉO: fr/eu prioritaires, far (Laponie, lointain)=secondaire, hors-Schengen=malus lourd. "
-    f"Journal de calibrage: {json.dumps(CAL.get('journal', []), ensure_ascii=False, default=str)}"
+    f"Journal de calibrage: {json.dumps(CAL.get('journal', []), ensure_ascii=False, default=str)} "
+    f"CONSIGNES RÉCENTES DE JO & ELLE (à respecter en priorité): {json.dumps(CONSIGNES, ensure_ascii=False)}"
 )
 
 scored, mode = [], "heuristique (clé API absente — scores provisoires)"
@@ -272,6 +334,37 @@ def fresh_enough(o):
 
 
 merged = [o for o in merged if fresh_enough(o)]
+# « non jamais » : retrait définitif, aucune récurrence
+merged = [o for o in merged if str(o.get("id")) not in FB_REJECT_IDS
+          and o["title"].lower() not in {t.lower() for t in FB_REJECT_TITLES}]
+
+# votes & commentaires visibles par les deux
+VOTES, COMMENTS = {}, {}
+for f in FEEDBACK:
+    oid = str(f.get("offer_id"))
+    if f.get("type") == "vote":
+        VOTES.setdefault(oid, {})[f.get("who", "?")] = f.get("value", "")
+    if f.get("type") == "commentaire":
+        COMMENTS.setdefault(oid, []).append({"who": f.get("who", "?"), "note": f.get("note", "")})
+for o in merged:
+    oid = str(o.get("id"))
+    if oid in VOTES:
+        o["votes_sync"] = VOTES[oid]
+    if oid in COMMENTS:
+        o["comments_sync"] = COMMENTS[oid][-6:]
+
+# shortlist -> page Notion
+for f in NEW_SHORTLIST:
+    oid = str(f.get("offer_id"))
+    o = next((x for x in merged if str(x.get("id")) == oid), None) or \
+        {"title": f.get("offer_title", "Offre"), "url": f.get("note", ""), "emitter": "", "badges": []}
+    if notion_shortlist_page(o):
+        fb_state["shortlisted"].append(oid)
+        if isinstance(o, dict):
+            o["shortlisted"] = True
+if FEEDBACK:
+    fb_state["last_id"] = max(f.get("id", 0) for f in FEEDBACK)
+
 merged.sort(key=lambda o: -o.get("score", 0))
 
 # plafond par catégorie : une vague d'annonces ne noie pas le reste
@@ -291,6 +384,7 @@ meta = {
     "examined": len(collected), "new": len(fresh), "kept": len(merged),
     "humans": len(current.get("humans", [])), "rejected": len(rejected_list),
     "calibrage": f"v{CAL.get('version')}", "alerts": alerts,
+    "consignes": CONSIGNES, "feedback_total": len(FEEDBACK),
     "sources_sante": {k: ("ok" if v.get("fails", 0) == 0 else f"{v['fails']} échecs") for k, v in health.items()},
 }
 
@@ -298,6 +392,8 @@ jsave("docs/data/offers.json", {"meta": meta, "offers": merged,
                                 "humans": current.get("humans", []), "rejected": rejected_list})
 jsave("data/seen.json", seen)
 jsave("data/health.json", health)
+jsave("data/rejects.json", rejects)
+jsave("data/feedback_state.json", fb_state)
 
 print(f"[boréale] {NOW} · examinées {len(collected)} · nouvelles {len(fresh)} · gardées {len(merged)} · "
       f"écartées {len(auto_rej)} · scoring {mode} · alertes {len(alerts)}")
