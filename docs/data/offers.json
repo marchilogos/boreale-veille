@@ -1,13 +1,27 @@
 {
  "meta": {
-  "run_at": "2026-07-09T14:30:00+02:00",
-  "run_type": "seed (session Fable)",
-  "examined": 31,
-  "kept": 11,
+  "run_at": "2026-07-10T01:59+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 306,
+  "new": 306,
+  "kept": 21,
   "humans": 4,
-  "rejected": 6,
-  "calibrage": "v2",
-  "alerts": []
+  "rejected": 11,
+  "calibrage": "v3",
+  "alerts": [
+   "Supabase illisible (403 Client Error: Forbidden for url: https://bljvehfncafnqrzetjyb.supabase.co/re)",
+   "Scoring coarse en échec (Extra data: line 1 column 78 (char 77)) — repli heuristique"
+  ],
+  "consignes": [],
+  "feedback_total": 0,
+  "sources_sante": {
+   "madameestservie": "ok",
+   "morganmallet": "1 échecs",
+   "laplandstaff": "ok",
+   "skijobs_couk": "1 échecs",
+   "francegardiennage": "ok",
+   "gestioncamping": "1 échecs"
+  }
  },
  "offers": [
   {
@@ -48,81 +62,6 @@
     "Fit couple": 95,
     "Travail aimé": 80,
     "Friction": 85
-   }
-  },
-  {
-   "id": 3,
-   "tier": "flow",
-   "score": 70,
-   "geo": "far",
-   "cat": [
-    "nordique",
-    "couple"
-   ],
-   "title": "Saison 2026-27 — Star Arctic Hotel, Saariselkä (20+ postes)",
-   "emitter": "Star Arctic Hotel — hôtel design, sommet de Kaunispää",
-   "src": "stararctichotel.com",
-   "url": "https://stararctichotel.com/careers/",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — recrutement 26-27 confirmé en recherche, page carrières à ouvrir"
-   },
-   "canal": "Employeur direct",
-   "badges": [
-    "💰 convention hôtelière FI (~2 000-2 500 €/brut/mois/pers.)",
-    "🏠 logement staff (chambre à vérifier)",
-    "📅 ~nov → avril",
-    "❄️ aurores, Laponie finlandaise",
-    "🗣️ EN ok, FR = atout (clientèle FR)"
-   ],
-   "hot": "Recrute maintenant pour 26-27 — Saariselkä est aussi un hub physique (pop-up saisonniers en nov., cf. ta base)",
-   "why": "Deux postes au même endroit très plausibles = ~17-20K net à deux, dépenses quasi nulles, nature maximale. Classée « lointain secondaire » depuis ton calibrage (Schengen, mais à 3 500 km) — remonte si tu dis « la Laponie compte comme Europe ».",
-   "caveat": "À vérifier avant candidature : chambre privée staff possible pour un couple ?",
-   "bars": {
-    "Épargne": 76,
-    "Logement": 70,
-    "Planque/pression": 62,
-    "Cadre": 100,
-    "Fit couple": 85,
-    "Travail aimé": 80,
-    "Friction": 88
-   }
-  },
-  {
-   "id": 4,
-   "tier": "flow",
-   "score": 69,
-   "geo": "far",
-   "cat": [
-    "nordique",
-    "couple"
-   ],
-   "title": "Chef + Serveuse/Housekeeper — Lapland Hotels, saison 2026-27",
-   "emitter": "Lapland Hotels via Lapland Staff (ATS Talentadore)",
-   "src": "laplandstaff.fi",
-   "url": "https://laplandstaff.fi/en/job-openings/",
-   "verif": {
-    "lvl": "ok",
-    "txt": "✓ vérifiée — 3 annonces 2026-27 ouvertes aujourd'hui, candidature en ligne active"
-   },
-   "canal": "Employeur direct",
-   "badges": [
-    "💰 grille TES FI ~2 000-2 400 €/brut/mois/pers.",
-    "🏠 logement staff aidé",
-    "📅 saisons 2026-2027, Nord Finlande",
-    "❄️ Levi, Ylläs, Saariselkä, Pallas…",
-    "👥 stratégie : 2 candidatures, même destination"
-   ],
-   "why": "La plus grosse chaîne lapone recrute en ce moment même : Chef (lui — cuisine d'hôtel ≠ rush de resto étoilé, à cadrer à l'entretien) + Waiter/Housekeeper (elle). En visant la même destination wilderness, vous vous retrouvez le soir — exactement ton critère.",
-   "caveat": "Candidature uniquement en ligne (pas d'email). Préciser « couple, même site » dans les deux dossiers.",
-   "bars": {
-    "Épargne": 72,
-    "Logement": 72,
-    "Planque/pression": 58,
-    "Cadre": 95,
-    "Fit couple": 82,
-    "Travail aimé": 78,
-    "Friction": 90
    }
   },
   {
@@ -235,40 +174,6 @@
    }
   },
   {
-   "id": 8,
-   "tier": "flow",
-   "score": 66,
-   "geo": "far",
-   "cat": [
-    "nordique"
-   ],
-   "title": "Saison 26/27 — Northern Lights Ranch, Levi",
-   "emitter": "Northern Lights Ranch (lodge vitré, huskies & rennes voisins)",
-   "src": "theranch.fi",
-   "url": "https://theranch.fi/about-us/jobs/",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — « recruitment for winter 26-27 has begun » confirmé en recherche"
-   },
-   "canal": "Employeur direct",
-   "badges": [
-    "💰 grille FI",
-    "🏠 logement staff",
-    "📅 hiver 26-27",
-    "❄️ cabins vitrées sous aurores"
-   ],
-   "why": "Petite structure premium en pleine nature : service/host pour deux possible, clientèle internationale aisée. Cadre irréel, équipe réduite = ambiance qui compte double.",
-   "bars": {
-    "Épargne": 68,
-    "Logement": 70,
-    "Planque/pression": 60,
-    "Cadre": 100,
-    "Fit couple": 75,
-    "Travail aimé": 80,
-    "Friction": 86
-   }
-  },
-  {
    "id": 9,
    "tier": "top",
    "score": 73,
@@ -337,6 +242,307 @@
    }
   },
   {
+   "id": 3,
+   "tier": "flow",
+   "score": 70,
+   "geo": "far",
+   "cat": [
+    "nordique",
+    "couple"
+   ],
+   "title": "Saison 2026-27 — Star Arctic Hotel, Saariselkä (20+ postes)",
+   "emitter": "Star Arctic Hotel — hôtel design, sommet de Kaunispää",
+   "src": "stararctichotel.com",
+   "url": "https://stararctichotel.com/careers/",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — recrutement 26-27 confirmé en recherche, page carrières à ouvrir"
+   },
+   "canal": "Employeur direct",
+   "badges": [
+    "💰 convention hôtelière FI (~2 000-2 500 €/brut/mois/pers.)",
+    "🏠 logement staff (chambre à vérifier)",
+    "📅 ~nov → avril",
+    "❄️ aurores, Laponie finlandaise",
+    "🗣️ EN ok, FR = atout (clientèle FR)"
+   ],
+   "hot": "Recrute maintenant pour 26-27 — Saariselkä est aussi un hub physique (pop-up saisonniers en nov., cf. ta base)",
+   "why": "Deux postes au même endroit très plausibles = ~17-20K net à deux, dépenses quasi nulles, nature maximale. Classée « lointain secondaire » depuis ton calibrage (Schengen, mais à 3 500 km) — remonte si tu dis « la Laponie compte comme Europe ».",
+   "caveat": "À vérifier avant candidature : chambre privée staff possible pour un couple ?",
+   "bars": {
+    "Épargne": 76,
+    "Logement": 70,
+    "Planque/pression": 62,
+    "Cadre": 100,
+    "Fit couple": 85,
+    "Travail aimé": 80,
+    "Friction": 88
+   }
+  },
+  {
+   "id": 4,
+   "tier": "flow",
+   "score": 69,
+   "geo": "far",
+   "cat": [
+    "nordique",
+    "couple"
+   ],
+   "title": "Chef + Serveuse/Housekeeper — Lapland Hotels, saison 2026-27",
+   "emitter": "Lapland Hotels via Lapland Staff (ATS Talentadore)",
+   "src": "laplandstaff.fi",
+   "url": "https://laplandstaff.fi/en/job-openings/",
+   "verif": {
+    "lvl": "ok",
+    "txt": "✓ vérifiée — 3 annonces 2026-27 ouvertes aujourd'hui, candidature en ligne active"
+   },
+   "canal": "Employeur direct",
+   "badges": [
+    "💰 grille TES FI ~2 000-2 400 €/brut/mois/pers.",
+    "🏠 logement staff aidé",
+    "📅 saisons 2026-2027, Nord Finlande",
+    "❄️ Levi, Ylläs, Saariselkä, Pallas…",
+    "👥 stratégie : 2 candidatures, même destination"
+   ],
+   "why": "La plus grosse chaîne lapone recrute en ce moment même : Chef (lui — cuisine d'hôtel ≠ rush de resto étoilé, à cadrer à l'entretien) + Waiter/Housekeeper (elle). En visant la même destination wilderness, vous vous retrouvez le soir — exactement ton critère.",
+   "caveat": "Candidature uniquement en ligne (pas d'email). Préciser « couple, même site » dans les deux dossiers.",
+   "bars": {
+    "Épargne": 72,
+    "Logement": 72,
+    "Planque/pression": 58,
+    "Cadre": 95,
+    "Fit couple": 82,
+    "Travail aimé": 78,
+    "Friction": 90
+   }
+  },
+  {
+   "id": 8,
+   "tier": "flow",
+   "score": 66,
+   "geo": "far",
+   "cat": [
+    "nordique"
+   ],
+   "title": "Saison 26/27 — Northern Lights Ranch, Levi",
+   "emitter": "Northern Lights Ranch (lodge vitré, huskies & rennes voisins)",
+   "src": "theranch.fi",
+   "url": "https://theranch.fi/about-us/jobs/",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — « recruitment for winter 26-27 has begun » confirmé en recherche"
+   },
+   "canal": "Employeur direct",
+   "badges": [
+    "💰 grille FI",
+    "🏠 logement staff",
+    "📅 hiver 26-27",
+    "❄️ cabins vitrées sous aurores"
+   ],
+   "why": "Petite structure premium en pleine nature : service/host pour deux possible, clientèle internationale aisée. Cadre irréel, équipe réduite = ambiance qui compte double.",
+   "bars": {
+    "Épargne": 68,
+    "Logement": 70,
+    "Planque/pression": 60,
+    "Cadre": 100,
+    "Fit couple": 75,
+    "Travail aimé": 80,
+    "Friction": 86
+   }
+  },
+  {
+   "title": "Couple de gardiens Eure (27) 22/06/2026 Couple de gardiens CDI 004860",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-eure-27-4860.htm?p=2",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "20ab6f208bab9740",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-07-10"
+  },
+  {
+   "title": "Couple de gardiens Montfort-Lamaury (78) 17/06/2026 Couple de gardiens CDI 004876",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-montfort-lamaury-78-4876.htm?p=3",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "409d73e810bf030d",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-07-10"
+  },
+  {
+   "title": "Couple de gardiens Orgeval (78) 14/06/2026 Couple de gardiens CDI 004871",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-orgeval-78-4871.htm?p=5",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "a64ac8c6d1a21563",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-07-10"
+  },
+  {
+   "title": "Couple de gardiens wallonne, Belgique 09/06/2026 Couple de gardiens CDI 004865",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-wallonne-belgique-4865.htm?p=6",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "519bc5cdef7e2f1e",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-07-10"
+  },
+  {
+   "title": "Couple de gardiens Haute-Marne 28/05/2026 Couple de gardiens CDI 004847",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-haute-marne-4847.htm?p=7",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "8e60768232ca7ae0",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-07-10"
+  },
+  {
+   "title": "Couple de gardiens Sylvains-Lès-Moulins (27) 27/05/2026 Couple de gardiens CDI 004843",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-sylvains-les-moulins-27-4843.htm?p=8",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "364450d5ef8b7b11",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-07-10"
+  },
+  {
+   "title": "Couple de gardiens Ramatuelle & Courchevel 18/05/2026 Couple de gardiens CDD 004509",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-ramatuelle-&-courchevel-4509.htm?p=9",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "d4e8b02552a3908d",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-07-10"
+  },
+  {
+   "title": "Couple de gardiens Gien (45) 06/05/2026 Couple de gardiens CDI 004251",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-gien-45-4251.htm?p=10",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "fc8182f84e8c7c05",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-07-10"
+  },
+  {
    "id": 11,
    "tier": "flow",
    "score": 56,
@@ -371,40 +577,73 @@
    }
   },
   {
-   "id": 12,
-   "tier": "flow",
-   "score": 44,
+   "title": "Chef, seasons 2026-2027, Northern Finland, Lapland Hotels Read more",
+   "url": "https://staffpoint.talentadore.com/apply/chef-seasons-2026-2027-northern-finland-lapland-hotels/3B5ovZ",
+   "src": "laplandstaff",
+   "emitter": "Lapland Hotels & Safaris (ATS Talentadore)",
    "geo": "far",
+   "id": "cec26a92117284da",
+   "score": 35,
+   "provisoire": true,
+   "tier": "flow",
    "cat": [
-    "planque",
-    "couple",
-    "maison"
+    "nordique"
    ],
-   "title": "Caretaker couple — île de Quadra, Colombie-Britannique",
-   "emitter": "Famille propriétaire, 30 acres en bord de mer",
-   "src": "workingcouples.com",
-   "url": "https://workingcouples.com/job_opening/caretaker-couple-position-quadra-island-bc",
+   "canal": "Board",
    "verif": {
     "lvl": "listed",
-    "txt": "◌ listée — ancienneté de l'annonce à confirmer"
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
    },
-   "canal": "Board couples",
-   "badges": [
-    "💰 payé + logé sur place",
-    "🌊 waterfront, vergers, ateliers",
-    "🍁 Canada : permis de travail requis",
-    "⏱ « hiver très libre » écrit dans l'annonce"
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-07-10"
+  },
+  {
+   "title": "Waiter/Waitress, seasons 2026-2027, Northern Finland, Lapland Hotels Read more",
+   "url": "https://staffpoint.talentadore.com/apply/waiter-waitress-seasons-2026-2027-northern-finland-lapland-hotels/ZjP6ab",
+   "src": "laplandstaff",
+   "emitter": "Lapland Hotels & Safaris (ATS Talentadore)",
+   "geo": "far",
+   "id": "bd47e5af5545d12e",
+   "score": 30,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "nordique"
    ],
-   "why": "La planque absolue sur le papier (hiver = présence + temps libre, au bord de l'eau)… mais hors Schengen : permis canadien = double malus depuis ton calibrage (friction + lointain non-Europe). On baisse fort, on ne supprime pas — tu as dit vouloir tenter même à faible chance.",
-   "bars": {
-    "Épargne": 55,
-    "Logement": 90,
-    "Planque/pression": 95,
-    "Cadre": 95,
-    "Fit couple": 100,
-    "Travail aimé": 75,
-    "Friction": 12
-   }
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-07-10"
+  },
+  {
+   "title": "Housekeeper, seasons 2026-2027, Northern Finland, Lapland Hotels Read more",
+   "url": "https://staffpoint.talentadore.com/apply/housekeeper-seasons-2026-2027-northern-finland-lapland-hotels/bdYw7L",
+   "src": "laplandstaff",
+   "emitter": "Lapland Hotels & Safaris (ATS Talentadore)",
+   "geo": "far",
+   "id": "cb3c9c5aabb2a6ff",
+   "score": 30,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "nordique"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-07-10"
   }
  ],
  "humans": [
@@ -471,6 +710,31 @@
    "title": "Aide-gardien de refuge",
    "src": "refuges.info",
    "reason": "Saison été — hors fenêtre oct-avril"
+  },
+  {
+   "title": "Caretaker couple Saint-Jean-Cap-Ferrat (06) 03/02/2026 Couple de gardiens CDI 004693",
+   "src": "Madame est Servie — couples de gardiens",
+   "reason": "CDI sans mention de rémunération hors du commun, et hors fenêtre 1-6 mois (poste à l'année, offre déjà pourvue)."
+  },
+  {
+   "title": "Intendant Auvergne 14/06/2026 Couple de gardiens CDI 000566",
+   "src": "Madame est Servie — couples de gardiens",
+   "reason": "CDI sans rémunération hors du commun mentionnée — hors périmètre saisonnier 1-6 mois."
+  },
+  {
+   "title": "Gardien - Intendant Haute-Savoie 10/03/2026 Couple de gardiens CDI 004265",
+   "src": "Madame est Servie — couples de gardiens",
+   "reason": "CDI sans rémunération hors du commun chiffrée + offre déjà pourvue/en attente de validation"
+  },
+  {
+   "title": "Domestic couple Le Blanc (36) 30/06/2026 Couple de gardiens CDI 002393",
+   "src": "Madame est Servie — couples de gardiens",
+   "reason": "CDI sans rémunération hors du commun mentionnée (porte d'exclusion contrat)."
+  },
+  {
+   "title": "Couple d'employés de maison Namur, Belgique 26/06/2026 Couple de gardiens CDI 004884",
+   "src": "Madame est Servie — couples de gardiens",
+   "reason": "CDI sans rémunération hors du commun mentionnée (règle d'exclusion des CDI)"
   }
  ]
 }
