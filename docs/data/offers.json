@@ -1,25 +1,31 @@
 {
  "meta": {
-  "run_at": "2026-07-10T02:15+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 306,
-  "new": 0,
-  "kept": 13,
+  "run_at": "2026-07-10T08:16+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 309,
+  "new": 3,
+  "kept": 14,
   "humans": 4,
-  "rejected": 1,
+  "rejected": 6,
   "calibrage": "v4",
   "alerts": [
    "Supabase illisible (403 Client Error: Forbidden for url: https://bljvehfncafnqrzetjyb.supabase.co/re)"
   ],
   "consignes": [],
   "feedback_total": 0,
+  "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "2 échecs",
+   "morganmallet": "3 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "2 échecs",
+   "skijobs_couk": "3 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "2 échecs"
+   "gestioncamping": "3 échecs",
+   "mailbox": "1 échecs",
+   "stararctic": "1 échecs",
+   "hunterchalets": "1 échecs",
+   "skiworld": "ok",
+   "workingcouples": "1 échecs"
   }
  },
  "offers": [
@@ -435,6 +441,42 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-07-10"
+  },
+  {
+   "title": "Blog: Being a Chalet Host...",
+   "url": "http://www.skiworld.co.uk/recruitment/resort-roles/chalet-host",
+   "src": "skiworld",
+   "emitter": "Skiworld recruitment",
+   "geo": "eu",
+   "id": "9eebdce762dedd84",
+   "score": 22,
+   "provisoire": true,
+   "badges": [
+    "📅 saison hiver probable",
+    "🏠 logé (non confirmé)",
+    "💰 salaire inconnu"
+   ],
+   "why": "Ce n'est pas une offre d'emploi concrète mais une page blog/marketing générique de Skiworld sur le métier de chalet host, sans salaire, dates précises, ni lieu spécifique donnés. Le métier lui-même (hospitality chalet, cuisine maison) collerait bien au couple, mais aucune donnée exploitable pour juger épargne, logement ou pression réelle.",
+   "caveat": "Page non-exploitable en l'état: il faudrait retrouver une vraie fiche de poste Skiworld avec dates, salaire et resort précis avant de considérer sérieusement.",
+   "bars": {
+    "Épargne": 10,
+    "Logement": 30,
+    "Planque/pression": 30,
+    "Cadre": 50,
+    "Fit couple": 45,
+    "Travail aimé": 40,
+    "Friction": 40
+   },
+   "verif": {
+    "lvl": "ok",
+    "txt": "✓ vérifiée — page ouverte au passage du 2026-07-10 08:16"
+   },
+   "tier": "flow",
+   "cat": [
+    "montagne"
+   ],
+   "canal": "Board",
+   "nouveau": "2026-07-10"
   }
  ],
  "humans": [
@@ -476,6 +518,31 @@
    "title": "Aide-gardien de refuge",
    "src": "refuges.info",
    "reason": "Saison été — hors fenêtre oct-avril"
+  },
+  {
+   "title": "Blog: Being a Chalet Host...",
+   "src": "Skiworld recruitment",
+   "reason": "Blog (non offre d'emploi)"
+  },
+  {
+   "title": "Blog: Being a Resort Manager...",
+   "src": "Skiworld recruitment",
+   "reason": "Blog (non offre d'emploi)"
+  },
+  {
+   "title": "Blog: Being a Chalet Manager...",
+   "src": "Skiworld recruitment",
+   "reason": "Blog (non offre d'emploi)"
+  },
+  {
+   "title": "Blog: Being a Chalet Manager...",
+   "src": "Skiworld recruitment",
+   "reason": "non payé"
+  },
+  {
+   "title": "Blog: Being a Resort Manager...",
+   "src": "Skiworld recruitment",
+   "reason": "non payé"
   }
  ]
 }
