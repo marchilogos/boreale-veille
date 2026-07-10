@@ -143,13 +143,54 @@ def collect_links(src):
     return out
 
 
+def collect_mail(src):
+    """Lit la boîte d'alertes (Indeed, Jooble, leboncoin, EURES…) — la voie royale
+    vers les sources qui bloquent les robots mais adorent envoyer des emails."""
+    user = os.environ.get("MAIL_USER", "").strip()
+    pwd = os.environ.get("MAIL_APP_PASSWORD", "").strip()
+    if not user or not pwd:
+        raise RuntimeError("secrets MAIL_USER / MAIL_APP_PASSWORD absents")
+    import imaplib, email as em
+    DOMS = ["indeed.", "jooble.", "leboncoin.", "europa.eu", "eures", "lhotellerie",
+            "jobs.ch", "jobup.ch", "seasonworkers", "ski-jobs", "caterer", "hosco"]
+    out = []
+    M = imaplib.IMAP4_SSL("imap.gmail.com")
+    M.login(user, pwd)
+    M.select("INBOX")
+    _, data = M.search(None, "UNSEEN")
+    for i in data[0].split()[-120:]:
+        try:
+            _, msg = M.fetch(i, "(RFC822)")
+            m = em.message_from_bytes(msg[0][1])
+            html = ""
+            for part in m.walk():
+                if part.get_content_type() == "text/html":
+                    html = part.get_payload(decode=True).decode(part.get_content_charset() or "utf-8", "ignore")
+                    break
+            sender = (m.get("From") or "?").split("@")[-1].strip(">").strip()
+            for a in BeautifulSoup(html, "html.parser").select("a[href]"):
+                t = a.get_text(" ", strip=True)
+                u = a["href"]
+                if not (18 <= len(t) <= 160) or t.lower().startswith(("voir", "see all", "unsubscribe", "gérer")):
+                    continue
+                if not any(d in u.lower() for d in DOMS):
+                    continue
+                out.append({"title": t[:160], "url": u.split("&utm")[0][:600], "src": "mailbox",
+                            "emitter": f"Alerte email · {sender}", "geo": "eu"})
+            M.store(i, "+FLAGS", "\\Seen")
+        except Exception:
+            continue
+    M.logout()
+    return out
+
+
 collected = []
 for src in SRC:
     if not src.get("enabled"):
         continue
     h = health.get(src["id"], {"fails": 0})
     try:
-        items = collect_links(src)
+        items = collect_mail(src) if src.get("collector") == "mail" else collect_links(src)
         h = {"fails": 0, "last_ok": NOW, "last_count": len(items)}
         if not items:
             h["fails"] = health.get(src["id"], {}).get("fails", 0) + 1
@@ -181,23 +222,28 @@ for o in collected:
     fresh.append(o)
 
 # ------------------------------------------------------------ portes (règles)
-NON_PAYE = ["bénévol", "volontari", "workaway", "wwoof", "non rémunéré", "unpaid", "voluntary", "au pair"]
-HORS_FENETRE = ["saison été", "summer season", "juin-sept", "été 2026"]
+NON_PAYE = ["bénévol", "volontari", "workaway", "wwoof", "non rémunéré", "unpaid", "voluntary", "au pair",
+            "house sit", "house-sit", "échange", "volunteer"]
+CDI = ["cdi", "permanent", "year-round", "year round", "à l'année", "unbefristet", "indeterminato"]
+HORS_FENETRE = ["saison été", "summer season", "juin-sept", "été 2026", "summer 2026"]
 
 
-def porte(o):
-    t = o["title"].lower()
-    if any(w in t for w in NON_PAYE):
-        return "Non payé — l'argent est roi"
-    if any(w in t for w in HORS_FENETRE):
-        return "Hors fenêtre oct-avril"
-    return None
+def invisible(txt):
+    """CDI et non payé : suppression totale, n'apparaissent nulle part (règle v4)."""
+    t = (txt or "").lower()
+    return any(w in t for w in NON_PAYE) or any(w in t for w in CDI)
 
 
-kept, auto_rej = [], []
+kept, auto_rej, silencieux = [], [], 0
 for o in fresh:
-    r = porte(o)
-    (auto_rej.append({"title": o["title"], "src": o["emitter"], "reason": r}) if r else kept.append(o))
+    t = o["title"].lower()
+    if invisible(t):
+        silencieux += 1
+        continue
+    if any(w in t for w in HORS_FENETRE):
+        auto_rej.append({"title": o["title"], "src": o["emitter"], "reason": "Hors fenêtre oct-avril"})
+        continue
+    kept.append(o)
 
 
 # ------------------------------------------------------------------- scoring
@@ -226,8 +272,8 @@ BAREME = (
     "vendanges, résidence d'artistes/phare/île/refuge d'hiver gardé, assistant musher. Barème /100 : épargne 35 (net à deux/saison: "
     "15K viable, 20K content, 50K jackpot), logement 20 (chambre privée quasi-exigée, dortoir malus lourd), "
     "planque/basse pression 15, cadre nature 10, fit couple 10, travail aimé 5, friction 5. "
-    "PORTES: non payé=exclure; hors fenêtre oct-avril=exclure; CDI=exclure sauf rémunération hors du commun (le noter); "
-    "durée cible 1-6 mois. GÉO: fr/eu prioritaires, far (Laponie, lointain)=secondaire, hors-Schengen=malus lourd. "
+    "PORTES ABSOLUES: CDI/permanent/à l'année => exclure=true raison 'CDI'. Non payé/échange/bénévolat => exclure=true "
+    "raison 'non payé'. AUCUNE exception, jamais. Hors fenêtre oct-avril => exclure. Durée cible 1-6 mois. GÉO: fr/eu prioritaires, far (Laponie, lointain)=secondaire, hors-Schengen=malus lourd. "
     f"Journal de calibrage: {json.dumps(CAL.get('journal', []), ensure_ascii=False, default=str)} "
     f"CONSIGNES RÉCENTES DE JO & ELLE (à respecter en priorité): {json.dumps(CONSIGNES, ensure_ascii=False)}"
 )
@@ -244,8 +290,11 @@ if kept and API_KEY:
         for row in json_block(out) or []:
             o = kept[row["i"]]
             if row.get("exclure"):
-                auto_rej.append({"title": o["title"], "src": o["emitter"],
-                                 "reason": row.get("raison_exclusion") or "règle du calibrage"})
+                if invisible(row.get("raison_exclusion")):
+                    silencieux += 1
+                else:
+                    auto_rej.append({"title": o["title"], "src": o["emitter"],
+                                     "reason": row.get("raison_exclusion") or "règle du calibrage"})
             else:
                 o["score"] = int(row["score"])
                 o["geo"] = row.get("geo", o["geo"])
@@ -285,8 +334,11 @@ if API_KEY:
             if d:
                 if d.get("exclure"):
                     scored.remove(o)
-                    auto_rej.append({"title": o["title"], "src": o["emitter"],
-                                     "reason": d.get("raison_exclusion") or "règle du calibrage"})
+                    if invisible(d.get("raison_exclusion")):
+                        silencieux += 1
+                    else:
+                        auto_rej.append({"title": o["title"], "src": o["emitter"],
+                                         "reason": d.get("raison_exclusion") or "règle du calibrage"})
                     continue
                 o.update({k: d[k] for k in ("score", "geo", "badges", "why", "caveat", "bars") if d.get(k) is not None})
                 o["verif"] = {"lvl": "ok", "txt": f"✓ vérifiée — page ouverte au passage du {NOW[:16].replace('T', ' ')}"}
@@ -333,7 +385,7 @@ def fresh_enough(o):
     return age <= 21
 
 
-merged = [o for o in merged if fresh_enough(o)]
+merged = [o for o in merged if fresh_enough(o) and not invisible(o.get("title", "") + " " + " ".join(o.get("badges", [])) + " " + (o.get("caveat") or ""))]
 # « non jamais » : retrait définitif, aucune récurrence
 merged = [o for o in merged if str(o.get("id")) not in FB_REJECT_IDS
           and o["title"].lower() not in {t.lower() for t in FB_REJECT_TITLES}]
@@ -377,14 +429,15 @@ for o in merged:
         capped.append(o)
 merged = capped
 
-rejected_list = (current.get("rejected", []) + auto_rej)[-25:]
+rejected_list = [r for r in (current.get("rejected", []) + auto_rej)
+                 if not invisible(r.get("title", "") + " " + r.get("reason", ""))][-25:]
 
 meta = {
     "run_at": NOW, "run_type": f"passage automatique — scoring {mode}",
     "examined": len(collected), "new": len(fresh), "kept": len(merged),
     "humans": len(current.get("humans", [])), "rejected": len(rejected_list),
     "calibrage": f"v{CAL.get('version')}", "alerts": alerts,
-    "consignes": CONSIGNES, "feedback_total": len(FEEDBACK),
+    "consignes": CONSIGNES, "feedback_total": len(FEEDBACK), "exclus_invisibles": silencieux,
     "sources_sante": {k: ("ok" if v.get("fails", 0) == 0 else f"{v['fails']} échecs") for k, v in health.items()},
 }
 

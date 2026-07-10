@@ -4,10 +4,10 @@
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 306,
   "new": 0,
-  "kept": 21,
+  "kept": 13,
   "humans": 4,
-  "rejected": 11,
-  "calibrage": "v3",
+  "rejected": 1,
+  "calibrage": "v4",
   "alerts": [
    "Supabase illisible (403 Client Error: Forbidden for url: https://bljvehfncafnqrzetjyb.supabase.co/re)"
   ],
@@ -23,46 +23,6 @@
   }
  },
  "offers": [
-  {
-   "id": 1,
-   "tier": "top",
-   "score": 86,
-   "geo": "fr",
-   "cat": [
-    "maison",
-    "couple",
-    "planque"
-   ],
-   "title": "Couple de gardiens — demeure XVIIIe, 4 ha, Saumur (49)",
-   "emitter": "Morgan & Mallet pour une propriétaire écrivain",
-   "src": "personneldemaison.agency",
-   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-couple-gardiens-propriete-saumur-france/",
-   "verif": {
-    "lvl": "ok",
-    "txt": "✓ vérifiée — page ouverte le 9 juil., formulaire actif"
-   },
-   "canal": "Agence",
-   "badges": [
-    "💰 69-77K€ brut/an à deux (≈ 26-29K net / 7 mois)",
-    "🏠 Logé sur le domaine",
-    "📅 prise de poste sept. 2026",
-    "🌳 Verger, coteau boisé, piscine",
-    "🐱 1 chat, ânes voisins",
-    "🇫🇷 réf. 4118 PAC · postée 26 juin"
-   ],
-   "hot": "Recruteur identifié (C. Lebreton) — dossier couple à soigner",
-   "why": "Le meilleur ratio argent/vie trouvé aujourd'hui : quasi-jackpot au prorata, logés dans un cadre nature, travail varié à deux (jardin/maison/présence) sans cadence de resto. Propriétaire sur place mais supervision décrite comme « bienveillante », homme d'entretien pour les travaux lourds.",
-   "caveat": "⚖️ CDI — normalement exclu par ta règle, gardé au titre de l'exception « hors du commun » (quasi-jackpot logé). S'y engager = dépasser avril. Exige permis B ×2, outils thermiques, vraies bases jardinage.",
-   "bars": {
-    "Épargne": 90,
-    "Logement": 95,
-    "Planque/pression": 68,
-    "Cadre": 85,
-    "Fit couple": 95,
-    "Travail aimé": 80,
-    "Friction": 85
-   }
-  },
   {
    "id": 5,
    "tier": "top",
@@ -350,180 +310,12 @@
    }
   },
   {
-   "title": "Couple de gardiens Eure (27) 22/06/2026 Couple de gardiens CDI 004860",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-eure-27-4860.htm?p=2",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "20ab6f208bab9740",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-07-10"
-  },
-  {
-   "title": "Couple de gardiens Montfort-Lamaury (78) 17/06/2026 Couple de gardiens CDI 004876",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-montfort-lamaury-78-4876.htm?p=3",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "409d73e810bf030d",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-07-10"
-  },
-  {
-   "title": "Couple de gardiens Orgeval (78) 14/06/2026 Couple de gardiens CDI 004871",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-orgeval-78-4871.htm?p=5",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "a64ac8c6d1a21563",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-07-10"
-  },
-  {
-   "title": "Couple de gardiens wallonne, Belgique 09/06/2026 Couple de gardiens CDI 004865",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-wallonne-belgique-4865.htm?p=6",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "519bc5cdef7e2f1e",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-07-10"
-  },
-  {
-   "title": "Couple de gardiens Haute-Marne 28/05/2026 Couple de gardiens CDI 004847",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-haute-marne-4847.htm?p=7",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "8e60768232ca7ae0",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-07-10"
-  },
-  {
-   "title": "Couple de gardiens Sylvains-Lès-Moulins (27) 27/05/2026 Couple de gardiens CDI 004843",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-sylvains-les-moulins-27-4843.htm?p=8",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "364450d5ef8b7b11",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-07-10"
-  },
-  {
    "title": "Couple de gardiens Ramatuelle & Courchevel 18/05/2026 Couple de gardiens CDD 004509",
    "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-ramatuelle-&-courchevel-4509.htm?p=9",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
    "id": "d4e8b02552a3908d",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-07-10"
-  },
-  {
-   "title": "Couple de gardiens Gien (45) 06/05/2026 Couple de gardiens CDI 004251",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-gien-45-4251.htm?p=10",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "fc8182f84e8c7c05",
    "score": 66,
    "provisoire": true,
    "tier": "flow",
@@ -681,59 +473,9 @@
  ],
  "rejected": [
   {
-   "title": "Couple de gardiens — Chalon-sur-Saône (postée 9 juil.)",
-   "src": "Morgan & Mallet",
-   "reason": "CDI + salaire non affiché (règle v2) — récupérable : « ouvre Chalon »"
-  },
-  {
-   "title": "Couple de gardiens — château, Eure (27)",
-   "src": "Madame est Servie",
-   "reason": "CDI + salaire non affiché (règle v2)"
-  },
-  {
-   "title": "Série « couple de gardiens » CDI (Sologne, Liège, Madrid…)",
-   "src": "M&M / Madame est Servie",
-   "reason": "CDI à l année — surveillées : remontent si salaire hors du commun"
-  },
-  {
-   "title": "House-sits Alpes & Pyrénées",
-   "src": "TrustedHousesitters / Nomador",
-   "reason": "Non payé — l argent est roi"
-  },
-  {
-   "title": "Équipage transat ARC (Las Palmas, nov.)",
-   "src": "Ocean Crew Link",
-   "reason": "Échange / partage de frais, 0 salaire"
-  },
-  {
    "title": "Aide-gardien de refuge",
    "src": "refuges.info",
    "reason": "Saison été — hors fenêtre oct-avril"
-  },
-  {
-   "title": "Caretaker couple Saint-Jean-Cap-Ferrat (06) 03/02/2026 Couple de gardiens CDI 004693",
-   "src": "Madame est Servie — couples de gardiens",
-   "reason": "CDI sans mention de rémunération hors du commun, et hors fenêtre 1-6 mois (poste à l'année, offre déjà pourvue)."
-  },
-  {
-   "title": "Intendant Auvergne 14/06/2026 Couple de gardiens CDI 000566",
-   "src": "Madame est Servie — couples de gardiens",
-   "reason": "CDI sans rémunération hors du commun mentionnée — hors périmètre saisonnier 1-6 mois."
-  },
-  {
-   "title": "Gardien - Intendant Haute-Savoie 10/03/2026 Couple de gardiens CDI 004265",
-   "src": "Madame est Servie — couples de gardiens",
-   "reason": "CDI sans rémunération hors du commun chiffrée + offre déjà pourvue/en attente de validation"
-  },
-  {
-   "title": "Domestic couple Le Blanc (36) 30/06/2026 Couple de gardiens CDI 002393",
-   "src": "Madame est Servie — couples de gardiens",
-   "reason": "CDI sans rémunération hors du commun mentionnée (porte d'exclusion contrat)."
-  },
-  {
-   "title": "Couple d'employés de maison Namur, Belgique 26/06/2026 Couple de gardiens CDI 004884",
-   "src": "Madame est Servie — couples de gardiens",
-   "reason": "CDI sans rémunération hors du commun mentionnée (règle d'exclusion des CDI)"
   }
  ]
 }

@@ -7,7 +7,17 @@
 # ============================================================
 
 sources:
-  # ---- Collectées automatiquement (palier 1) ----
+  # ---- LA source reine : boîte mail d'alertes (palier « précieuses ») ----
+  # Les géants (Indeed, Jooble, leboncoin, EURES, jobs.ch…) bloquent les robots
+  # mais envoient volontiers leurs offres par email. La boîte dédiée est lue à
+  # chaque passage (secrets MAIL_USER / MAIL_APP_PASSWORD).
+  - id: mailbox
+    nom: "Boîte mail d'alertes (Indeed FR/CH, Jooble, leboncoin, EURES, jobs.ch…)"
+    url: imap://imap.gmail.com
+    collector: mail
+    enabled: true
+
+  # ---- Collectées automatiquement ----
   - id: madameestservie
     nom: Madame est Servie — couples de gardiens
     url: https://www.madameestservie.net/offres-d-emploi-couple-de-gardiens-7.htm
@@ -63,13 +73,41 @@ sources:
     enabled: true
 
   # ---- Repérées, collecteur à écrire (palier 3) ----
-  - {id: stararctic, nom: Star Arctic Hotel Saariselkä, url: "https://stararctichotel.com/careers/", geo: far, enabled: false, statut: watch}
+  - id: stararctic
+    nom: Star Arctic Hotel Saariselkä
+    url: https://stararctichotel.com/careers/
+    collector: links
+    link_contains: "career"
+    title_any: [host, chef, waiter, receptionist, guide, cook, housekeep, manager]
+    geo: far
+    enabled: true
   - {id: ranch, nom: Northern Lights Ranch Levi, url: "https://theranch.fi/about-us/jobs/", geo: far, enabled: false, statut: watch}
   - {id: wilderness, nom: Wilderness Hotels, url: "https://jobs.wildernesshotels.fi/en", geo: far, enabled: false, statut: watch}
-  - {id: hunterchalets, nom: Hunter Chalets Morzine, url: "https://hunterchalets.com/ski-season-jobs/", geo: fr, enabled: false, statut: watch}
+  - id: hunterchalets
+    nom: Hunter Chalets Morzine
+    url: https://hunterchalets.com/ski-season-jobs/
+    collector: links
+    link_contains: "job"
+    title_any: [host, chef, couple, manager, driver, nanny]
+    geo: fr
+    enabled: true
   - {id: alpinium, nom: Alpinium Chalet Couple, url: "https://www.alpinium.co.uk/work-for-us/chalet-chef-host-chalet-couple", geo: fr, enabled: false, statut: watch}
-  - {id: skiworld, nom: Skiworld recruitment, url: "https://www.skiworld.co.uk/recruitment/ski-season-jobs", geo: fr, enabled: false, statut: watch}
-  - {id: workingcouples, nom: WorkingCouples.com, url: "https://workingcouples.com", geo: eu, enabled: false, statut: watch}
+  - id: skiworld
+    nom: Skiworld recruitment
+    url: https://www.skiworld.co.uk/recruitment/ski-season-jobs
+    collector: links
+    link_contains: "recruitment"
+    title_any: [host, chef, couple, manager, resort, chalet]
+    geo: fr
+    enabled: true
+  - id: workingcouples
+    nom: WorkingCouples.com
+    url: https://workingcouples.com/jobs
+    collector: links
+    link_contains: "job_opening"
+    title_any: [couple, caretaker, manager, estate, lodge]
+    geo: eu
+    enabled: true
   - {id: indeed_ch, nom: "Indeed CH — saisonnier hiver logé (grappe Suisse)", url: "https://ch-fr.indeed.com/q-suisse-saisonnier-hiver,-log%C3%A9-emplois.html", geo: eu, enabled: false, statut: watch, note: anti-bot probable}
   - {id: lhotellerie, nom: "L'Hôtellerie-Restauration Suisse", url: "https://www.lhotellerie-restauration.fr/emploi/suisse", geo: eu, enabled: false, statut: watch}
   - {id: greycoat, nom: Greycoat Lumleys couples, url: "https://www.greycoatlumleys.co.uk", geo: eu, enabled: false, statut: watch}

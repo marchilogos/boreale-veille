@@ -227,7 +227,7 @@
     <div class="pipe">
       <div class="step"><div class="snum">1</div><div><div class="t">Collecte</div><div class="d"><b>9 recherches web</b> (FR + EN : gardiennage couple, Laponie 26-27, chalets couple, Suisse logé, forums/groupes, niches camping-vignoble-phare…) + <b>4 pages sources ouvertes</b> intégralement.</div></div></div>
       <div class="step"><div class="snum">2</div><div><div class="t">Dédoublonnage</div><div class="d">31 pistes → fusion des doublons (même offre vue via Jooble/Indeed/agence). Une offre déjà vue ou déjà rejetée ne revient jamais.</div></div></div>
-      <div class="step"><div class="snum">3</div><div><div class="t">Filtres durs (règles, zéro IA)</div><div class="d">Non payé → dehors. Hors fenêtre oct-avril → dehors. CDI sauf hors du commun → dehors (règle v2). <b>6 écartées</b>, listées en bas de l'onglet Offres — jamais en silence.</div></div></div>
+      <div class="step"><div class="snum">3</div><div><div class="t">Filtres durs (règles, zéro IA)</div><div class="d"><b>CDI et non-payé : supprimés avant même l'affichage</b> (règle v4 — ils n'existent pas pour toi). Hors fenêtre oct-avril → écartée listée en bas de l'onglet Offres, avec sa raison.</div></div></div>
       <div class="step"><div class="snum">4</div><div><div class="t">Score grossier (modèle léger, en lot)</div><div class="d">Les 28 restantes reçoivent un score rapide sur le barème ci-dessous. Coût minimal : texte tronqué, une requête pour tout le lot.</div></div></div>
       <div class="step"><div class="snum">5</div><div><div class="t">Score fin + vérification (modèle fort, top seulement)</div><div class="d">Les ~12 meilleures : lecture complète, <b>lien testé</b>, salaire converti en « net à deux sur la saison », rédaction du « pourquoi ». Badge <span style="color:var(--aurora1)">✓ vérifiée</span> = page ouverte aujourd'hui ; <span style="color:var(--aurora2)">◌ listée</span> = trouvée en recherche, page non ouverte.</div></div></div>
       <div class="step"><div class="snum">6</div><div><div class="t">Vous deux</div><div class="d">👍👎 + commentaires + « non jamais » = signaux réinjectés dans le barème. Shortlist → page Notion (branchement à venir).</div></div></div>
@@ -244,7 +244,7 @@
       <tr><td><span class="w">10%</span> Fit couple & compétences</td><td>poste couple explicite, ou deux postes même toit. Elle : gestion/relation. Lui : hospitality/cuisine maisonnée.</td></tr>
       <tr><td><span class="w">5%</span> Travail aimé</td><td>service à la personne, cuisiner varié pour les mêmes gens, gens fortunés sympas (pondération douce, comme demandé).</td></tr>
       <tr><td><span class="w">5%</span> Friction</td><td>visa lointain, réponse à 3 mois, certifs → <b>baisse sans supprimer</b>.</td></tr>
-      <tr><td><span class="gate">PORTE</span> Durée</td><td>cible <b>1 à 6 mois</b> ; plus long ok si intéressant. <span class="gate">CDI = exclu</span> sauf hors du commun (ex. Saumur).</td></tr>
+      <tr><td><span class="gate">PORTE</span> Durée</td><td>cible <b>1 à 6 mois</b> ; plus long ok si intéressant. <span class="gate">CDI = supprimé avant affichage, sans exception</span> (règle v4) — comme le non-payé, il n'apparaît nulle part.</td></tr>
       <tr><td><span class="gate">PORTE</span> Géographie</td><td>France & Schengen d'abord ; <b>lointain = secondaire</b> (filtre ✈️ dédié) ; hors-Schengen = friction lourde en plus.</td></tr>
     </table>
     <div class="note"><b>Recalibrable en une phrase.</b> « La Laponie d'abord », « remonte les CDI de gardiennage », « moins de chalets » → je change les poids, pas le code. Rien n'est une boîte noire : chaque carte montre ses barres critère par critère (bouton Détails).</div>
@@ -253,6 +253,8 @@
   <div class="panel">
     <h3>Journal de calibrage — tu parles, ça change</h3>
     <div class="note">
+    <b>v4 · 10 juil. (consigne Jo)</b> — CDI & non-rémunéré invisibles, aucune exception (Saumur retirée) · volume 20-35/jour · boîte mail d'alertes branchée (Indeed, Jooble, leboncoin, EURES, jobs.ch…) · 4 collecteurs directs activés.<br><br>
+    <b>v3 · 9 juil. soir (Jo)</b> — plafond par catégorie · métiers élargis out-of-the-box (nuit calme, événementiel, conciergerie, insolite).<br><br>
     <b>v2 · 9 juil. 14h30 (consigne Jo)</b> — CDI exclus sauf hors du commun · missions 1-6 mois (plus si intéressant) · Europe/Schengen prioritaire · Laponie & lointain = secondaires (filtre ✈️) · onglets France/Europe ajoutés.<br>
     → Effets : 4 CDI « couple de gardiens » descendus en Écartées, Saumur maintenu (exception), Laponie top→flux, Alpes FR & Suisse remontées.<br><br>
     <b>v1 · 9 juil. matin</b> — barème initial issu du brief (argent roi, logé, nature, basse pression, couple).</div>

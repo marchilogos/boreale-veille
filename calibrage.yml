@@ -5,11 +5,11 @@
 # passage ; le site l'affiche dans l'onglet Coulisses.
 # ============================================================
 
-version: 3
+version: 4
 
 volume:
-  global: [15, 25]          # offres/jour visées — pousse à chercher plus loin
-  max_par_categorie: 8      # une vague d'annonces d'un coup ne noie pas les autres catégories
+  global: [20, 35]          # offres/jour visées — pousse à chercher plus loin
+  max_par_categorie: 10     # une vague d'annonces d'un coup ne noie pas les autres catégories
 
 # --- Métiers du possible (élargis v3 — think out of the box) ---
 metiers_possibles:
@@ -38,9 +38,9 @@ poids:
 
 # --- Portes (règles dures, appliquées AVANT l'IA) ---
 portes:
-  non_paye: exclure                          # échanges/bénévolat → dehors, listé en Écartées
-  fenetre: "octobre -> avril"                # hors fenêtre → dehors
-  cdi: exclure_sauf_hors_du_commun           # règle v2 (ex. d'exception : Saumur 69-77K logé)
+  non_paye: exclure_invisible                # n'apparaît NULLE PART (même pas en écartées)
+  cdi: exclure_invisible                     # idem — aucune exception (règle v4)
+  fenetre: "octobre -> avril"                # hors fenêtre → écartée (visible, transparence)
   duree_mois: [1, 6]                         # plus long ok si vraiment intéressant
   recurrence_ecartees: jamais                # une offre écartée ne revient JAMAIS (mémoire data/rejects.json)
 
@@ -64,6 +64,13 @@ modeles:
 
 # --- Journal de calibrage (le plus récent en premier) ---
 journal:
+  - date: 2026-07-10
+    v: 4
+    par: Jo
+    regle: >
+      CDI et non-rémunéré totalement invisibles (plus d'exception, plus de liste) ·
+      volume élargi (20-35/jour, 10/catégorie) · boîte mail d'alertes branchée comme
+      source (Indeed, Jooble, leboncoin, EURES, jobs.ch…) · collecteurs directs activés.
   - date: 2026-07-09
     v: 3
     par: Jo
