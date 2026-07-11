@@ -1,8 +1,8 @@
 {
  "meta": {
-  "run_at": "2026-07-10T16:50+00:00",
+  "run_at": "2026-07-11T07:07+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 309,
+  "examined": 306,
   "new": 0,
   "kept": 14,
   "humans": 4,
@@ -10,7 +10,7 @@
   "calibrage": "v4",
   "alerts": [
    "Supabase illisible (403 Client Error: Forbidden for url: https://bljvehfncafnqrzetjyb.supabase.co/re)",
-   "Source muette/cassée : Morgan & Mallet — board France (403 Client Error: Forbidden for url: https://www.personneldemaison.agency/jobs/)",
+   "Source muette/cassée : Morgan & Mallet — board France (0 résultat)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)"
   ],
@@ -19,16 +19,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "4 échecs",
+   "morganmallet": "5 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "4 échecs",
-   "francegardiennage": "ok",
-   "gestioncamping": "4 échecs",
-   "mailbox": "2 échecs",
-   "stararctic": "2 échecs",
-   "hunterchalets": "2 échecs",
+   "skijobs_couk": "5 échecs",
+   "francegardiennage": "1 échecs",
+   "gestioncamping": "5 échecs",
+   "mailbox": "3 échecs",
+   "stararctic": "3 échecs",
+   "hunterchalets": "3 échecs",
    "skiworld": "ok",
-   "workingcouples": "2 échecs"
+   "workingcouples": "3 échecs"
   }
  },
  "offers": [

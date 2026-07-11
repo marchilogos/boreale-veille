@@ -1,56 +1,56 @@
 {
  "madameestservie": {
   "fails": 0,
-  "last_ok": "2026-07-10T16:50+00:00",
+  "last_ok": "2026-07-11T07:07+00:00",
   "last_count": 300
  },
  "morganmallet": {
-  "fails": 4,
-  "last_ok": "2026-07-10T08:16+00:00",
-  "last_count": 0,
-  "last_err": "403 Client Error: Forbidden for url: https://www.personneldemaison.agency/jobs/"
+  "fails": 5,
+  "last_ok": "2026-07-11T07:07+00:00",
+  "last_count": 0
  },
  "laplandstaff": {
   "fails": 0,
-  "last_ok": "2026-07-10T16:50+00:00",
+  "last_ok": "2026-07-11T07:07+00:00",
   "last_count": 3
  },
  "skijobs_couk": {
-  "fails": 4,
-  "last_ok": "2026-07-10T16:50+00:00",
+  "fails": 5,
+  "last_ok": "2026-07-11T07:07+00:00",
   "last_count": 0
  },
  "francegardiennage": {
-  "fails": 0,
+  "fails": 1,
   "last_ok": "2026-07-10T16:50+00:00",
-  "last_count": 3
+  "last_count": 3,
+  "last_err": "415 Client Error: Unsupported Media Type for url: https://www.francegardiennageproprietes.com/gardien-de-propriete-privee-offres-d-emploi/"
  },
  "gestioncamping": {
-  "fails": 4,
+  "fails": 5,
   "last_err": "403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html"
  },
  "mailbox": {
-  "fails": 2,
+  "fails": 3,
   "last_err": "secrets MAIL_USER / MAIL_APP_PASSWORD absents"
  },
  "stararctic": {
-  "fails": 2,
-  "last_ok": "2026-07-10T08:16+00:00",
-  "last_count": 0,
-  "last_err": "403 Client Error: Forbidden for url: https://stararctichotel.com/careers/"
+  "fails": 3,
+  "last_ok": "2026-07-11T07:07+00:00",
+  "last_count": 0
  },
  "hunterchalets": {
-  "fails": 2,
+  "fails": 3,
   "last_ok": "2026-07-10T16:50+00:00",
-  "last_count": 0
+  "last_count": 0,
+  "last_err": "403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/"
  },
  "skiworld": {
   "fails": 0,
-  "last_ok": "2026-07-10T16:50+00:00",
+  "last_ok": "2026-07-11T07:07+00:00",
   "last_count": 3
  },
  "workingcouples": {
-  "fails": 2,
+  "fails": 3,
   "last_err": "404 Client Error: Not Found for url: https://workingcouples.com/jobs"
  }
 }
