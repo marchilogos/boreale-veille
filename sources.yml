@@ -49,7 +49,7 @@ sources:
     nom: Ski-Jobs.co.uk
     url: https://www.ski-jobs.co.uk/
     collector: links
-    link_contains: "/job"
+    link_contains: "job"
     title_any: [couple, chalet, host, chef, manager, night, rep, coordinator, spa]
     geo: fr
     enabled: true
@@ -102,7 +102,7 @@ sources:
     enabled: true
   - id: workingcouples
     nom: WorkingCouples.com
-    url: https://workingcouples.com/jobs
+    url: https://workingcouples.com/job-openings/
     collector: links
     link_contains: "job_opening"
     title_any: [couple, caretaker, manager, estate, lodge]

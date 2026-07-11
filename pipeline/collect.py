@@ -20,7 +20,10 @@ import yaml
 from bs4 import BeautifulSoup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-UA = {"User-Agent": "Mozilla/5.0 (compatible; BorealeVeille/1.0; +https://github.com/marchilogos/boreale-veille)"}
+UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/126.0.0.0 Safari/537.36",
+      "Accept-Language": "fr-FR,fr;q=0.9,en;q=0.7",
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"}
 NOW = datetime.datetime.now(datetime.timezone.utc).astimezone().isoformat(timespec="minutes")
 API_KEY = os.environ.get("ANTHROPIC_API_KEY", "").strip()
 
@@ -118,6 +121,21 @@ def fetch(url):
     return r.text
 
 
+JUNK = ["blog", "being a ", "guide", "conseil", "article", "actualité", "témoignage", "how to", "top 10",
+        "faq", "à propos", "about us", "contact", "cookie", "politique", "newsletter"]
+
+
+def clean_title(t):
+    t = re.sub(r"\s*(Read more|Lire la suite|Voir l'offre.*|En savoir plus)\s*$", "", t, flags=re.I)
+    t = re.sub(r"\s*\d{1,2}/\d{1,2}/\d{4}.*$", "", t)          # dates de listing collées
+    t = re.sub(r"\s{2,}", " ", t).strip(" -·|")
+    return t.strip()
+
+
+def norm(t):
+    return re.sub(r"[^a-z0-9]+", "", t.lower())[:60]
+
+
 def collect_links(src):
     """Collecteur générique : liens contenant link_contains, titre matchant title_any."""
     html = fetch(src["url"])
@@ -136,6 +154,9 @@ def collect_links(src):
             continue
         url = href if href.startswith("http") else base + ("" if href.startswith("/") else "/") + href
         if url in seen_urls:
+            continue
+        title = clean_title(title)
+        if len(title) < 18 or any(j in title.lower() for j in JUNK):
             continue
         seen_urls.add(url)
         out.append({"title": title[:160], "url": url, "src": src["id"],
@@ -373,7 +394,9 @@ for o in scored:
     o["nouveau"] = NOW[:10]
 
 known_urls = {o["url"] for o in current.get("offers", [])}
-merged = current.get("offers", []) + [o for o in scored if o["url"] not in known_urls]
+known_titles = {norm(o["title"]) for o in current.get("offers", [])}
+merged = current.get("offers", []) + [o for o in scored
+                                      if o["url"] not in known_urls and norm(o["title"]) not in known_titles]
 
 # expiration douce : les offres non shortlistées de plus de 21 jours sortent du flux
 def fresh_enough(o):
@@ -385,6 +408,7 @@ def fresh_enough(o):
     return age <= 21
 
 
+merged = [o for o in merged if not any(j in o["title"].lower() for j in JUNK)]
 merged = [o for o in merged if fresh_enough(o) and not invisible(o.get("title", "") + " " + " ".join(o.get("badges", [])) + " " + (o.get("caveat") or ""))]
 # « non jamais » : retrait définitif, aucune récurrence
 merged = [o for o in merged if str(o.get("id")) not in FB_REJECT_IDS
@@ -429,8 +453,11 @@ for o in merged:
         capped.append(o)
 merged = capped
 
+kept_norms = {norm(o["title"]) for o in merged}
 rejected_list = [r for r in (current.get("rejected", []) + auto_rej)
-                 if not invisible(r.get("title", "") + " " + r.get("reason", ""))][-25:]
+                 if not invisible(r.get("title", "") + " " + r.get("reason", ""))
+                 and not any(j in r.get("title", "").lower() for j in JUNK)
+                 and norm(r.get("title", "")) not in kept_norms][-25:]
 
 meta = {
     "run_at": NOW, "run_type": f"passage automatique — scoring {mode}",

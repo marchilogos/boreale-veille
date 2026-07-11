@@ -4,9 +4,9 @@
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 309,
   "new": 0,
-  "kept": 14,
+  "kept": 9,
   "humans": 4,
-  "rejected": 6,
+  "rejected": 1,
   "calibrage": "v4",
   "alerts": [
    "Supabase illisible (403 Client Error: Forbidden for url: https://bljvehfncafnqrzetjyb.supabase.co/re)",
@@ -323,30 +323,6 @@
    }
   },
   {
-   "title": "Couple de gardiens Ramatuelle & Courchevel 18/05/2026 Couple de gardiens CDD 004509",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-ramatuelle-&-courchevel-4509.htm?p=9",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "d4e8b02552a3908d",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-07-10"
-  },
-  {
    "id": 11,
    "tier": "flow",
    "score": 56,
@@ -379,111 +355,6 @@
     "Travail aimé": 75,
     "Friction": 88
    }
-  },
-  {
-   "title": "Chef, seasons 2026-2027, Northern Finland, Lapland Hotels Read more",
-   "url": "https://staffpoint.talentadore.com/apply/chef-seasons-2026-2027-northern-finland-lapland-hotels/3B5ovZ",
-   "src": "laplandstaff",
-   "emitter": "Lapland Hotels & Safaris (ATS Talentadore)",
-   "geo": "far",
-   "id": "cec26a92117284da",
-   "score": 35,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "nordique"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-07-10"
-  },
-  {
-   "title": "Waiter/Waitress, seasons 2026-2027, Northern Finland, Lapland Hotels Read more",
-   "url": "https://staffpoint.talentadore.com/apply/waiter-waitress-seasons-2026-2027-northern-finland-lapland-hotels/ZjP6ab",
-   "src": "laplandstaff",
-   "emitter": "Lapland Hotels & Safaris (ATS Talentadore)",
-   "geo": "far",
-   "id": "bd47e5af5545d12e",
-   "score": 30,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "nordique"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-07-10"
-  },
-  {
-   "title": "Housekeeper, seasons 2026-2027, Northern Finland, Lapland Hotels Read more",
-   "url": "https://staffpoint.talentadore.com/apply/housekeeper-seasons-2026-2027-northern-finland-lapland-hotels/bdYw7L",
-   "src": "laplandstaff",
-   "emitter": "Lapland Hotels & Safaris (ATS Talentadore)",
-   "geo": "far",
-   "id": "cb3c9c5aabb2a6ff",
-   "score": 30,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "nordique"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-07-10"
-  },
-  {
-   "title": "Blog: Being a Chalet Host...",
-   "url": "http://www.skiworld.co.uk/recruitment/resort-roles/chalet-host",
-   "src": "skiworld",
-   "emitter": "Skiworld recruitment",
-   "geo": "eu",
-   "id": "9eebdce762dedd84",
-   "score": 22,
-   "provisoire": true,
-   "badges": [
-    "📅 saison hiver probable",
-    "🏠 logé (non confirmé)",
-    "💰 salaire inconnu"
-   ],
-   "why": "Ce n'est pas une offre d'emploi concrète mais une page blog/marketing générique de Skiworld sur le métier de chalet host, sans salaire, dates précises, ni lieu spécifique donnés. Le métier lui-même (hospitality chalet, cuisine maison) collerait bien au couple, mais aucune donnée exploitable pour juger épargne, logement ou pression réelle.",
-   "caveat": "Page non-exploitable en l'état: il faudrait retrouver une vraie fiche de poste Skiworld avec dates, salaire et resort précis avant de considérer sérieusement.",
-   "bars": {
-    "Épargne": 10,
-    "Logement": 30,
-    "Planque/pression": 30,
-    "Cadre": 50,
-    "Fit couple": 45,
-    "Travail aimé": 40,
-    "Friction": 40
-   },
-   "verif": {
-    "lvl": "ok",
-    "txt": "✓ vérifiée — page ouverte au passage du 2026-07-10 08:16"
-   },
-   "tier": "flow",
-   "cat": [
-    "montagne"
-   ],
-   "canal": "Board",
-   "nouveau": "2026-07-10"
   }
  ],
  "humans": [
@@ -525,31 +396,6 @@
    "title": "Aide-gardien de refuge",
    "src": "refuges.info",
    "reason": "Saison été — hors fenêtre oct-avril"
-  },
-  {
-   "title": "Blog: Being a Chalet Host...",
-   "src": "Skiworld recruitment",
-   "reason": "Blog (non offre d'emploi)"
-  },
-  {
-   "title": "Blog: Being a Resort Manager...",
-   "src": "Skiworld recruitment",
-   "reason": "Blog (non offre d'emploi)"
-  },
-  {
-   "title": "Blog: Being a Chalet Manager...",
-   "src": "Skiworld recruitment",
-   "reason": "Blog (non offre d'emploi)"
-  },
-  {
-   "title": "Blog: Being a Chalet Manager...",
-   "src": "Skiworld recruitment",
-   "reason": "non payé"
-  },
-  {
-   "title": "Blog: Being a Resort Manager...",
-   "src": "Skiworld recruitment",
-   "reason": "non payé"
   }
  ]
 }
