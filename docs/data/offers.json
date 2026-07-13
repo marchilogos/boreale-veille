@@ -1,9 +1,9 @@
 {
  "meta": {
-  "run_at": "2026-07-13T08:10+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 305,
-  "new": 0,
+  "run_at": "2026-07-13T17:08+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 307,
+  "new": 299,
   "kept": 39,
   "humans": 4,
   "rejected": 1,
@@ -15,23 +15,26 @@
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : Skiworld recruitment (0 résultat)",
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (Extra data: line 1 column 79 (char 78)) — repli heuristique",
+   "Passe fine en échec sur « Couple de gardiens Eure (27) » (529 Server Error: <none> for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
-  "exclus_invisibles": 0,
+  "exclus_invisibles": 5,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "1 échecs",
+   "morganmallet": "ok",
    "laplandstaff": "ok",
-   "skijobs_couk": "9 échecs",
+   "skijobs_couk": "10 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "9 échecs",
-   "mailbox": "7 échecs",
-   "stararctic": "7 échecs",
-   "hunterchalets": "7 échecs",
-   "skiworld": "3 échecs",
-   "workingcouples": "7 échecs"
+   "gestioncamping": "10 échecs",
+   "mailbox": "8 échecs",
+   "stararctic": "8 échecs",
+   "hunterchalets": "8 échecs",
+   "skiworld": "4 échecs",
+   "workingcouples": "8 échecs"
   }
  },
  "offers": [
