@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-07-14T16:09+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 307,
-  "new": 0,
-  "kept": 39,
+  "run_at": "2026-07-15T07:08+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 308,
+  "new": 4,
+  "kept": 42,
   "humans": 4,
   "rejected": 1,
   "calibrage": "v4",
@@ -14,7 +14,7 @@
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
-   "Source muette/cassée : Hunter Chalets Morzine (401 Client Error: Unauthorized for url: https://hunterchalets.com/ski-season-jobs/)",
+   "Source muette/cassée : Hunter Chalets Morzine (0 résultat)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
   ],
@@ -25,14 +25,14 @@
    "madameestservie": "ok",
    "morganmallet": "ok",
    "laplandstaff": "ok",
-   "skijobs_couk": "12 échecs",
-   "francegardiennage": "ok",
-   "gestioncamping": "12 échecs",
-   "mailbox": "10 échecs",
-   "stararctic": "10 échecs",
-   "hunterchalets": "10 échecs",
-   "skiworld": "6 échecs",
-   "workingcouples": "10 échecs"
+   "skijobs_couk": "13 échecs",
+   "francegardiennage": "1 échecs",
+   "gestioncamping": "13 échecs",
+   "mailbox": "11 échecs",
+   "stararctic": "11 échecs",
+   "hunterchalets": "11 échecs",
+   "skiworld": "7 échecs",
+   "workingcouples": "11 échecs"
   }
  },
  "offers": [
@@ -979,6 +979,42 @@
    "nouveau": "2026-07-12"
   },
   {
+   "title": "Christmas Operations Coordinator, Lapland Safaris Ylläs & Levi",
+   "url": "https://ats.talentadore.com/apply/jouluoperaation-koordinaattori-lapland-safaris-yllas-levi/Z93e3A?lang=en",
+   "src": "laplandstaff",
+   "emitter": "Lapland Hotels & Safaris (ATS Talentadore)",
+   "geo": "far",
+   "id": "df08e31ce58b811d",
+   "score": 38,
+   "badges": [
+    "📅 saison Noël",
+    "🏔️ Laponie",
+    "⚠️ pression"
+   ],
+   "why": "Poste opérationnel de coordination (elfes, ventes, data) en pleine effervescence de Noël, avec pression explicitement assumée ('work under pressure', 'hectic') — à l'opposé du besoin de basse pression pour lui. Un seul poste de coordinateur visé, pas un binôme couple naturel, et rien sur salaire ou logement dans l'annonce.",
+   "caveat": "Logement/salaire non précisés ; à vérifier avant tout intérêt, et le rythme haute-saison ne correspond pas au profil TDAH bas-stress.",
+   "bars": {
+    "Épargne": 30,
+    "Logement": 30,
+    "Planque/pression": 15,
+    "Cadre": 70,
+    "Fit couple": 25,
+    "Travail aimé": 30,
+    "Friction": 40
+   },
+   "verif": {
+    "lvl": "ok",
+    "txt": "✓ vérifiée — page ouverte au passage du 2026-07-15 07:08"
+   },
+   "tier": "flow",
+   "cat": [
+    "nordique",
+    "evenementiel"
+   ],
+   "canal": "Board",
+   "nouveau": "2026-07-15"
+  },
+  {
    "title": "Chef, seasons 2026-2027, Northern Finland, Lapland Hotels",
    "url": "https://staffpoint.talentadore.com/apply/chef-seasons-2026-2027-northern-finland-lapland-hotels/3B5ovZ",
    "src": "laplandstaff",
@@ -1000,6 +1036,42 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-07-12"
+  },
+  {
+   "title": "Clothing Team Coordinator, Lapland Safaris Luosto",
+   "url": "https://ats.talentadore.com/apply/varustevastaava-lapland-safaris-luosto/813M7X?lang=en",
+   "src": "laplandstaff",
+   "emitter": "Lapland Hotels & Safaris (ATS Talentadore)",
+   "geo": "far",
+   "id": "1f2b8f577b694df5",
+   "score": 35,
+   "badges": [
+    "💰 salaire modeste",
+    "🏠 dortoir",
+    "📅 5 mois"
+   ],
+   "why": "Contrat saisonnier Nov-Avril (5 mois) en Laponie finlandaise, mais salaire horaire faible (12,20€ brut) laisse un revenu insuffisant pour un couple, logement en chambres partagées (malus lourd), et le poste unique de coordinateur ne prévoit pas naturellement une place pour les deux membres du couple.",
+   "caveat": "Aucune mention d'un poste correspondant pour le/la partenaire; le rôle de supervision inclut gestion d'équipe et pression liée aux exigences saisonnières, contraire au besoin de basse pression.",
+   "bars": {
+    "Épargne": 30,
+    "Logement": 25,
+    "Planque/pression": 30,
+    "Cadre": 80,
+    "Fit couple": 20,
+    "Travail aimé": 40,
+    "Friction": 50
+   },
+   "verif": {
+    "lvl": "ok",
+    "txt": "✓ vérifiée — page ouverte au passage du 2026-07-15 07:08"
+   },
+   "tier": "flow",
+   "cat": [
+    "nordique",
+    "evenementiel"
+   ],
+   "canal": "Board",
+   "nouveau": "2026-07-15"
   },
   {
    "title": "Waiter/Waitress, seasons 2026-2027, Northern Finland, Lapland Hotels",
@@ -1046,6 +1118,43 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-07-12"
+  },
+  {
+   "title": "Christmas Operations Coordinator, Lapland Safaris Saariselkä & Rovaniemi",
+   "url": "https://ats.talentadore.com/apply/jouluoperaation-koordinaattori-lapland-safaris-saariselka-rovaniemi/mexeXM?lang=en",
+   "src": "laplandstaff",
+   "emitter": "Lapland Hotels & Safaris (ATS Talentadore)",
+   "geo": "far",
+   "id": "ee6da78b4b7fe226",
+   "score": 29,
+   "badges": [
+    "💰 modeste (12,20€/h brut)",
+    "🏠 dortoir partagé",
+    "📅 saisonnier oct→mi-janv",
+    "⚡ forte pression"
+   ],
+   "why": "Poste opérationnel très exposé (coordination logistique, gestion de crise, 'ability to work under pressure' explicite) — à l'opposé d'une planque pour profil TDAH. Logement en chambre partagée (malus lourd) et rôle clairement individuel, peu compatible avec un fit couple.",
+   "caveat": "Le poste semble unique (un seul coordinateur par équipe), donc pas clairement duplicable pour le couple; salaire horaire bas laisse peu d'épargne réelle sur 3 mois.",
+   "bars": {
+    "Épargne": 30,
+    "Logement": 15,
+    "Planque/pression": 10,
+    "Cadre": 55,
+    "Fit couple": 15,
+    "Travail aimé": 20,
+    "Friction": 70
+   },
+   "verif": {
+    "lvl": "ok",
+    "txt": "✓ vérifiée — page ouverte au passage du 2026-07-15 07:08"
+   },
+   "tier": "flow",
+   "cat": [
+    "nordique",
+    "evenementiel"
+   ],
+   "canal": "Board",
+   "nouveau": "2026-07-15"
   }
  ],
  "humans": [
