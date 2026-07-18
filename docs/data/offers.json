@@ -1,9 +1,9 @@
 {
  "meta": {
-  "run_at": "2026-07-17T16:08+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 307,
-  "new": 0,
+  "run_at": "2026-07-18T06:54+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 309,
+  "new": 8,
   "kept": 42,
   "humans": 4,
   "rejected": 1,
@@ -14,25 +14,25 @@
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
-   "Source muette/cassée : Hunter Chalets Morzine (401 Client Error: Unauthorized for url: https://hunterchalets.com/ski-season-jobs/)",
+   "Source muette/cassée : Hunter Chalets Morzine (0 résultat)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
   ],
   "consignes": [],
   "feedback_total": 0,
-  "exclus_invisibles": 0,
+  "exclus_invisibles": 5,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "ok",
+   "morganmallet": "1 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "18 échecs",
-   "francegardiennage": "1 échecs",
-   "gestioncamping": "18 échecs",
-   "mailbox": "16 échecs",
-   "stararctic": "16 échecs",
-   "hunterchalets": "16 échecs",
-   "skiworld": "12 échecs",
-   "workingcouples": "16 échecs"
+   "skijobs_couk": "19 échecs",
+   "francegardiennage": "ok",
+   "gestioncamping": "19 échecs",
+   "mailbox": "17 échecs",
+   "stararctic": "17 échecs",
+   "hunterchalets": "17 échecs",
+   "skiworld": "13 échecs",
+   "workingcouples": "17 échecs"
   }
  },
  "offers": [
