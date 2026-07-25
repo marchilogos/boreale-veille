@@ -1,17 +1,16 @@
 {
  "meta": {
-  "run_at": "2026-07-25T07:10+00:00",
+  "run_at": "2026-07-25T15:58+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
-  "examined": 309,
-  "new": 5,
+  "examined": 310,
+  "new": 1,
   "kept": 42,
   "humans": 4,
-  "rejected": 1,
+  "rejected": 2,
   "calibrage": "v4",
   "alerts": [
    "Supabase illisible (HTTPSConnectionPool(host='bljvehfncafnqrzetjyb.supabase.co', port=443): Max retr)",
    "Source muette/cassée : Boîte mail d'alertes (Indeed FR/CH, Jooble, leboncoin, EURES, jobs.ch…) (secrets MAIL_USER / MAIL_APP_PASSWORD absents)",
-   "Source muette/cassée : Morgan & Mallet — board France (0 résultat)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
@@ -21,19 +20,19 @@
   ],
   "consignes": [],
   "feedback_total": 0,
-  "exclus_invisibles": 5,
+  "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "6 échecs",
+   "morganmallet": "ok",
    "laplandstaff": "ok",
-   "skijobs_couk": "32 échecs",
+   "skijobs_couk": "33 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "32 échecs",
-   "mailbox": "30 échecs",
-   "stararctic": "30 échecs",
-   "hunterchalets": "30 échecs",
-   "skiworld": "26 échecs",
-   "workingcouples": "30 échecs"
+   "gestioncamping": "33 échecs",
+   "mailbox": "31 échecs",
+   "stararctic": "31 échecs",
+   "hunterchalets": "31 échecs",
+   "skiworld": "27 échecs",
+   "workingcouples": "31 échecs"
   }
  },
  "offers": [
@@ -1197,6 +1196,11 @@
    "title": "Aide-gardien de refuge",
    "src": "refuges.info",
    "reason": "Saison été — hors fenêtre oct-avril"
+  },
+  {
+   "title": "Offre d’emploi de gouvernant(e) de maison/ régisseur(se) junior (H/F) à Dubai, Emirats-Arabes-Unis",
+   "src": "Morgan & Mallet — board France",
+   "reason": "hors-Schengen (Émirats-Arabes-Unis = malus lourd + malus très lourd)"
   }
  ]
 }
