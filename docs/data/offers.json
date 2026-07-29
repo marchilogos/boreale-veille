@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-07-28T16:28+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 307,
-  "new": 0,
-  "kept": 42,
+  "run_at": "2026-07-29T07:37+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 309,
+  "new": 9,
+  "kept": 43,
   "humans": 4,
   "rejected": 2,
   "calibrage": "v4",
@@ -20,19 +20,19 @@
   ],
   "consignes": [],
   "feedback_total": 0,
-  "exclus_invisibles": 0,
+  "exclus_invisibles": 6,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "3 échecs",
+   "morganmallet": "ok",
    "laplandstaff": "ok",
-   "skijobs_couk": "39 échecs",
+   "skijobs_couk": "40 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "39 échecs",
-   "mailbox": "37 échecs",
-   "stararctic": "37 échecs",
-   "hunterchalets": "37 échecs",
-   "skiworld": "33 échecs",
-   "workingcouples": "37 échecs"
+   "gestioncamping": "40 échecs",
+   "mailbox": "38 échecs",
+   "stararctic": "38 échecs",
+   "hunterchalets": "38 échecs",
+   "skiworld": "34 échecs",
+   "workingcouples": "38 échecs"
   }
  },
  "offers": [
@@ -849,6 +849,28 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-07-12"
+  },
+  {
+   "title": "Offre d’emploi d’intendant(e) de maison (H/F) à Paris, France",
+   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-intendante-de-maison-paris-france/",
+   "src": "morganmallet",
+   "emitter": "Morgan & Mallet — board France",
+   "geo": "fr",
+   "id": "7926495e0d237828",
+   "score": 51,
+   "tier": "flow",
+   "cat": [
+    "maison"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-07-29"
   },
   {
    "title": "Intendant Auvergne",
