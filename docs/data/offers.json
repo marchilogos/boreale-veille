@@ -1,9 +1,9 @@
 {
  "meta": {
-  "run_at": "2026-07-31T07:45+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
+  "run_at": "2026-07-31T16:40+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
   "examined": 309,
-  "new": 0,
+  "new": 55,
   "kept": 34,
   "humans": 4,
   "rejected": 3,
@@ -20,31 +20,30 @@
   ],
   "consignes": [],
   "feedback_total": 0,
-  "exclus_invisibles": 0,
+  "exclus_invisibles": 5,
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
    "laplandstaff": "ok",
-   "skijobs_couk": "44 échecs",
+   "skijobs_couk": "45 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "44 échecs",
-   "mailbox": "42 échecs",
-   "stararctic": "42 échecs",
-   "hunterchalets": "42 échecs",
-   "skiworld": "38 échecs",
-   "workingcouples": "42 échecs"
+   "gestioncamping": "45 échecs",
+   "mailbox": "43 échecs",
+   "stararctic": "43 échecs",
+   "hunterchalets": "43 échecs",
+   "skiworld": "39 échecs",
+   "workingcouples": "43 échecs"
   }
  },
  "offers": [
   {
-   "title": "Couple de gardiens Sylvains-Lès-Moulins (27)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-sylvains-les-moulins-27-4843.htm?p=8",
+   "title": "Couple de gardiens Saint-Tropez (83)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-saint-tropez-83-4599.htm?p=40",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
-   "id": "929297e5cd466971",
-   "score": 66,
-   "provisoire": true,
+   "id": "10e35ea2508c2db2",
+   "score": 72,
    "tier": "flow",
    "cat": [
     "planque",
@@ -56,19 +55,18 @@
     "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
    },
    "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "why": "",
    "bars": {},
-   "nouveau": "2026-07-12"
+   "nouveau": "2026-07-31"
   },
   {
-   "title": "Couple de gardiens Ramatuelle & Courchevel",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-ramatuelle-&-courchevel-4509.htm?p=9",
+   "title": "Couple de gardiens Sanary-sur-Mer (83)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-sanary-sur-mer-83-1994.htm?p=56",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
-   "id": "e892c88d2456f8ee",
-   "score": 66,
-   "provisoire": true,
+   "id": "8ab7d6ecb7a215fb",
+   "score": 71,
    "tier": "flow",
    "cat": [
     "planque",
@@ -80,19 +78,18 @@
     "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
    },
    "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "why": "",
    "bars": {},
-   "nouveau": "2026-07-12"
+   "nouveau": "2026-07-31"
   },
   {
-   "title": "Couple de gardiens Gien (45)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-gien-45-4251.htm?p=10",
+   "title": "Couple de gardiens Luberon",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-luberon-2616.htm?p=52",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
-   "id": "8dab6dd2146ec164",
-   "score": 66,
-   "provisoire": true,
+   "id": "3be1ea4364ebd1c2",
+   "score": 70,
    "tier": "flow",
    "cat": [
     "planque",
@@ -104,19 +101,18 @@
     "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
    },
    "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "why": "",
    "bars": {},
-   "nouveau": "2026-07-12"
+   "nouveau": "2026-07-31"
   },
   {
-   "title": "Couple de gardiens Romorantin-Lanthenay (41)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-romorantin-lanthenay-41-4460.htm?p=11",
+   "title": "Couple de gardiens Luberon",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-luberon-4515.htm?p=64",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
-   "id": "6fd4854dd262e75b",
-   "score": 66,
-   "provisoire": true,
+   "id": "e729882a626f1a55",
+   "score": 70,
    "tier": "flow",
    "cat": [
     "planque",
@@ -128,22 +124,22 @@
     "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
    },
    "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "why": "",
    "bars": {},
-   "nouveau": "2026-07-12"
+   "nouveau": "2026-07-31"
   },
   {
-   "title": "Couple de gardiens Yvelines",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-yvelines-4761.htm?p=12",
+   "title": "Couple de gardiens Alpes-Maritimes",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-alpes-maritimes-4723.htm?p=42",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
-   "id": "d4e8be0d9bfbad4c",
-   "score": 66,
-   "provisoire": true,
+   "id": "37919fcdbac6b988",
+   "score": 69,
    "tier": "flow",
    "cat": [
     "planque",
+    "montagne",
     "couple"
    ],
    "canal": "Board",
@@ -152,19 +148,18 @@
     "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
    },
    "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "why": "",
    "bars": {},
-   "nouveau": "2026-07-12"
+   "nouveau": "2026-07-31"
   },
   {
-   "title": "Couple de gardiens Belgique",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-belgique-4473.htm?p=15",
+   "title": "Couple de gardiens Provence",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-provence-4673.htm?p=53",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
-   "id": "73f17fcc86588917",
-   "score": 66,
-   "provisoire": true,
+   "id": "31caacad27a3d7c6",
+   "score": 69,
    "tier": "flow",
    "cat": [
     "planque",
@@ -176,22 +171,22 @@
     "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
    },
    "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "why": "",
    "bars": {},
-   "nouveau": "2026-07-12"
+   "nouveau": "2026-07-31"
   },
   {
-   "title": "Couple de gardiens Côte dAzur",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-cote-dazur-2290.htm?p=16",
+   "title": "Couple de gardiens Alpes Maritimes",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-alpes-maritimes-4646.htm?p=57",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
-   "id": "b87cfc58bde5266c",
-   "score": 66,
-   "provisoire": true,
+   "id": "9e410d3a2bcf7dd9",
+   "score": 69,
    "tier": "flow",
    "cat": [
     "planque",
+    "montagne",
     "couple"
    ],
    "canal": "Board",
@@ -200,19 +195,18 @@
     "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
    },
    "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "why": "",
    "bars": {},
-   "nouveau": "2026-07-12"
+   "nouveau": "2026-07-31"
   },
   {
-   "title": "Couple de gardiens Cannes (06)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-cannes-06-4827.htm?p=17",
+   "title": "Couple de gardiens Ile d'Oléron (17)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-ile-d-oleron-17-4676.htm?p=51",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
-   "id": "655327a47421cfca",
-   "score": 66,
-   "provisoire": true,
+   "id": "e3ad5fe4ef5cc5ff",
+   "score": 68,
    "tier": "flow",
    "cat": [
     "planque",
@@ -224,23 +218,21 @@
     "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
    },
    "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "why": "",
    "bars": {},
-   "nouveau": "2026-07-12"
+   "nouveau": "2026-07-31"
   },
   {
-   "title": "Couple de gardiens Genève, Suisse",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-geneve-suisse-4819.htm?p=18",
+   "title": "Gardien - Factotum Grasse (06)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-gardien-factotum-grasse-06-4586.htm?p=67",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
-   "id": "c222b82c870c975b",
-   "score": 66,
-   "provisoire": true,
+   "id": "deb8fc43bc0f4916",
+   "score": 68,
    "tier": "flow",
    "cat": [
-    "planque",
-    "couple"
+    "planque"
    ],
    "canal": "Board",
    "verif": {
@@ -248,19 +240,18 @@
     "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
    },
    "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "why": "",
    "bars": {},
-   "nouveau": "2026-07-12"
+   "nouveau": "2026-07-31"
   },
   {
-   "title": "Couple de Gardiens Beaujolais",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-beaujolais-55.htm?p=19",
+   "title": "Couple de gardiens Biarritz (64)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-biarritz-64-4491.htm?p=65",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
-   "id": "67b83b9bd89a8beb",
-   "score": 66,
-   "provisoire": true,
+   "id": "3715a44681206991",
+   "score": 67,
    "tier": "flow",
    "cat": [
     "planque",
@@ -272,9 +263,9 @@
     "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
    },
    "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "why": "",
    "bars": {},
-   "nouveau": "2026-07-12"
+   "nouveau": "2026-07-31"
   },
   {
    "title": "Domestic couple Le Blanc (36)",
