@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-08-05T07:33+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 304,
-  "new": 0,
-  "kept": 14,
+  "run_at": "2026-08-05T16:27+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 307,
+  "new": 97,
+  "kept": 26,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -20,22 +20,44 @@
   ],
   "consignes": [],
   "feedback_total": 0,
-  "exclus_invisibles": 0,
+  "exclus_invisibles": 5,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "1 échecs",
+   "morganmallet": "2 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "54 échecs",
-   "francegardiennage": "1 échecs",
-   "gestioncamping": "54 échecs",
-   "mailbox": "52 échecs",
-   "stararctic": "52 échecs",
-   "hunterchalets": "52 échecs",
-   "skiworld": "48 échecs",
-   "workingcouples": "52 échecs"
+   "skijobs_couk": "55 échecs",
+   "francegardiennage": "ok",
+   "gestioncamping": "55 échecs",
+   "mailbox": "53 échecs",
+   "stararctic": "53 échecs",
+   "hunterchalets": "53 échecs",
+   "skiworld": "49 échecs",
+   "workingcouples": "53 échecs"
   }
  },
  "offers": [
+  {
+   "title": "Couple d'employés de maison Monaco & Var",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-monaco-&-var-4797.htm?p=27",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "d7652421b490fdf1",
+   "score": 73,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
+  },
   {
    "title": "Couple de gardiens Saint-Tropez (83)",
    "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-saint-tropez-83-4599.htm?p=40",
@@ -60,6 +82,73 @@
    "nouveau": "2026-07-31"
   },
   {
+   "title": "Couple de gardiens Côte dAzur",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-cote-dazur-2290.htm?p=18",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "2cf1aff447626f66",
+   "score": 72,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
+  },
+  {
+   "title": "Couple de concierges Monaco",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-concierges-monaco-4767.htm?p=32",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "15c6b410c4d1563e",
+   "score": 72,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
+  },
+  {
+   "title": "Domestic couple Grimaud (83)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-domestic-couple-grimaud-83-4439.htm?p=95",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "dba1a25a222701dd",
+   "score": 72,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
+  },
+  {
    "title": "Couple de gardiens Sanary-sur-Mer (83)",
    "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-sanary-sur-mer-83-1994.htm?p=56",
    "src": "madameestservie",
@@ -81,6 +170,29 @@
    "why": "",
    "bars": {},
    "nouveau": "2026-07-31"
+  },
+  {
+   "title": "Couple de gardiens Le Rayol Canadel sur Mer (83)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-le-rayol-canadel-sur-mer-83-2983.htm?p=38",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "777f46bcb5829d64",
+   "score": 71,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
   },
   {
    "title": "Couple de gardiens Luberon",
@@ -127,6 +239,51 @@
    "why": "",
    "bars": {},
    "nouveau": "2026-07-31"
+  },
+  {
+   "title": "Couple de gardiens Cannes (06)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-cannes-06-4827.htm?p=20",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "6a32081b56b8f065",
+   "score": 70,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
+  },
+  {
+   "title": "Domestic couple Provence",
+   "url": "https://www.madameestservie.net/offre-d-emploi-domestic-couple-provence-4393.htm?p=105",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "3010f14423a34889",
+   "score": 70,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
   },
   {
    "title": "Couple de gardiens Alpes-Maritimes",
@@ -200,16 +357,15 @@
    "nouveau": "2026-07-31"
   },
   {
-   "title": "Couple de gardiens Ile d'Oléron (17)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-ile-d-oleron-17-4676.htm?p=51",
+   "title": "Couple d'employés de maison Bonifacio Corse",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-bonifacio-corse-4780.htm?p=30",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
-   "id": "e3ad5fe4ef5cc5ff",
-   "score": 68,
+   "id": "bb88ab680f6a0d3b",
+   "score": 69,
    "tier": "flow",
    "cat": [
-    "planque",
     "couple"
    ],
    "canal": "Board",
@@ -220,41 +376,18 @@
    "badges": [],
    "why": "",
    "bars": {},
-   "nouveau": "2026-07-31"
+   "nouveau": "2026-08-05"
   },
   {
-   "title": "Gardien - Factotum Grasse (06)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-gardien-factotum-grasse-06-4586.htm?p=67",
+   "title": "Couple d'employés de maison Flassans-sur-Issole (83)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-flassans-sur-issole-83-4573.htm?p=72",
    "src": "madameestservie",
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
-   "id": "deb8fc43bc0f4916",
+   "id": "4e0a9d2146393220",
    "score": 68,
    "tier": "flow",
    "cat": [
-    "planque"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "",
-   "bars": {},
-   "nouveau": "2026-07-31"
-  },
-  {
-   "title": "Couple de gardiens Biarritz (64)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-biarritz-64-4491.htm?p=65",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "3715a44681206991",
-   "score": 67,
-   "tier": "flow",
-   "cat": [
-    "planque",
     "couple"
    ],
    "canal": "Board",
@@ -265,7 +398,95 @@
    "badges": [],
    "why": "",
    "bars": {},
-   "nouveau": "2026-07-31"
+   "nouveau": "2026-08-05"
+  },
+  {
+   "title": "Couple d'employés de maison Provence",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-provence-2492.htm?p=92",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "c60ce1d3b3819878",
+   "score": 68,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
+  },
+  {
+   "title": "Couple d'employés de maison Deauville (14)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-deauville-14-4411.htm?p=104",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "1d2795be7f052f70",
+   "score": 66,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
+  },
+  {
+   "title": "Couple d'employés de maison Côme Italie",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-come-italie-2216.htm?p=11",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "eu",
+   "id": "f185276f9332b467",
+   "score": 65,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
+  },
+  {
+   "title": "Couple d'employés de maison Laethem-Saint-Martin Belgique",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-laethem-saint-martin-belgique-2121.htm?p=35",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "eu",
+   "id": "5952f426ac5ed095",
+   "score": 64,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
   },
   {
    "title": "Offre d’emploi d’intendant(e) de maison (H/F) à Paris, France",
@@ -288,6 +509,46 @@
    "why": "",
    "bars": {},
    "nouveau": "2026-07-29"
+  },
+  {
+   "title": "Employé de maison Le Touquet-Paris-Plage (62)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-employe-de-maison-le-touquet-paris-plage-62-4796.htm?p=28",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "04a72b635b63189d",
+   "score": 48,
+   "tier": "flow",
+   "cat": [],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
+  },
+  {
+   "title": "Employé de maison Brinon sur Sauldre (18)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-employe-de-maison-brinon-sur-sauldre-18-4750.htm?p=36",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "d583ba33df879a12",
+   "score": 45,
+   "tier": "flow",
+   "cat": [],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "",
+   "bars": {},
+   "nouveau": "2026-08-05"
   },
   {
    "title": "Christmas Operations Coordinator, Lapland Safaris Ylläs & Levi",
