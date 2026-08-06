@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-08-05T16:27+00:00",
+  "run_at": "2026-08-06T07:34+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
-  "examined": 307,
-  "new": 97,
-  "kept": 26,
+  "examined": 311,
+  "new": 238,
+  "kept": 27,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -16,23 +16,24 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (0 résultat)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (Extra data: line 1 column 70 (char 69)) — repli heuristique"
   ],
   "consignes": [],
   "feedback_total": 0,
-  "exclus_invisibles": 5,
+  "exclus_invisibles": 6,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "2 échecs",
+   "morganmallet": "ok",
    "laplandstaff": "ok",
-   "skijobs_couk": "55 échecs",
+   "skijobs_couk": "56 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "55 échecs",
-   "mailbox": "53 échecs",
-   "stararctic": "53 échecs",
-   "hunterchalets": "53 échecs",
-   "skiworld": "49 échecs",
-   "workingcouples": "53 échecs"
+   "gestioncamping": "56 échecs",
+   "mailbox": "54 échecs",
+   "stararctic": "54 échecs",
+   "hunterchalets": "54 échecs",
+   "skiworld": "50 échecs",
+   "workingcouples": "54 échecs"
   }
  },
  "offers": [
@@ -489,6 +490,30 @@
    "nouveau": "2026-08-05"
   },
   {
+   "title": "Couple d'employés de maison Île de France",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-Ile-de-france-4232.htm?p=140",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "17fa40ef2ca9747c",
+   "score": 54,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "insolite",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-06"
+  },
+  {
    "title": "Offre d’emploi d’intendant(e) de maison (H/F) à Paris, France",
    "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-intendante-de-maison-paris-france/",
    "src": "morganmallet",
@@ -551,113 +576,67 @@
    "nouveau": "2026-08-05"
   },
   {
-   "title": "Christmas Operations Coordinator, Lapland Safaris Ylläs & Levi",
-   "url": "https://ats.talentadore.com/apply/jouluoperaation-koordinaattori-lapland-safaris-yllas-levi/Z93e3A?lang=en",
-   "src": "laplandstaff",
-   "emitter": "Lapland Hotels & Safaris (ATS Talentadore)",
-   "geo": "far",
-   "id": "df08e31ce58b811d",
-   "score": 38,
-   "badges": [
-    "📅 saison Noël",
-    "🏔️ Laponie",
-    "⚠️ pression"
-   ],
-   "why": "Poste opérationnel de coordination (elfes, ventes, data) en pleine effervescence de Noël, avec pression explicitement assumée ('work under pressure', 'hectic') — à l'opposé du besoin de basse pression pour lui. Un seul poste de coordinateur visé, pas un binôme couple naturel, et rien sur salaire ou logement dans l'annonce.",
-   "caveat": "Logement/salaire non précisés ; à vérifier avant tout intérêt, et le rythme haute-saison ne correspond pas au profil TDAH bas-stress.",
-   "bars": {
-    "Épargne": 30,
-    "Logement": 30,
-    "Planque/pression": 15,
-    "Cadre": 70,
-    "Fit couple": 25,
-    "Travail aimé": 30,
-    "Friction": 40
-   },
-   "verif": {
-    "lvl": "ok",
-    "txt": "✓ vérifiée — page ouverte au passage du 2026-07-15 07:08"
-   },
+   "title": "Régisseur Vallauris (06)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-regisseur-vallauris-06-4193.htm?p=147",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "805f517bee5a50a5",
+   "score": 40,
+   "provisoire": true,
    "tier": "flow",
-   "cat": [
-    "nordique",
-    "evenementiel"
-   ],
+   "cat": [],
    "canal": "Board",
-   "nouveau": "2026-07-15"
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-06"
   },
   {
-   "title": "Clothing Team Coordinator, Lapland Safaris Luosto",
-   "url": "https://ats.talentadore.com/apply/varustevastaava-lapland-safaris-luosto/813M7X?lang=en",
-   "src": "laplandstaff",
-   "emitter": "Lapland Hotels & Safaris (ATS Talentadore)",
-   "geo": "far",
-   "id": "1f2b8f577b694df5",
-   "score": 35,
-   "badges": [
-    "💰 salaire modeste",
-    "🏠 dortoir",
-    "📅 5 mois"
-   ],
-   "why": "Contrat saisonnier Nov-Avril (5 mois) en Laponie finlandaise, mais salaire horaire faible (12,20€ brut) laisse un revenu insuffisant pour un couple, logement en chambres partagées (malus lourd), et le poste unique de coordinateur ne prévoit pas naturellement une place pour les deux membres du couple.",
-   "caveat": "Aucune mention d'un poste correspondant pour le/la partenaire; le rôle de supervision inclut gestion d'équipe et pression liée aux exigences saisonnières, contraire au besoin de basse pression.",
-   "bars": {
-    "Épargne": 30,
-    "Logement": 25,
-    "Planque/pression": 30,
-    "Cadre": 80,
-    "Fit couple": 20,
-    "Travail aimé": 40,
-    "Friction": 50
-   },
-   "verif": {
-    "lvl": "ok",
-    "txt": "✓ vérifiée — page ouverte au passage du 2026-07-15 07:08"
-   },
+   "title": "Gouvernante Paris (75008)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-gouvernante-paris-75008-2627.htm?p=218",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "8695afda5fcb4781",
+   "score": 40,
+   "provisoire": true,
    "tier": "flow",
-   "cat": [
-    "nordique",
-    "evenementiel"
-   ],
+   "cat": [],
    "canal": "Board",
-   "nouveau": "2026-07-15"
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-06"
   },
   {
-   "title": "Christmas Operations Coordinator, Lapland Safaris Saariselkä & Rovaniemi",
-   "url": "https://ats.talentadore.com/apply/jouluoperaation-koordinaattori-lapland-safaris-saariselka-rovaniemi/mexeXM?lang=en",
-   "src": "laplandstaff",
-   "emitter": "Lapland Hotels & Safaris (ATS Talentadore)",
-   "geo": "far",
-   "id": "ee6da78b4b7fe226",
-   "score": 29,
-   "badges": [
-    "💰 modeste (12,20€/h brut)",
-    "🏠 dortoir partagé",
-    "📅 saisonnier oct→mi-janv",
-    "⚡ forte pression"
-   ],
-   "why": "Poste opérationnel très exposé (coordination logistique, gestion de crise, 'ability to work under pressure' explicite) — à l'opposé d'une planque pour profil TDAH. Logement en chambre partagée (malus lourd) et rôle clairement individuel, peu compatible avec un fit couple.",
-   "caveat": "Le poste semble unique (un seul coordinateur par équipe), donc pas clairement duplicable pour le couple; salaire horaire bas laisse peu d'épargne réelle sur 3 mois.",
-   "bars": {
-    "Épargne": 30,
-    "Logement": 15,
-    "Planque/pression": 10,
-    "Cadre": 55,
-    "Fit couple": 15,
-    "Travail aimé": 20,
-    "Friction": 70
-   },
-   "verif": {
-    "lvl": "ok",
-    "txt": "✓ vérifiée — page ouverte au passage du 2026-07-15 07:08"
-   },
+   "title": "Offre d’emploi de cuisinier(ère)/majordome (H/F) à Paris, France",
+   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-cuisinier-majordome-paris-france/",
+   "src": "morganmallet",
+   "emitter": "Morgan & Mallet — board France",
+   "geo": "fr",
+   "id": "090328995786fe7e",
+   "score": 40,
+   "provisoire": true,
    "tier": "flow",
-   "cat": [
-    "nordique",
-    "evenementiel"
-   ],
+   "cat": [],
    "canal": "Board",
-   "nouveau": "2026-07-15"
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-06"
   }
  ],
  "humans": [
