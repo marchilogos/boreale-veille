@@ -1,9 +1,9 @@
 {
  "meta": {
-  "run_at": "2026-08-06T07:34+00:00",
-  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
-  "examined": 311,
-  "new": 238,
+  "run_at": "2026-08-07T06:05+00:00",
+  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
+  "examined": 309,
+  "new": 0,
   "kept": 27,
   "humans": 4,
   "rejected": 3,
@@ -16,24 +16,23 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (0 résultat)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
-   "Scoring coarse en échec (Extra data: line 1 column 70 (char 69)) — repli heuristique"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
   ],
   "consignes": [],
   "feedback_total": 0,
-  "exclus_invisibles": 6,
+  "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
    "laplandstaff": "ok",
-   "skijobs_couk": "56 échecs",
+   "skijobs_couk": "57 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "56 échecs",
-   "mailbox": "54 échecs",
-   "stararctic": "54 échecs",
-   "hunterchalets": "54 échecs",
-   "skiworld": "50 échecs",
-   "workingcouples": "54 échecs"
+   "gestioncamping": "57 échecs",
+   "mailbox": "55 échecs",
+   "stararctic": "55 échecs",
+   "hunterchalets": "55 échecs",
+   "skiworld": "51 échecs",
+   "workingcouples": "55 échecs"
   }
  },
  "offers": [
