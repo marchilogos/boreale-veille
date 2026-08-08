@@ -1,12 +1,12 @@
 {
  "meta": {
-  "run_at": "2026-08-07T15:45+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 306,
-  "new": 0,
+  "run_at": "2026-08-08T05:35+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 309,
+  "new": 1,
   "kept": 27,
   "humans": 4,
-  "rejected": 3,
+  "rejected": 4,
   "calibrage": "v4",
   "alerts": [
    "Supabase illisible (HTTPSConnectionPool(host='bljvehfncafnqrzetjyb.supabase.co', port=443): Max retr)",
@@ -20,19 +20,19 @@
   ],
   "consignes": [],
   "feedback_total": 0,
-  "exclus_invisibles": 0,
+  "exclus_invisibles": 1,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "1 échecs",
+   "morganmallet": "ok",
    "laplandstaff": "ok",
-   "skijobs_couk": "58 échecs",
+   "skijobs_couk": "59 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "58 échecs",
-   "mailbox": "56 échecs",
-   "stararctic": "56 échecs",
-   "hunterchalets": "56 échecs",
-   "skiworld": "52 échecs",
-   "workingcouples": "56 échecs"
+   "gestioncamping": "59 échecs",
+   "mailbox": "57 échecs",
+   "stararctic": "57 échecs",
+   "hunterchalets": "57 échecs",
+   "skiworld": "53 échecs",
+   "workingcouples": "57 échecs"
   }
  },
  "offers": [
@@ -687,6 +687,11 @@
    "title": "Couple de gardiens Saint-Tropez",
    "src": "Madame est Servie — couples de gardiens",
    "reason": "hors fenêtre (mission estivale)"
+  },
+  {
+   "title": "Offre d’emploi de couple d’employés de maison à Newbury, Royaume-Uni",
+   "src": "Morgan & Mallet — board France",
+   "reason": "Hors Schengen (Royaume-Uni post-Brexit)"
   }
  ]
 }
