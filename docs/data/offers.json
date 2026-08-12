@@ -1,9 +1,9 @@
 {
  "meta": {
-  "run_at": "2026-08-11T15:52+00:00",
-  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "run_at": "2026-08-12T06:07+00:00",
+  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 309,
-  "new": 4,
+  "new": 0,
   "kept": 27,
   "humans": 4,
   "rejected": 4,
@@ -16,12 +16,7 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (0 résultat)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
-   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Couple de gardiens Dordogne » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Vauréal » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple d'employés de maison Côme Italie » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple d'employés de maison La Chapelle de Bragny  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -30,14 +25,14 @@
    "madameestservie": "ok",
    "morganmallet": "ok",
    "laplandstaff": "ok",
-   "skijobs_couk": "66 échecs",
+   "skijobs_couk": "67 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "66 échecs",
-   "mailbox": "64 échecs",
-   "stararctic": "64 échecs",
-   "hunterchalets": "64 échecs",
-   "skiworld": "60 échecs",
-   "workingcouples": "64 échecs"
+   "gestioncamping": "67 échecs",
+   "mailbox": "65 échecs",
+   "stararctic": "65 échecs",
+   "hunterchalets": "65 échecs",
+   "skiworld": "61 échecs",
+   "workingcouples": "65 échecs"
   }
  },
  "offers": [
