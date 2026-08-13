@@ -1,8 +1,8 @@
 {
  "meta": {
-  "run_at": "2026-08-12T15:51+00:00",
+  "run_at": "2026-08-13T06:10+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 303,
+  "examined": 306,
   "new": 0,
   "kept": 27,
   "humans": 4,
@@ -13,7 +13,7 @@
    "Source muette/cassée : Boîte mail d'alertes (Indeed FR/CH, Jooble, leboncoin, EURES, jobs.ch…) (secrets MAIL_USER / MAIL_APP_PASSWORD absents)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
-   "Source muette/cassée : Star Arctic Hotel Saariselkä (HTTPSConnectionPool(host='stararctichotel.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='stararctichotel.com', port=443) at 0x7f9dc2669)",
+   "Source muette/cassée : Star Arctic Hotel Saariselkä (HTTPSConnectionPool(host='stararctichotel.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='stararctichotel.com', port=443) at 0x7fb3c2b2e)",
    "Source muette/cassée : Hunter Chalets Morzine (0 résultat)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
@@ -23,16 +23,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "1 échecs",
+   "morganmallet": "2 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "68 échecs",
-   "francegardiennage": "1 échecs",
-   "gestioncamping": "68 échecs",
-   "mailbox": "66 échecs",
-   "stararctic": "66 échecs",
-   "hunterchalets": "66 échecs",
-   "skiworld": "62 échecs",
-   "workingcouples": "66 échecs"
+   "skijobs_couk": "69 échecs",
+   "francegardiennage": "ok",
+   "gestioncamping": "69 échecs",
+   "mailbox": "67 échecs",
+   "stararctic": "67 échecs",
+   "hunterchalets": "67 échecs",
+   "skiworld": "63 échecs",
+   "workingcouples": "67 échecs"
   }
  },
  "offers": [
