@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-08-13T06:10+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 306,
-  "new": 0,
-  "kept": 27,
+  "run_at": "2026-08-13T15:51+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 309,
+  "new": 7,
+  "kept": 28,
   "humans": 4,
   "rejected": 4,
   "calibrage": "v4",
@@ -13,26 +13,33 @@
    "Source muette/cassée : Boîte mail d'alertes (Indeed FR/CH, Jooble, leboncoin, EURES, jobs.ch…) (secrets MAIL_USER / MAIL_APP_PASSWORD absents)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
-   "Source muette/cassée : Star Arctic Hotel Saariselkä (HTTPSConnectionPool(host='stararctichotel.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='stararctichotel.com', port=443) at 0x7fb3c2b2e)",
+   "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (0 résultat)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
+   "Passe fine en échec sur « Couple de gardiens Dordogne » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Vauréal » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Offre d’emploi de couple de gardiens à Grasse, Fra » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple d'employés de maison Côme Italie » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple d'employés de maison La Chapelle de Bragny  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple d'employés de maison Namur, Belgique » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "2 échecs",
+   "morganmallet": "ok",
    "laplandstaff": "ok",
-   "skijobs_couk": "69 échecs",
+   "skijobs_couk": "70 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "69 échecs",
-   "mailbox": "67 échecs",
-   "stararctic": "67 échecs",
-   "hunterchalets": "67 échecs",
-   "skiworld": "63 échecs",
-   "workingcouples": "67 échecs"
+   "gestioncamping": "70 échecs",
+   "mailbox": "68 échecs",
+   "stararctic": "68 échecs",
+   "hunterchalets": "68 échecs",
+   "skiworld": "64 échecs",
+   "workingcouples": "68 échecs"
   }
  },
  "offers": [
@@ -636,6 +643,27 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-08-06"
+  },
+  {
+   "title": "Offre d’emploi d’employé(e) de maison/cuisinière (H/F) à San Diego, Californie, Etats-Unis",
+   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-employee-maison-san-diego-etats-unis/",
+   "src": "morganmallet",
+   "emitter": "Morgan & Mallet — board France",
+   "geo": "fr",
+   "id": "e95209b86ab0a41c",
+   "score": 40,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-13"
   }
  ],
  "humans": [
