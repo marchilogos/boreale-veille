@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-08-14T15:42+00:00",
+  "run_at": "2026-08-15T05:17+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
-  "examined": 306,
-  "new": 1,
-  "kept": 29,
+  "examined": 309,
+  "new": 8,
+  "kept": 30,
   "humans": 4,
   "rejected": 4,
   "calibrage": "v4",
@@ -13,28 +13,33 @@
    "Source muette/cassée : Boîte mail d'alertes (Indeed FR/CH, Jooble, leboncoin, EURES, jobs.ch…) (secrets MAIL_USER / MAIL_APP_PASSWORD absents)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
-   "Source muette/cassée : Star Arctic Hotel Saariselkä (HTTPSConnectionPool(host='stararctichotel.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='stararctichotel.com', port=443) at 0x7f48bef7b)",
+   "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (0 résultat)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
    "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Christmas Operations Coordinator, Lapland Safaris  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Passe fine en échec sur « Couple de gardiens Dordogne » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Vauréal » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple d'employés de maison Côme Italie » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple d'employés de maison La Chapelle de Bragny  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple d'employés de maison Aix-en-Provence (13) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple d'employés de maison Namur, Belgique » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "1 échecs",
+   "morganmallet": "ok",
    "laplandstaff": "ok",
-   "skijobs_couk": "72 échecs",
+   "skijobs_couk": "73 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "72 échecs",
-   "mailbox": "70 échecs",
-   "stararctic": "70 échecs",
-   "hunterchalets": "70 échecs",
-   "skiworld": "66 échecs",
-   "workingcouples": "70 échecs"
+   "gestioncamping": "73 échecs",
+   "mailbox": "71 échecs",
+   "stararctic": "71 échecs",
+   "hunterchalets": "71 échecs",
+   "skiworld": "67 échecs",
+   "workingcouples": "71 échecs"
   }
  },
  "offers": [
@@ -555,6 +560,29 @@
    "why": "",
    "bars": {},
    "nouveau": "2026-08-05"
+  },
+  {
+   "title": "Intendant Auvergne",
+   "url": "https://www.madameestservie.net/offre-d-emploi-intendant-auvergne-566.htm?p=11",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "9c3d85602812da87",
+   "score": 48,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "maison"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-15"
   },
   {
    "title": "Employé de maison Brinon sur Sauldre (18)",
