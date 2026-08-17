@@ -1,54 +1,56 @@
 {
  "madameestservie": {
   "fails": 0,
-  "last_ok": "2026-08-16T15:13+00:00",
+  "last_ok": "2026-08-17T05:28+00:00",
   "last_count": 299
  },
  "morganmallet": {
-  "fails": 0,
+  "fails": 1,
   "last_ok": "2026-08-16T15:13+00:00",
-  "last_count": 3
+  "last_count": 3,
+  "last_err": "HTTPSConnectionPool(host='www.personneldemaison.agency', port=443): Max retries exceeded with url: /jobs/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.personneldemaison.agency', port=443)"
  },
  "laplandstaff": {
   "fails": 0,
-  "last_ok": "2026-08-16T15:13+00:00",
+  "last_ok": "2026-08-17T05:28+00:00",
   "last_count": 3
  },
  "skijobs_couk": {
-  "fails": 76,
-  "last_ok": "2026-08-16T15:13+00:00",
+  "fails": 77,
+  "last_ok": "2026-08-17T05:28+00:00",
   "last_count": 0
  },
  "francegardiennage": {
   "fails": 0,
-  "last_ok": "2026-08-16T15:13+00:00",
+  "last_ok": "2026-08-17T05:28+00:00",
   "last_count": 3
  },
  "gestioncamping": {
-  "fails": 76,
+  "fails": 77,
   "last_err": "403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html"
  },
  "mailbox": {
-  "fails": 74,
+  "fails": 75,
   "last_err": "secrets MAIL_USER / MAIL_APP_PASSWORD absents"
  },
  "stararctic": {
-  "fails": 74,
+  "fails": 75,
   "last_ok": "2026-08-16T15:13+00:00",
-  "last_count": 0
+  "last_count": 0,
+  "last_err": "HTTPSConnectionPool(host='stararctichotel.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='stararctichotel.com', port=443) at 0x7ffbf07c6"
  },
  "hunterchalets": {
-  "fails": 74,
-  "last_ok": "2026-08-16T15:13+00:00",
+  "fails": 75,
+  "last_ok": "2026-08-17T05:28+00:00",
   "last_count": 0
  },
  "skiworld": {
-  "fails": 70,
-  "last_ok": "2026-08-16T15:13+00:00",
+  "fails": 71,
+  "last_ok": "2026-08-17T05:28+00:00",
   "last_count": 0
  },
  "workingcouples": {
-  "fails": 74,
+  "fails": 75,
   "last_err": "404 Client Error: Not Found for url: https://workingcouples.com/job-openings"
  }
 }
