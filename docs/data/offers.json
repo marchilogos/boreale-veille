@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-08-19T15:22+00:00",
+  "run_at": "2026-08-20T05:22+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 307,
+  "examined": 305,
   "new": 0,
-  "kept": 30,
+  "kept": 29,
   "humans": 4,
   "rejected": 4,
   "calibrage": "v4",
@@ -23,16 +23,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "ok",
+   "morganmallet": "1 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "81 échecs",
+   "skijobs_couk": "82 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "81 échecs",
-   "mailbox": "79 échecs",
-   "stararctic": "79 échecs",
-   "hunterchalets": "79 échecs",
-   "skiworld": "75 échecs",
-   "workingcouples": "79 échecs"
+   "gestioncamping": "82 échecs",
+   "mailbox": "80 échecs",
+   "stararctic": "80 échecs",
+   "hunterchalets": "80 échecs",
+   "skiworld": "76 échecs",
+   "workingcouples": "80 échecs"
   }
  },
  "offers": [
@@ -511,28 +511,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-08-06"
-  },
-  {
-   "title": "Offre d’emploi d’intendant(e) de maison (H/F) à Paris, France",
-   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-intendante-de-maison-paris-france/",
-   "src": "morganmallet",
-   "emitter": "Morgan & Mallet — board France",
-   "geo": "fr",
-   "id": "7926495e0d237828",
-   "score": 51,
-   "tier": "flow",
-   "cat": [
-    "maison"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "",
-   "bars": {},
-   "nouveau": "2026-07-29"
   },
   {
    "title": "Employé de maison Le Touquet-Paris-Plage (62)",
