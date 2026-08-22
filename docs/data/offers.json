@@ -1,6 +1,6 @@
 {
  "meta": {
-  "run_at": "2026-08-22T05:18+00:00",
+  "run_at": "2026-08-22T15:12+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 304,
   "new": 0,
@@ -11,6 +11,7 @@
   "alerts": [
    "Supabase illisible (HTTPSConnectionPool(host='bljvehfncafnqrzetjyb.supabase.co', port=443): Max retr)",
    "Source muette/cassée : Boîte mail d'alertes (Indeed FR/CH, Jooble, leboncoin, EURES, jobs.ch…) (secrets MAIL_USER / MAIL_APP_PASSWORD absents)",
+   "Source muette/cassée : Morgan & Mallet — board France (0 résultat)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
@@ -23,16 +24,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "3 échecs",
+   "morganmallet": "4 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "86 échecs",
+   "skijobs_couk": "87 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "86 échecs",
-   "mailbox": "84 échecs",
-   "stararctic": "84 échecs",
-   "hunterchalets": "84 échecs",
-   "skiworld": "80 échecs",
-   "workingcouples": "84 échecs"
+   "gestioncamping": "87 échecs",
+   "mailbox": "85 échecs",
+   "stararctic": "85 échecs",
+   "hunterchalets": "85 échecs",
+   "skiworld": "81 échecs",
+   "workingcouples": "85 échecs"
   }
  },
  "offers": [
