@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-08-21T15:24+00:00",
+  "run_at": "2026-08-22T05:18+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 304,
   "new": 0,
-  "kept": 29,
+  "kept": 22,
   "humans": 4,
   "rejected": 4,
   "calibrage": "v4",
@@ -23,16 +23,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "2 échecs",
+   "morganmallet": "3 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "85 échecs",
+   "skijobs_couk": "86 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "85 échecs",
-   "mailbox": "83 échecs",
-   "stararctic": "83 échecs",
-   "hunterchalets": "83 échecs",
-   "skiworld": "79 échecs",
-   "workingcouples": "83 échecs"
+   "gestioncamping": "86 échecs",
+   "mailbox": "84 échecs",
+   "stararctic": "84 échecs",
+   "hunterchalets": "84 échecs",
+   "skiworld": "80 échecs",
+   "workingcouples": "84 échecs"
   }
  },
  "offers": [
@@ -57,29 +57,6 @@
    "why": "",
    "bars": {},
    "nouveau": "2026-08-05"
-  },
-  {
-   "title": "Couple de gardiens Saint-Tropez (83)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-saint-tropez-83-4599.htm?p=40",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "10e35ea2508c2db2",
-   "score": 72,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "",
-   "bars": {},
-   "nouveau": "2026-07-31"
   },
   {
    "title": "Couple de gardiens Côte dAzur",
@@ -149,29 +126,6 @@
    "nouveau": "2026-08-05"
   },
   {
-   "title": "Couple de gardiens Sanary-sur-Mer (83)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-sanary-sur-mer-83-1994.htm?p=56",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "8ab7d6ecb7a215fb",
-   "score": 71,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "",
-   "bars": {},
-   "nouveau": "2026-07-31"
-  },
-  {
    "title": "Couple de gardiens Le Rayol Canadel sur Mer (83)",
    "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-le-rayol-canadel-sur-mer-83-2983.htm?p=38",
    "src": "madameestservie",
@@ -193,52 +147,6 @@
    "why": "",
    "bars": {},
    "nouveau": "2026-08-05"
-  },
-  {
-   "title": "Couple de gardiens Luberon",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-luberon-2616.htm?p=52",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "3be1ea4364ebd1c2",
-   "score": 70,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "",
-   "bars": {},
-   "nouveau": "2026-07-31"
-  },
-  {
-   "title": "Couple de gardiens Luberon",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-luberon-4515.htm?p=64",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "e729882a626f1a55",
-   "score": 70,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "",
-   "bars": {},
-   "nouveau": "2026-07-31"
   },
   {
    "title": "Couple de gardiens Cannes (06)",
@@ -284,77 +192,6 @@
    "why": "",
    "bars": {},
    "nouveau": "2026-08-05"
-  },
-  {
-   "title": "Couple de gardiens Alpes-Maritimes",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-alpes-maritimes-4723.htm?p=42",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "37919fcdbac6b988",
-   "score": 69,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "montagne",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "",
-   "bars": {},
-   "nouveau": "2026-07-31"
-  },
-  {
-   "title": "Couple de gardiens Provence",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-provence-4673.htm?p=53",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "31caacad27a3d7c6",
-   "score": 69,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "",
-   "bars": {},
-   "nouveau": "2026-07-31"
-  },
-  {
-   "title": "Couple de gardiens Alpes Maritimes",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-alpes-maritimes-4646.htm?p=57",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "9e410d3a2bcf7dd9",
-   "score": 69,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "montagne",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "",
-   "bars": {},
-   "nouveau": "2026-07-31"
   },
   {
    "title": "Couple d'employés de maison Bonifacio Corse",
