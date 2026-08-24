@@ -1,12 +1,12 @@
 {
  "meta": {
-  "run_at": "2026-08-23T15:13+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
+  "run_at": "2026-08-24T05:31+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
   "examined": 304,
-  "new": 0,
-  "kept": 22,
+  "new": 4,
+  "kept": 25,
   "humans": 4,
-  "rejected": 4,
+  "rejected": 3,
   "calibrage": "v4",
   "alerts": [
    "Supabase illisible (HTTPSConnectionPool(host='bljvehfncafnqrzetjyb.supabase.co', port=443): Max retr)",
@@ -17,23 +17,28 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (0 résultat)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
+   "Passe fine en échec sur « Couple de gardiens Dordogne » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Vauréal » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Saint-Tropez » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple d'employés de maison Côme Italie » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "6 échecs",
+   "morganmallet": "7 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "89 échecs",
+   "skijobs_couk": "90 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "89 échecs",
-   "mailbox": "87 échecs",
-   "stararctic": "87 échecs",
-   "hunterchalets": "87 échecs",
-   "skiworld": "83 échecs",
-   "workingcouples": "87 échecs"
+   "gestioncamping": "90 échecs",
+   "mailbox": "88 échecs",
+   "stararctic": "88 échecs",
+   "hunterchalets": "88 échecs",
+   "skiworld": "84 échecs",
+   "workingcouples": "88 échecs"
   }
  },
  "offers": [
@@ -281,6 +286,78 @@
    "why": "",
    "bars": {},
    "nouveau": "2026-08-05"
+  },
+  {
+   "title": "Couple de gardiens Dordogne",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-dordogne-4575.htm?p=3",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "0363c3d91c77c6df",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-24"
+  },
+  {
+   "title": "Couple de gardiens Vauréal",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-vaureal-4925.htm?p=5",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "82ab1031c7b7d3a8",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-24"
+  },
+  {
+   "title": "Couple de gardiens Saint-Tropez",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-saint-tropez-4917.htm?p=6",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "e7aa42e543c38b7d",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-24"
   },
   {
    "title": "Couple d'employés de maison Côme Italie",
@@ -566,11 +643,6 @@
    "title": "Offre d’emploi de gouvernant(e) de maison/ régisseur(se) junior (H/F) à Dubai, Emirats-Arabes-Unis",
    "src": "Morgan & Mallet — board France",
    "reason": "hors-Schengen (Émirats-Arabes-Unis = malus lourd + malus très lourd)"
-  },
-  {
-   "title": "Couple de gardiens Saint-Tropez",
-   "src": "Madame est Servie — couples de gardiens",
-   "reason": "hors fenêtre (mission estivale)"
   },
   {
    "title": "Offre d’emploi de couple d’employés de maison à Newbury, Royaume-Uni",
