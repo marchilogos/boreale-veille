@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-08-24T05:31+00:00",
+  "run_at": "2026-08-24T15:31+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
   "examined": 304,
-  "new": 4,
-  "kept": 25,
+  "new": 19,
+  "kept": 29,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -19,26 +19,28 @@
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
    "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Couple de gardiens Dordogne » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Gien (45) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
    "Passe fine en échec sur « Couple de gardiens Vauréal » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Yvelines » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
    "Passe fine en échec sur « Couple de gardiens Saint-Tropez » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple d'employés de maison Côme Italie » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Passe fine en échec sur « Couple de gardiens wallonne, Belgique » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Haute-Marne » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "7 échecs",
+   "morganmallet": "8 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "90 échecs",
+   "skijobs_couk": "91 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "90 échecs",
-   "mailbox": "88 échecs",
-   "stararctic": "88 échecs",
-   "hunterchalets": "88 échecs",
-   "skiworld": "84 échecs",
-   "workingcouples": "88 échecs"
+   "gestioncamping": "91 échecs",
+   "mailbox": "89 échecs",
+   "stararctic": "89 échecs",
+   "hunterchalets": "89 échecs",
+   "skiworld": "85 échecs",
+   "workingcouples": "89 échecs"
   }
  },
  "offers": [
@@ -342,6 +344,102 @@
    "emitter": "Madame est Servie — couples de gardiens",
    "geo": "fr",
    "id": "e7aa42e543c38b7d",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-24"
+  },
+  {
+   "title": "Couple de gardiens Gien (45)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-gien-45-4251.htm?p=0",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "12626eeca926bfa8",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-24"
+  },
+  {
+   "title": "Couple de gardiens Yvelines",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-yvelines-4761.htm?p=2",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "a9c204a0eb26bce9",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-24"
+  },
+  {
+   "title": "Couple de gardiens wallonne, Belgique",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-wallonne-belgique-4865.htm?p=15",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "96c100f8738398f1",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-24"
+  },
+  {
+   "title": "Couple de gardiens Haute-Marne",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-haute-marne-4847.htm?p=17",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "9e8d4da7cd2db080",
    "score": 66,
    "provisoire": true,
    "tier": "flow",
