@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-08-25T05:24+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
+  "run_at": "2026-08-25T15:34+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
   "examined": 304,
-  "new": 0,
-  "kept": 29,
+  "new": 234,
+  "kept": 30,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -17,26 +17,58 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (0 résultat)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
+   "Passe fine en échec sur « Domaine viticole, site oenotouristique comprenant  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Chaumont-en-Vexin (60) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Gien (45) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Vauréal » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Yvelines » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Eure (27) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "9 échecs",
+   "morganmallet": "10 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "92 échecs",
+   "skijobs_couk": "93 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "92 échecs",
-   "mailbox": "90 échecs",
-   "stararctic": "90 échecs",
-   "hunterchalets": "90 échecs",
-   "skiworld": "86 échecs",
-   "workingcouples": "90 échecs"
+   "gestioncamping": "93 échecs",
+   "mailbox": "91 échecs",
+   "stararctic": "91 échecs",
+   "hunterchalets": "91 échecs",
+   "skiworld": "87 échecs",
+   "workingcouples": "91 échecs"
   }
  },
  "offers": [
+  {
+   "title": "Domaine viticole, site oenotouristique comprenant plusieurs gîtes et salle de réception de standing, recherche un couple de gardiens : Logés sur place (appartem",
+   "url": "https://www.madameestservie.net/offre-d-emploi-gardien-gard-4148.htm?p=153",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "99e70811dc2e7d2d",
+   "score": 84,
+   "provisoire": true,
+   "tier": "top",
+   "cat": [
+    "planque",
+    "maison",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-25"
+  },
   {
    "title": "Couple d'employés de maison Monaco & Var",
    "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-monaco-&-var-4797.htm?p=27",
@@ -427,30 +459,6 @@
    "nouveau": "2026-08-24"
   },
   {
-   "title": "Couple de gardiens Haute-Marne",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-haute-marne-4847.htm?p=17",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "9e8d4da7cd2db080",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-24"
-  },
-  {
    "title": "Couple d'employés de maison Côme Italie",
    "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-come-italie-2216.htm?p=11",
    "src": "madameestservie",
@@ -664,6 +672,27 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-08-13"
+  },
+  {
+   "title": "Guardian Saint-Tropez (83)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-guardian-saint-tropez-83-3367.htm?p=278",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "121e4222f4e4b68b",
+   "score": 40,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-25"
   },
   {
    "title": "Christmas Operations Coordinator, Lapland Safaris Saariselkä",
