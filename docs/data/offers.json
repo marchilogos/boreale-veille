@@ -1,9 +1,9 @@
 {
  "meta": {
-  "run_at": "2026-08-28T17:03+00:00",
-  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "run_at": "2026-08-29T11:25+00:00",
+  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 304,
-  "new": 27,
+  "new": 0,
   "kept": 22,
   "humans": 4,
   "rejected": 3,
@@ -17,30 +17,23 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
-   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Couple de gardiens Saint-Tropez » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens wallonne, Belgique » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Belgique » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Haute-Marne » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Sylvains-Lès-Moulins (27) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Côte dAzur » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "14 échecs",
+   "morganmallet": "15 échecs",
    "laplandstaff": "ok",
-   "skijobs_couk": "97 échecs",
+   "skijobs_couk": "98 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "97 échecs",
-   "mailbox": "95 échecs",
-   "stararctic": "95 échecs",
-   "hunterchalets": "95 échecs",
-   "skiworld": "91 échecs",
-   "workingcouples": "95 échecs"
+   "gestioncamping": "98 échecs",
+   "mailbox": "96 échecs",
+   "stararctic": "96 échecs",
+   "hunterchalets": "96 échecs",
+   "skiworld": "92 échecs",
+   "workingcouples": "96 échecs"
   }
  },
  "offers": [
