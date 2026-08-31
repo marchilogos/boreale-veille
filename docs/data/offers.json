@@ -1,39 +1,45 @@
 {
  "meta": {
-  "run_at": "2026-08-30T18:17+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 304,
-  "new": 0,
-  "kept": 23,
+  "run_at": "2026-08-31T11:15+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 305,
+  "new": 7,
+  "kept": 25,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
   "alerts": [
    "Supabase illisible (HTTPSConnectionPool(host='bljvehfncafnqrzetjyb.supabase.co', port=443): Max retr)",
    "Source muette/cassée : Boîte mail d'alertes (Indeed FR/CH, Jooble, leboncoin, EURES, jobs.ch…) (secrets MAIL_USER / MAIL_APP_PASSWORD absents)",
-   "Source muette/cassée : Morgan & Mallet — board France (0 résultat)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
+   "Passe fine en échec sur « Couple de gardiens Chaumont-en-Vexin (60) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Gien (45) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Vauréal » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Yvelines » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple d'employés de maison Montrieux (41) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Offre d’emploi de couple d’employés de maison à Be » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "18 échecs",
+   "morganmallet": "ok",
    "laplandstaff": "ok",
-   "skijobs_couk": "101 échecs",
+   "skijobs_couk": "102 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "101 échecs",
-   "mailbox": "99 échecs",
-   "stararctic": "99 échecs",
-   "hunterchalets": "99 échecs",
-   "skiworld": "95 échecs",
-   "workingcouples": "99 échecs"
+   "gestioncamping": "102 échecs",
+   "mailbox": "100 échecs",
+   "stararctic": "100 échecs",
+   "hunterchalets": "100 échecs",
+   "skiworld": "96 échecs",
+   "workingcouples": "100 échecs"
   }
  },
  "offers": [
@@ -438,6 +444,52 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-08-30"
+  },
+  {
+   "title": "Couple d'employés de maison Montrieux (41)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-montrieux-41-3510.htm?p=5",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "0a637c497440ff51",
+   "score": 54,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-31"
+  },
+  {
+   "title": "Offre d’emploi de couple d’employés de maison à Berkshire, Royaume-Uni",
+   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-couple-employes-maison-berkshire-royaume-uni/",
+   "src": "morganmallet",
+   "emitter": "Morgan & Mallet — board France",
+   "geo": "fr",
+   "id": "11dfc2561f464414",
+   "score": 54,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-08-31"
   },
   {
    "title": "Intendant Auvergne",
