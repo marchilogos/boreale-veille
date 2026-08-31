@@ -1,55 +1,55 @@
 {
  "madameestservie": {
   "fails": 0,
-  "last_ok": "2026-08-31T11:15+00:00",
+  "last_ok": "2026-08-31T20:31+00:00",
   "last_count": 299
  },
  "morganmallet": {
   "fails": 0,
-  "last_ok": "2026-08-31T11:15+00:00",
+  "last_ok": "2026-08-31T20:31+00:00",
   "last_count": 1
  },
  "laplandstaff": {
   "fails": 0,
-  "last_ok": "2026-08-31T11:15+00:00",
+  "last_ok": "2026-08-31T20:31+00:00",
   "last_count": 2
  },
  "skijobs_couk": {
-  "fails": 102,
-  "last_ok": "2026-08-31T11:15+00:00",
+  "fails": 103,
+  "last_ok": "2026-08-31T20:31+00:00",
   "last_count": 0
  },
  "francegardiennage": {
   "fails": 0,
-  "last_ok": "2026-08-31T11:15+00:00",
+  "last_ok": "2026-08-31T20:31+00:00",
   "last_count": 3
  },
  "gestioncamping": {
-  "fails": 102,
+  "fails": 103,
   "last_err": "403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html"
  },
  "mailbox": {
-  "fails": 100,
+  "fails": 101,
   "last_err": "secrets MAIL_USER / MAIL_APP_PASSWORD absents"
  },
  "stararctic": {
-  "fails": 100,
-  "last_ok": "2026-08-31T11:15+00:00",
+  "fails": 101,
+  "last_ok": "2026-08-31T20:31+00:00",
   "last_count": 0
  },
  "hunterchalets": {
-  "fails": 100,
+  "fails": 101,
   "last_ok": "2026-08-26T16:11+00:00",
   "last_count": 0,
   "last_err": "403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/"
  },
  "skiworld": {
-  "fails": 96,
-  "last_ok": "2026-08-31T11:15+00:00",
+  "fails": 97,
+  "last_ok": "2026-08-31T20:31+00:00",
   "last_count": 0
  },
  "workingcouples": {
-  "fails": 100,
+  "fails": 101,
   "last_err": "404 Client Error: Not Found for url: https://workingcouples.com/job-openings"
  }
 }
