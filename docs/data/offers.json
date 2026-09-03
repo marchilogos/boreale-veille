@@ -1,8 +1,8 @@
 {
  "meta": {
-  "run_at": "2026-09-02T18:16+00:00",
+  "run_at": "2026-09-03T09:19+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 302,
+  "examined": 303,
   "new": 0,
   "kept": 29,
   "humans": 4,
@@ -14,7 +14,7 @@
    "Source muette/cassée : Lapland Hotels & Safaris (ATS Talentadore) (0 résultat)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
-   "Source muette/cassée : Star Arctic Hotel Saariselkä (HTTPSConnectionPool(host='stararctichotel.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='stararctichotel.com', port=443) at 0x7f21464cd)",
+   "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
@@ -24,16 +24,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "1 échecs",
-   "laplandstaff": "4 échecs",
-   "skijobs_couk": "107 échecs",
+   "morganmallet": "ok",
+   "laplandstaff": "5 échecs",
+   "skijobs_couk": "108 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "107 échecs",
-   "mailbox": "105 échecs",
-   "stararctic": "105 échecs",
-   "hunterchalets": "105 échecs",
-   "skiworld": "101 échecs",
-   "workingcouples": "105 échecs"
+   "gestioncamping": "108 échecs",
+   "mailbox": "106 échecs",
+   "stararctic": "106 échecs",
+   "hunterchalets": "106 échecs",
+   "skiworld": "102 échecs",
+   "workingcouples": "106 échecs"
   }
  },
  "offers": [
