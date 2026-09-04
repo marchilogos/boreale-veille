@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-09-03T18:15+00:00",
+  "run_at": "2026-09-04T09:12+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 299,
+  "examined": 302,
   "new": 0,
-  "kept": 29,
+  "kept": 28,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -24,16 +24,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "1 échecs",
-   "laplandstaff": "6 échecs",
-   "skijobs_couk": "109 échecs",
-   "francegardiennage": "1 échecs",
-   "gestioncamping": "109 échecs",
-   "mailbox": "107 échecs",
-   "stararctic": "107 échecs",
-   "hunterchalets": "107 échecs",
-   "skiworld": "103 échecs",
-   "workingcouples": "107 échecs"
+   "morganmallet": "2 échecs",
+   "laplandstaff": "7 échecs",
+   "skijobs_couk": "110 échecs",
+   "francegardiennage": "ok",
+   "gestioncamping": "110 échecs",
+   "mailbox": "108 échecs",
+   "stararctic": "108 échecs",
+   "hunterchalets": "108 échecs",
+   "skiworld": "104 échecs",
+   "workingcouples": "108 échecs"
   }
  },
  "offers": [
@@ -554,27 +554,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-08-15"
-  },
-  {
-   "title": "Offre d’emploi d’employé(e) de maison/cuisinière (H/F) à San Diego, Californie, Etats-Unis",
-   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-employee-maison-san-diego-etats-unis/",
-   "src": "morganmallet",
-   "emitter": "Morgan & Mallet — board France",
-   "geo": "fr",
-   "id": "e95209b86ab0a41c",
-   "score": 40,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-13"
   },
   {
    "title": "Guardian Saint-Tropez (83)",
