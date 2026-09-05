@@ -1,55 +1,57 @@
 {
  "madameestservie": {
   "fails": 0,
-  "last_ok": "2026-09-05T08:43+00:00",
+  "last_ok": "2026-09-05T17:02+00:00",
   "last_count": 299
  },
  "morganmallet": {
-  "fails": 4,
+  "fails": 5,
   "last_ok": "2026-09-05T08:43+00:00",
-  "last_count": 0
+  "last_count": 0,
+  "last_err": "HTTPSConnectionPool(host='www.personneldemaison.agency', port=443): Max retries exceeded with url: /jobs/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.personneldemaison.agency', port=443)"
  },
  "laplandstaff": {
-  "fails": 9,
-  "last_ok": "2026-09-05T08:43+00:00",
+  "fails": 10,
+  "last_ok": "2026-09-05T17:02+00:00",
   "last_count": 0
  },
  "skijobs_couk": {
-  "fails": 112,
-  "last_ok": "2026-09-05T08:43+00:00",
+  "fails": 113,
+  "last_ok": "2026-09-05T17:02+00:00",
   "last_count": 0
  },
  "francegardiennage": {
   "fails": 0,
-  "last_ok": "2026-09-05T08:43+00:00",
+  "last_ok": "2026-09-05T17:02+00:00",
   "last_count": 3
  },
  "gestioncamping": {
-  "fails": 112,
+  "fails": 113,
   "last_err": "403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html"
  },
  "mailbox": {
-  "fails": 110,
+  "fails": 111,
   "last_err": "secrets MAIL_USER / MAIL_APP_PASSWORD absents"
  },
  "stararctic": {
-  "fails": 110,
+  "fails": 111,
   "last_ok": "2026-09-05T08:43+00:00",
-  "last_count": 0
+  "last_count": 0,
+  "last_err": "HTTPSConnectionPool(host='stararctichotel.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='stararctichotel.com', port=443) at 0x7fb92af15"
  },
  "hunterchalets": {
-  "fails": 110,
+  "fails": 111,
   "last_ok": "2026-08-26T16:11+00:00",
   "last_count": 0,
   "last_err": "403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/"
  },
  "skiworld": {
-  "fails": 106,
-  "last_ok": "2026-09-05T08:43+00:00",
+  "fails": 107,
+  "last_ok": "2026-09-05T17:02+00:00",
   "last_count": 0
  },
  "workingcouples": {
-  "fails": 110,
+  "fails": 111,
   "last_err": "404 Client Error: Not Found for url: https://workingcouples.com/job-openings"
  }
 }
