@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-09-05T17:02+00:00",
+  "run_at": "2026-09-06T09:04+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 302,
   "new": 0,
-  "kept": 27,
+  "kept": 26,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -15,7 +15,7 @@
    "Source muette/cassée : Lapland Hotels & Safaris (ATS Talentadore) (0 résultat)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
-   "Source muette/cassée : Star Arctic Hotel Saariselkä (HTTPSConnectionPool(host='stararctichotel.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='stararctichotel.com', port=443) at 0x7fb92af15)",
+   "Source muette/cassée : Star Arctic Hotel Saariselkä (HTTPSConnectionPool(host='stararctichotel.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='stararctichotel.com', port=443) at 0x7f59c87d1)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
@@ -25,16 +25,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "5 échecs",
-   "laplandstaff": "10 échecs",
-   "skijobs_couk": "113 échecs",
+   "morganmallet": "6 échecs",
+   "laplandstaff": "11 échecs",
+   "skijobs_couk": "114 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "113 échecs",
-   "mailbox": "111 échecs",
-   "stararctic": "111 échecs",
-   "hunterchalets": "111 échecs",
-   "skiworld": "107 échecs",
-   "workingcouples": "111 échecs"
+   "gestioncamping": "114 échecs",
+   "mailbox": "112 échecs",
+   "stararctic": "112 échecs",
+   "hunterchalets": "112 échecs",
+   "skiworld": "108 échecs",
+   "workingcouples": "112 échecs"
   }
  },
  "offers": [
@@ -532,29 +532,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-09-01"
-  },
-  {
-   "title": "Intendant Auvergne",
-   "url": "https://www.madameestservie.net/offre-d-emploi-intendant-auvergne-566.htm?p=11",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "9c3d85602812da87",
-   "score": 48,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "maison"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-15"
   },
   {
    "title": "Guardian Saint-Tropez (83)",
