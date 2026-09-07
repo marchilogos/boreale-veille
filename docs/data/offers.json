@@ -1,9 +1,9 @@
 {
  "meta": {
-  "run_at": "2026-09-07T09:51+00:00",
-  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "run_at": "2026-09-07T18:56+00:00",
+  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 302,
-  "new": 1,
+  "new": 0,
   "kept": 26,
   "humans": 4,
   "rejected": 3,
@@ -18,25 +18,23 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
-   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Couple d'employés de maison Lyon & voyages » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "8 échecs",
-   "laplandstaff": "13 échecs",
-   "skijobs_couk": "116 échecs",
+   "morganmallet": "9 échecs",
+   "laplandstaff": "14 échecs",
+   "skijobs_couk": "117 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "116 échecs",
-   "mailbox": "114 échecs",
-   "stararctic": "114 échecs",
-   "hunterchalets": "114 échecs",
-   "skiworld": "110 échecs",
-   "workingcouples": "114 échecs"
+   "gestioncamping": "117 échecs",
+   "mailbox": "115 échecs",
+   "stararctic": "115 échecs",
+   "hunterchalets": "115 échecs",
+   "skiworld": "111 échecs",
+   "workingcouples": "115 échecs"
   }
  },
  "offers": [
