@@ -1,40 +1,46 @@
 {
  "meta": {
-  "run_at": "2026-09-08T18:12+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 302,
-  "new": 0,
-  "kept": 26,
+  "run_at": "2026-09-09T09:18+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 303,
+  "new": 297,
+  "kept": 27,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
   "alerts": [
    "Supabase illisible (HTTPSConnectionPool(host='bljvehfncafnqrzetjyb.supabase.co', port=443): Max retr)",
    "Source muette/cassée : Boîte mail d'alertes (Indeed FR/CH, Jooble, leboncoin, EURES, jobs.ch…) (secrets MAIL_USER / MAIL_APP_PASSWORD absents)",
-   "Source muette/cassée : Morgan & Mallet — board France (0 résultat)",
    "Source muette/cassée : Lapland Hotels & Safaris (ATS Talentadore) (0 résultat)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
+   "Passe fine en échec sur « Domaine viticole, site oenotouristique comprenant  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Coignières (78) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Yvelines » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Salbris (41) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Chaumont-en-Vexin (60) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Gien (45) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "11 échecs",
-   "laplandstaff": "16 échecs",
-   "skijobs_couk": "119 échecs",
+   "morganmallet": "ok",
+   "laplandstaff": "17 échecs",
+   "skijobs_couk": "120 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "119 échecs",
-   "mailbox": "117 échecs",
-   "stararctic": "117 échecs",
-   "hunterchalets": "117 échecs",
-   "skiworld": "113 échecs",
-   "workingcouples": "117 échecs"
+   "gestioncamping": "120 échecs",
+   "mailbox": "118 échecs",
+   "stararctic": "118 échecs",
+   "hunterchalets": "118 échecs",
+   "skiworld": "114 échecs",
+   "workingcouples": "118 échecs"
   }
  },
  "offers": [
@@ -532,6 +538,29 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-09-01"
+  },
+  {
+   "title": "Intendant Auvergne",
+   "url": "https://www.madameestservie.net/offre-d-emploi-intendant-auvergne-566.htm?p=18",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "f61575c65ac5787a",
+   "score": 48,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "maison"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-09-09"
   },
   {
    "title": "Guardian Saint-Tropez (83)",
