@@ -1,9 +1,9 @@
 {
  "meta": {
-  "run_at": "2026-09-11T09:16+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 303,
-  "new": 0,
+  "run_at": "2026-09-11T18:02+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 302,
+  "new": 2,
   "kept": 27,
   "humans": 4,
   "rejected": 3,
@@ -17,23 +17,26 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
+   "Passe fine en échec sur « Couple de gardiens Vence (06) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Employé de maison Brinon sur Sauldre (18) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "ok",
-   "laplandstaff": "21 échecs",
-   "skijobs_couk": "124 échecs",
+   "morganmallet": "1 échecs",
+   "laplandstaff": "22 échecs",
+   "skijobs_couk": "125 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "124 échecs",
-   "mailbox": "122 échecs",
-   "stararctic": "122 échecs",
-   "hunterchalets": "122 échecs",
-   "skiworld": "118 échecs",
-   "workingcouples": "122 échecs"
+   "gestioncamping": "125 échecs",
+   "mailbox": "123 échecs",
+   "stararctic": "123 échecs",
+   "hunterchalets": "123 échecs",
+   "skiworld": "119 échecs",
+   "workingcouples": "123 échecs"
   }
  },
  "offers": [
