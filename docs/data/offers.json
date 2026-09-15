@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-09-14T19:41+00:00",
-  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "run_at": "2026-09-15T09:42+00:00",
+  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 303,
-  "new": 1,
-  "kept": 28,
+  "new": 0,
+  "kept": 22,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -17,9 +17,7 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
-   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Offre d’emploi d’employé(e) de maison/cuisinier(èr » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -27,15 +25,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "28 échecs",
-   "skijobs_couk": "131 échecs",
+   "laplandstaff": "29 échecs",
+   "skijobs_couk": "132 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "131 échecs",
-   "mailbox": "129 échecs",
-   "stararctic": "129 échecs",
-   "hunterchalets": "129 échecs",
-   "skiworld": "125 échecs",
-   "workingcouples": "129 échecs"
+   "gestioncamping": "132 échecs",
+   "mailbox": "130 échecs",
+   "stararctic": "130 échecs",
+   "hunterchalets": "130 échecs",
+   "skiworld": "126 échecs",
+   "workingcouples": "130 échecs"
   }
  },
  "offers": [
@@ -63,150 +61,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-08-25"
-  },
-  {
-   "title": "Couple de gardiens Dordogne",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-dordogne-4575.htm?p=3",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "0363c3d91c77c6df",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-24"
-  },
-  {
-   "title": "Couple de gardiens Vauréal",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-vaureal-4925.htm?p=5",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "82ab1031c7b7d3a8",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-24"
-  },
-  {
-   "title": "Couple de gardiens Saint-Tropez",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-saint-tropez-4917.htm?p=6",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "e7aa42e543c38b7d",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-24"
-  },
-  {
-   "title": "Couple de gardiens Gien (45)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-gien-45-4251.htm?p=0",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "12626eeca926bfa8",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-24"
-  },
-  {
-   "title": "Couple de gardiens Yvelines",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-yvelines-4761.htm?p=2",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "a9c204a0eb26bce9",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-24"
-  },
-  {
-   "title": "Couple de gardiens wallonne, Belgique",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-wallonne-belgique-4865.htm?p=15",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "96c100f8738398f1",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-24"
   },
   {
    "title": "Couple de gardiens Belgique",
