@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-09-15T18:36+00:00",
-  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "run_at": "2026-09-16T09:36+00:00",
+  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 303,
-  "new": 290,
-  "kept": 28,
+  "new": 0,
+  "kept": 26,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -17,14 +17,7 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
-   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Domaine viticole, site oenotouristique comprenant  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Coignières (78) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Saint-Tropez » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Eure (27) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Montfort-Lamaury (78) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Orgeval (78) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -32,43 +25,18 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "30 échecs",
-   "skijobs_couk": "133 échecs",
+   "laplandstaff": "31 échecs",
+   "skijobs_couk": "134 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "133 échecs",
-   "mailbox": "131 échecs",
-   "stararctic": "131 échecs",
-   "hunterchalets": "131 échecs",
-   "skiworld": "127 échecs",
-   "workingcouples": "131 échecs"
+   "gestioncamping": "134 échecs",
+   "mailbox": "132 échecs",
+   "stararctic": "132 échecs",
+   "hunterchalets": "132 échecs",
+   "skiworld": "128 échecs",
+   "workingcouples": "132 échecs"
   }
  },
  "offers": [
-  {
-   "title": "Domaine viticole, site oenotouristique comprenant plusieurs gîtes et salle de réception de standing, recherche un couple de gardiens : Logés sur place (appartem",
-   "url": "https://www.madameestservie.net/offre-d-emploi-gardien-gard-4148.htm?p=153",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "99e70811dc2e7d2d",
-   "score": 84,
-   "provisoire": true,
-   "tier": "top",
-   "cat": [
-    "planque",
-    "maison",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-25"
-  },
   {
    "title": "Couple de gardiens Belgique",
    "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-belgique-4473.htm?p=17",
@@ -561,27 +529,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-09-09"
-  },
-  {
-   "title": "Guardian Saint-Tropez (83)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-guardian-saint-tropez-83-3367.htm?p=278",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "121e4222f4e4b68b",
-   "score": 40,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-25"
   },
   {
    "title": "Employé de maison Brinon sur Sauldre (18)",
