@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-09-20T17:49+00:00",
+  "run_at": "2026-09-21T10:19+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 302,
+  "examined": 300,
   "new": 0,
-  "kept": 16,
+  "kept": 15,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -24,16 +24,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "1 échecs",
-   "laplandstaff": "40 échecs",
-   "skijobs_couk": "143 échecs",
-   "francegardiennage": "ok",
-   "gestioncamping": "143 échecs",
-   "mailbox": "141 échecs",
-   "stararctic": "141 échecs",
-   "hunterchalets": "141 échecs",
-   "skiworld": "137 échecs",
-   "workingcouples": "141 échecs"
+   "morganmallet": "ok",
+   "laplandstaff": "41 échecs",
+   "skijobs_couk": "144 échecs",
+   "francegardiennage": "1 échecs",
+   "gestioncamping": "144 échecs",
+   "mailbox": "142 échecs",
+   "stararctic": "142 échecs",
+   "hunterchalets": "142 échecs",
+   "skiworld": "138 échecs",
+   "workingcouples": "142 échecs"
   }
  },
  "offers": [
@@ -205,29 +205,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-09-15"
-  },
-  {
-   "title": "Domestic couple Le Blanc (36)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-domestic-couple-le-blanc-36-2393.htm?p=11",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "f91823e16645d78c",
-   "score": 54,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-30"
   },
   {
    "title": "Couple d'employés de maison Montrieux (41)",
