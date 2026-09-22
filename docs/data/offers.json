@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-09-21T19:49+00:00",
-  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "run_at": "2026-09-22T09:33+00:00",
+  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 303,
-  "new": 297,
-  "kept": 28,
+  "new": 0,
+  "kept": 26,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -17,14 +17,7 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
-   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Domaine viticole, site oenotouristique comprenant  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Marcq-en-Baroeul (59) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Fontvieille (13) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Yvelines » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Salbris (41) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Chaumont-en-Vexin (60) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -32,15 +25,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "42 échecs",
-   "skijobs_couk": "145 échecs",
+   "laplandstaff": "43 échecs",
+   "skijobs_couk": "146 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "145 échecs",
-   "mailbox": "143 échecs",
-   "stararctic": "143 échecs",
-   "hunterchalets": "143 échecs",
-   "skiworld": "139 échecs",
-   "workingcouples": "143 échecs"
+   "gestioncamping": "146 échecs",
+   "mailbox": "144 échecs",
+   "stararctic": "144 échecs",
+   "hunterchalets": "144 échecs",
+   "skiworld": "140 échecs",
+   "workingcouples": "144 échecs"
   }
  },
  "offers": [
@@ -284,52 +277,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-09-21"
-  },
-  {
-   "title": "Couple d'employés de maison Montrieux (41)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-montrieux-41-3510.htm?p=5",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "0a637c497440ff51",
-   "score": 54,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-31"
-  },
-  {
-   "title": "Offre d’emploi de couple d’employés de maison à Berkshire, Royaume-Uni",
-   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-couple-employes-maison-berkshire-royaume-uni/",
-   "src": "morganmallet",
-   "emitter": "Morgan & Mallet — board France",
-   "geo": "fr",
-   "id": "11dfc2561f464414",
-   "score": 54,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-08-31"
   },
   {
    "title": "Couple d'employés de maison Gueret (23)",
