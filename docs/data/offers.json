@@ -1,9 +1,9 @@
 {
  "meta": {
-  "run_at": "2026-09-22T09:33+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 303,
-  "new": 0,
+  "run_at": "2026-09-22T18:25+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 304,
+  "new": 2,
   "kept": 26,
   "humans": 4,
   "rejected": 3,
@@ -17,7 +17,10 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
+   "Passe fine en échec sur « Couple de gardiens Salbris (41) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Offre d’emploi de couple de gardiens à La Roche Su » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -25,15 +28,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "43 échecs",
-   "skijobs_couk": "146 échecs",
+   "laplandstaff": "44 échecs",
+   "skijobs_couk": "147 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "146 échecs",
-   "mailbox": "144 échecs",
-   "stararctic": "144 échecs",
-   "hunterchalets": "144 échecs",
-   "skiworld": "140 échecs",
-   "workingcouples": "144 échecs"
+   "gestioncamping": "147 échecs",
+   "mailbox": "145 échecs",
+   "stararctic": "145 échecs",
+   "hunterchalets": "145 échecs",
+   "skiworld": "141 échecs",
+   "workingcouples": "145 échecs"
   }
  },
  "offers": [
