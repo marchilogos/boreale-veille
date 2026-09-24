@@ -1,8 +1,8 @@
 {
  "meta": {
-  "run_at": "2026-09-23T18:44+00:00",
+  "run_at": "2026-09-24T09:38+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 299,
+  "examined": 302,
   "new": 0,
   "kept": 22,
   "humans": 4,
@@ -14,7 +14,7 @@
    "Source muette/cassée : Lapland Hotels & Safaris (ATS Talentadore) (0 résultat)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
-   "Source muette/cassée : Star Arctic Hotel Saariselkä (HTTPSConnectionPool(host='stararctichotel.com', port=443): Max retries exceeded with url: /careers/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='stararctichotel.com', port=443) at 0x7fc3b303d)",
+   "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
@@ -24,16 +24,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "2 échecs",
-   "laplandstaff": "46 échecs",
-   "skijobs_couk": "149 échecs",
-   "francegardiennage": "1 échecs",
-   "gestioncamping": "149 échecs",
-   "mailbox": "147 échecs",
-   "stararctic": "147 échecs",
-   "hunterchalets": "147 échecs",
-   "skiworld": "143 échecs",
-   "workingcouples": "147 échecs"
+   "morganmallet": "3 échecs",
+   "laplandstaff": "47 échecs",
+   "skijobs_couk": "150 échecs",
+   "francegardiennage": "ok",
+   "gestioncamping": "150 échecs",
+   "mailbox": "148 échecs",
+   "stararctic": "148 échecs",
+   "hunterchalets": "148 échecs",
+   "skiworld": "144 échecs",
+   "workingcouples": "148 échecs"
   }
  },
  "offers": [
