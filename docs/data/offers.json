@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-09-24T18:46+00:00",
+  "run_at": "2026-09-25T09:56+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
-  "examined": 303,
-  "new": 1,
-  "kept": 23,
+  "examined": 302,
+  "new": 3,
+  "kept": 24,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -19,23 +19,25 @@
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
    "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Offre d’emploi de gouvernant(e) / cuisinier(ère) ( » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Passe fine en échec sur « Couple de gardiens Salbris (41) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple d'employés de maison Lyon & voyages » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple d'employés de maison Montrieux (41) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "ok",
-   "laplandstaff": "48 échecs",
-   "skijobs_couk": "151 échecs",
+   "morganmallet": "1 échecs",
+   "laplandstaff": "49 échecs",
+   "skijobs_couk": "152 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "151 échecs",
-   "mailbox": "149 échecs",
-   "stararctic": "149 échecs",
-   "hunterchalets": "149 échecs",
-   "skiworld": "145 échecs",
-   "workingcouples": "149 échecs"
+   "gestioncamping": "152 échecs",
+   "mailbox": "150 échecs",
+   "stararctic": "150 échecs",
+   "hunterchalets": "150 échecs",
+   "skiworld": "146 échecs",
+   "workingcouples": "150 échecs"
   }
  },
  "offers": [
@@ -440,6 +442,29 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-09-21"
+  },
+  {
+   "title": "Couple d'employés de maison Montrieux (41)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-montrieux-41-3510.htm?p=15",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "1abe605c9cb4ea5e",
+   "score": 54,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-09-25"
   },
   {
    "title": "Intendant Auvergne",
