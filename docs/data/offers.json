@@ -1,6 +1,6 @@
 {
  "meta": {
-  "run_at": "2026-10-01T11:16+00:00",
+  "run_at": "2026-10-01T19:59+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
   "examined": 304,
   "new": 1,
@@ -19,7 +19,7 @@
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
    "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Offre d’emploi de couple d’assistants régisseurs à » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Passe fine en échec sur « Couple de gardiens Chaumont-en-Vexin (60) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -27,15 +27,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "61 échecs",
-   "skijobs_couk": "164 échecs",
+   "laplandstaff": "62 échecs",
+   "skijobs_couk": "165 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "164 échecs",
-   "mailbox": "162 échecs",
-   "stararctic": "162 échecs",
-   "hunterchalets": "162 échecs",
-   "skiworld": "158 échecs",
-   "workingcouples": "162 échecs"
+   "gestioncamping": "165 échecs",
+   "mailbox": "163 échecs",
+   "stararctic": "163 échecs",
+   "hunterchalets": "163 échecs",
+   "skiworld": "159 échecs",
+   "workingcouples": "163 échecs"
   }
  },
  "offers": [
