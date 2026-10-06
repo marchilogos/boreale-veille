@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-10-05T21:44+00:00",
+  "run_at": "2026-10-06T11:37+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 303,
+  "examined": 302,
   "new": 0,
-  "kept": 28,
+  "kept": 27,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -24,16 +24,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "ok",
-   "laplandstaff": "70 échecs",
-   "skijobs_couk": "173 échecs",
+   "morganmallet": "1 échecs",
+   "laplandstaff": "71 échecs",
+   "skijobs_couk": "174 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "173 échecs",
-   "mailbox": "171 échecs",
-   "stararctic": "171 échecs",
-   "hunterchalets": "171 échecs",
-   "skiworld": "167 échecs",
-   "workingcouples": "171 échecs"
+   "gestioncamping": "174 échecs",
+   "mailbox": "172 échecs",
+   "stararctic": "172 échecs",
+   "hunterchalets": "172 échecs",
+   "skiworld": "168 échecs",
+   "workingcouples": "172 échecs"
   }
  },
  "offers": [
@@ -531,27 +531,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-09-29"
-  },
-  {
-   "title": "Offre d’emploi d’employé(e) de maison/cuisinier(ère) (H/F) à Milan, Italie",
-   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-employee-maison-cuisinier-hf-milan-italie/",
-   "src": "morganmallet",
-   "emitter": "Morgan & Mallet — board France",
-   "geo": "fr",
-   "id": "a0b8238323dd4499",
-   "score": 40,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-09-14"
   },
   {
    "title": "Employé de maison Brinon sur Sauldre (18)",
