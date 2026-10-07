@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-10-07T11:26+00:00",
+  "run_at": "2026-10-07T20:21+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
   "examined": 304,
-  "new": 1,
-  "kept": 22,
+  "new": 2,
+  "kept": 23,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -19,7 +19,8 @@
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
    "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Offre d’emploi de majordome / intendant(e) (H/F) à » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Passe fine en échec sur « Couple d'employés de maison Lyon & voyages » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Offre d’emploi de cuisinier(ère) / manager, Palm J » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -27,15 +28,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "73 échecs",
-   "skijobs_couk": "176 échecs",
+   "laplandstaff": "74 échecs",
+   "skijobs_couk": "177 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "176 échecs",
-   "mailbox": "174 échecs",
-   "stararctic": "174 échecs",
-   "hunterchalets": "174 échecs",
-   "skiworld": "170 échecs",
-   "workingcouples": "174 échecs"
+   "gestioncamping": "177 échecs",
+   "mailbox": "175 échecs",
+   "stararctic": "175 échecs",
+   "hunterchalets": "175 échecs",
+   "skiworld": "171 échecs",
+   "workingcouples": "175 échecs"
   }
  },
  "offers": [
@@ -403,6 +404,27 @@
    "cat": [
     "maison"
    ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-10-07"
+  },
+  {
+   "title": "Offre d’emploi de cuisinier(ère) / manager, Palm Jumeirah, Dubaï, Emirats-Arabes-Unis",
+   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-cuisinier-manager-hf-palm-jumeirah-dubai-emirats-arabes-unis/",
+   "src": "morganmallet",
+   "emitter": "Morgan & Mallet — board France",
+   "geo": "fr",
+   "id": "2b68dc6042f95b5b",
+   "score": 45,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [],
    "canal": "Board",
    "verif": {
     "lvl": "listed",
