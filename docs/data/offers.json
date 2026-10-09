@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-10-08T20:23+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 302,
-  "new": 0,
-  "kept": 23,
+  "run_at": "2026-10-09T11:35+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 305,
+  "new": 1,
+  "kept": 24,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -17,23 +17,25 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
+   "Passe fine en échec sur « Offre d’emploi de gardien(ne) / employé(e) de mais » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "1 échecs",
-   "laplandstaff": "76 échecs",
-   "skijobs_couk": "179 échecs",
+   "morganmallet": "ok",
+   "laplandstaff": "77 échecs",
+   "skijobs_couk": "180 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "179 échecs",
-   "mailbox": "177 échecs",
-   "stararctic": "177 échecs",
-   "hunterchalets": "177 échecs",
-   "skiworld": "173 échecs",
-   "workingcouples": "177 échecs"
+   "gestioncamping": "180 échecs",
+   "mailbox": "178 échecs",
+   "stararctic": "178 échecs",
+   "hunterchalets": "178 échecs",
+   "skiworld": "174 échecs",
+   "workingcouples": "178 échecs"
   }
  },
  "offers": [
@@ -387,6 +389,29 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-09-29"
+  },
+  {
+   "title": "Offre d’emploi de gardien(ne) / employé(e) de maison (H/F) à Fontainebleau, FRANCE",
+   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-gardien-employe-maison-fontainebleau-france/",
+   "src": "morganmallet",
+   "emitter": "Morgan & Mallet — board France",
+   "geo": "fr",
+   "id": "7d1726df903658c4",
+   "score": 52,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-10-09"
   },
   {
    "title": "Offre d’emploi de majordome / intendant(e) (H/F) à Verbier, Suisse",
