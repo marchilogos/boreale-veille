@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-10-09T19:56+00:00",
-  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
-  "examined": 302,
-  "new": 298,
-  "kept": 30,
+  "run_at": "2026-10-10T10:53+00:00",
+  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
+  "examined": 305,
+  "new": 0,
+  "kept": 29,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -17,58 +17,26 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
-   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Domaine viticole, site oenotouristique comprenant  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Poste de gardiens, idéal pour couple // Possibilit » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Sologne » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Lisieux (14) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Marcq-en-Baroeul (59) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Fontvieille (13) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "1 échecs",
-   "laplandstaff": "78 échecs",
-   "skijobs_couk": "181 échecs",
+   "morganmallet": "ok",
+   "laplandstaff": "79 échecs",
+   "skijobs_couk": "182 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "181 échecs",
-   "mailbox": "179 échecs",
-   "stararctic": "179 échecs",
-   "hunterchalets": "179 échecs",
-   "skiworld": "175 échecs",
-   "workingcouples": "179 échecs"
+   "gestioncamping": "182 échecs",
+   "mailbox": "180 échecs",
+   "stararctic": "180 échecs",
+   "hunterchalets": "180 échecs",
+   "skiworld": "176 échecs",
+   "workingcouples": "180 échecs"
   }
  },
  "offers": [
-  {
-   "title": "Domaine viticole, site oenotouristique comprenant plusieurs gîtes et salle de réception de standing, recherche un couple de gardiens : Logés sur place (appartem",
-   "url": "https://www.madameestservie.net/offre-d-emploi-gardien-gard-4148.htm?p=160",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "d044aceac25821e0",
-   "score": 84,
-   "provisoire": true,
-   "tier": "top",
-   "cat": [
-    "planque",
-    "maison",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-09-18"
-  },
   {
    "title": "Couple de gardiens Marcq-en-Baroeul (59)",
    "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-marcq-en-baroeul-59-4982.htm?p=0",
