@@ -1,56 +1,55 @@
 {
  "madameestservie": {
   "fails": 0,
-  "last_ok": "2026-10-21T09:45+00:00",
+  "last_ok": "2026-10-21T19:02+00:00",
   "last_count": 299
  },
  "morganmallet": {
   "fails": 0,
-  "last_ok": "2026-10-21T09:45+00:00",
+  "last_ok": "2026-10-21T19:02+00:00",
   "last_count": 3
  },
  "laplandstaff": {
-  "fails": 101,
-  "last_ok": "2026-10-20T18:50+00:00",
-  "last_count": 0,
-  "last_err": "HTTPSConnectionPool(host='laplandstaff.fi', port=443): Max retries exceeded with url: /en/job-openings/ (Caused by NewConnectionError(\"HTTPSConnection(host='laplandstaff.fi', port=443): Failed to esta"
+  "fails": 102,
+  "last_ok": "2026-10-21T19:02+00:00",
+  "last_count": 0
  },
  "skijobs_couk": {
-  "fails": 204,
-  "last_ok": "2026-10-21T09:45+00:00",
+  "fails": 205,
+  "last_ok": "2026-10-21T19:02+00:00",
   "last_count": 0
  },
  "francegardiennage": {
   "fails": 0,
-  "last_ok": "2026-10-21T09:45+00:00",
+  "last_ok": "2026-10-21T19:02+00:00",
   "last_count": 2
  },
  "gestioncamping": {
-  "fails": 204,
+  "fails": 205,
   "last_err": "403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html"
  },
  "mailbox": {
-  "fails": 202,
+  "fails": 203,
   "last_err": "secrets MAIL_USER / MAIL_APP_PASSWORD absents"
  },
  "stararctic": {
-  "fails": 202,
-  "last_ok": "2026-10-21T09:45+00:00",
+  "fails": 203,
+  "last_ok": "2026-10-21T19:02+00:00",
   "last_count": 0
  },
  "hunterchalets": {
-  "fails": 202,
+  "fails": 203,
   "last_ok": "2026-08-26T16:11+00:00",
   "last_count": 0,
   "last_err": "403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/"
  },
  "skiworld": {
-  "fails": 198,
-  "last_ok": "2026-10-21T09:45+00:00",
+  "fails": 199,
+  "last_ok": "2026-10-21T19:02+00:00",
   "last_count": 0
  },
  "workingcouples": {
-  "fails": 202,
+  "fails": 203,
   "last_err": "404 Client Error: Not Found for url: https://workingcouples.com/job-openings"
  }
 }

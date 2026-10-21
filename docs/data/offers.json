@@ -1,17 +1,17 @@
 {
  "meta": {
-  "run_at": "2026-10-21T09:45+00:00",
+  "run_at": "2026-10-21T19:02+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
   "examined": 304,
-  "new": 1,
-  "kept": 24,
+  "new": 293,
+  "kept": 29,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
   "alerts": [
    "Supabase illisible (HTTPSConnectionPool(host='bljvehfncafnqrzetjyb.supabase.co', port=443): Max retr)",
    "Source muette/cassée : Boîte mail d'alertes (Indeed FR/CH, Jooble, leboncoin, EURES, jobs.ch…) (secrets MAIL_USER / MAIL_APP_PASSWORD absents)",
-   "Source muette/cassée : Lapland Hotels & Safaris (ATS Talentadore) (HTTPSConnectionPool(host='laplandstaff.fi', port=443): Max retries exceeded with url: /en/job-openings/ (Caused by NewConnectionError(\"HTTPSConnection(host='laplandstaff.fi', port=443): Failed to esta)",
+   "Source muette/cassée : Lapland Hotels & Safaris (ATS Talentadore) (0 résultat)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (403 Client Error: Forbidden for url: https://www.gestion-camping.com/gardien-agent-securite-camping.html)",
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
@@ -19,6 +19,11 @@
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
    "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
+   "Passe fine en échec sur « Domaine viticole, site oenotouristique comprenant  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Poste de gardiens, idéal pour couple // Possibilit » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Sologne » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Lisieux (14) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Marseille (13) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
    "Passe fine en échec sur « Couple de gardiens Marcq-en-Baroeul (59) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
@@ -27,15 +32,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "101 échecs",
-   "skijobs_couk": "204 échecs",
+   "laplandstaff": "102 échecs",
+   "skijobs_couk": "205 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "204 échecs",
-   "mailbox": "202 échecs",
-   "stararctic": "202 échecs",
-   "hunterchalets": "202 échecs",
-   "skiworld": "198 échecs",
-   "workingcouples": "202 échecs"
+   "gestioncamping": "205 échecs",
+   "mailbox": "203 échecs",
+   "stararctic": "203 échecs",
+   "hunterchalets": "203 échecs",
+   "skiworld": "199 échecs",
+   "workingcouples": "203 échecs"
   }
  },
  "offers": [
@@ -465,6 +470,76 @@
    "nouveau": "2026-10-19"
   },
   {
+   "title": "Couple d'employés de maison Lyon (69)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-lyon-69-5029.htm?p=0",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "26774da72836c29b",
+   "score": 54,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-10-21"
+  },
+  {
+   "title": "Domestic couple Arcachon bay",
+   "url": "https://www.madameestservie.net/offre-d-emploi-domestic-couple-arcachon-bay-5025.htm?p=1",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "9a095d47cd84ce92",
+   "score": 54,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-10-21"
+  },
+  {
+   "title": "Couple d'employés de maison Île de France",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-Ile-de-france-4232.htm?p=156",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "9a61f72b8772397d",
+   "score": 54,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "insolite",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-10-21"
+  },
+  {
    "title": "Offre d’emploi de majordome / intendant(e) (H/F) à Verbier, Suisse",
    "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-majordome-intendant-verbier-suisse/",
    "src": "morganmallet",
@@ -593,6 +668,48 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-10-19"
+  },
+  {
+   "title": "Régisseur Vallauris (06)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-regisseur-vallauris-06-4193.htm?p=162",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "483c1a7544bd6ef0",
+   "score": 40,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-10-21"
+  },
+  {
+   "title": "Gouvernante Paris (75008)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-gouvernante-paris-75008-2627.htm?p=231",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "0f0ab61b0875a023",
+   "score": 40,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-10-21"
   }
  ],
  "humans": [
