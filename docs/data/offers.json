@@ -1,9 +1,9 @@
 {
  "meta": {
-  "run_at": "2026-10-28T10:54+00:00",
+  "run_at": "2026-10-28T19:59+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
-  "examined": 302,
-  "new": 2,
+  "examined": 301,
+  "new": 1,
   "kept": 30,
   "humans": 4,
   "rejected": 3,
@@ -19,24 +19,23 @@
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
    "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Couple de gardiens Lisieux (14) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Offre d’emploi d’assistant(e) personnel(le) / inte » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Passe fine en échec sur « Domestic couple Vence (06) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "ok",
-   "laplandstaff": "115 échecs",
-   "skijobs_couk": "218 échecs",
+   "morganmallet": "1 échecs",
+   "laplandstaff": "116 échecs",
+   "skijobs_couk": "219 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "218 échecs",
-   "mailbox": "216 échecs",
-   "stararctic": "216 échecs",
-   "hunterchalets": "216 échecs",
-   "skiworld": "212 échecs",
-   "workingcouples": "216 échecs"
+   "gestioncamping": "219 échecs",
+   "mailbox": "217 échecs",
+   "stararctic": "217 échecs",
+   "hunterchalets": "217 échecs",
+   "skiworld": "213 échecs",
+   "workingcouples": "217 échecs"
   }
  },
  "offers": [
