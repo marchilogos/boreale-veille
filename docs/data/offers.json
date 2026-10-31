@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-10-30T19:47+00:00",
-  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "run_at": "2026-10-31T10:40+00:00",
+  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 302,
-  "new": 289,
-  "kept": 28,
+  "new": 0,
+  "kept": 21,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -17,14 +17,7 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
-   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Domaine viticole, site oenotouristique comprenant  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Marseille (13) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Poste de gardiens, idéal pour couple // Possibilit » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Sologne » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Lisieux (14) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Coignières (78) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -32,15 +25,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "120 échecs",
-   "skijobs_couk": "223 échecs",
+   "laplandstaff": "121 échecs",
+   "skijobs_couk": "224 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "223 échecs",
-   "mailbox": "221 échecs",
-   "stararctic": "221 échecs",
-   "hunterchalets": "221 échecs",
-   "skiworld": "217 échecs",
-   "workingcouples": "221 échecs"
+   "gestioncamping": "224 échecs",
+   "mailbox": "222 échecs",
+   "stararctic": "222 échecs",
+   "hunterchalets": "222 échecs",
+   "skiworld": "218 échecs",
+   "workingcouples": "222 échecs"
   }
  },
  "offers": [
@@ -68,150 +61,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-10-19"
-  },
-  {
-   "title": "Poste de gardiens, idéal pour couple // Possibilité denvisager une personne seule pour assumer la partie gardiennage décrite ci dessous : - Lun, gardien, entr",
-   "url": "https://www.madameestservie.net/offre-d-emploi-gardien-occitanie-5016.htm?p=0",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "03c5bba663fe45e4",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-09"
-  },
-  {
-   "title": "Couple de gardiens Sologne",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-sologne-5003.htm?p=2",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "28b58d3916e81b17",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-09"
-  },
-  {
-   "title": "Couple de gardiens Lisieux (14)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-lisieux-14-4997.htm?p=3",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "02fcf4a86c6e6ad3",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-09"
-  },
-  {
-   "title": "Couple de gardiens Vauréal",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-vaureal-4925.htm?p=12",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "b190c287f1fccc96",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-09"
-  },
-  {
-   "title": "Couple de gardiens Occitanie",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-occitanie-4389.htm?p=13",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "af5e1489dbd074ce",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-09"
-  },
-  {
-   "title": "Couple de gardiens Vence (06)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-vence-06-4045.htm?p=14",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "fd3042e74e7390b0",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-09"
   },
   {
    "title": "Couple de gardiens Fontvieille (13)",
@@ -538,29 +387,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-10-21"
-  },
-  {
-   "title": "Intendant Auvergne",
-   "url": "https://www.madameestservie.net/offre-d-emploi-intendant-auvergne-566.htm?p=29",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "a767ce554abe1a7c",
-   "score": 48,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "maison"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-09"
   },
   {
    "title": "Offre d’emploi d’assistant(e) personnel(le) / intendant(e) (H/F) à Dorado, à Porto Rico",
