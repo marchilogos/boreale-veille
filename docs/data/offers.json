@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-10-31T10:40+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
-  "examined": 302,
-  "new": 0,
-  "kept": 21,
+  "run_at": "2026-10-31T18:56+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
+  "examined": 303,
+  "new": 1,
+  "kept": 22,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -17,7 +17,9 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
+   "Passe fine en échec sur « Gardien à la retraite » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -25,15 +27,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "121 échecs",
-   "skijobs_couk": "224 échecs",
+   "laplandstaff": "122 échecs",
+   "skijobs_couk": "225 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "224 échecs",
-   "mailbox": "222 échecs",
-   "stararctic": "222 échecs",
-   "hunterchalets": "222 échecs",
-   "skiworld": "218 échecs",
-   "workingcouples": "222 échecs"
+   "gestioncamping": "225 échecs",
+   "mailbox": "223 échecs",
+   "stararctic": "223 échecs",
+   "hunterchalets": "223 échecs",
+   "skiworld": "219 échecs",
+   "workingcouples": "223 échecs"
   }
  },
  "offers": [
@@ -387,6 +389,29 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-10-21"
+  },
+  {
+   "title": "Gardien à la retraite",
+   "url": "https://www.francegardiennageproprietes.com/emploi-gardien-de-propriete-retraite/",
+   "src": "francegardiennage",
+   "emitter": "France Gardiennage Propriétés",
+   "geo": "fr",
+   "id": "e1b976144c365d57",
+   "score": 52,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-10-31"
   },
   {
    "title": "Offre d’emploi d’assistant(e) personnel(le) / intendant(e) (H/F) à Dorado, à Porto Rico",
