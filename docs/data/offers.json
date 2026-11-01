@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-10-31T18:56+00:00",
+  "run_at": "2026-11-01T11:35+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
   "examined": 303,
   "new": 1,
-  "kept": 22,
+  "kept": 23,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -19,7 +19,7 @@
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
    "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Gardien à la retraite » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Passe fine en échec sur « Couple de gardiens Sologne » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -27,15 +27,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "122 échecs",
-   "skijobs_couk": "225 échecs",
+   "laplandstaff": "123 échecs",
+   "skijobs_couk": "226 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "225 échecs",
-   "mailbox": "223 échecs",
-   "stararctic": "223 échecs",
-   "hunterchalets": "223 échecs",
-   "skiworld": "219 échecs",
-   "workingcouples": "223 échecs"
+   "gestioncamping": "226 échecs",
+   "mailbox": "224 échecs",
+   "stararctic": "224 échecs",
+   "hunterchalets": "224 échecs",
+   "skiworld": "220 échecs",
+   "workingcouples": "224 échecs"
   }
  },
  "offers": [
@@ -135,6 +135,30 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-10-19"
+  },
+  {
+   "title": "Couple de gardiens Sologne",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-sologne-5003.htm?p=13",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "454ea380970c9658",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-11-01"
   },
   {
    "title": "Couple d'employés de maison Saint-Viâtre (41)",
