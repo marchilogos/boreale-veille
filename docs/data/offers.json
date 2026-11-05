@@ -1,6 +1,6 @@
 {
  "meta": {
-  "run_at": "2026-11-04T20:59+00:00",
+  "run_at": "2026-11-05T12:51+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 302,
   "new": 0,
@@ -11,6 +11,7 @@
   "alerts": [
    "Supabase illisible (HTTPSConnectionPool(host='bljvehfncafnqrzetjyb.supabase.co', port=443): Max retr)",
    "Source muette/cassée : Boîte mail d'alertes (Indeed FR/CH, Jooble, leboncoin, EURES, jobs.ch…) (secrets MAIL_USER / MAIL_APP_PASSWORD absents)",
+   "Source muette/cassée : Morgan & Mallet — board France (0 résultat)",
    "Source muette/cassée : Lapland Hotels & Safaris (ATS Talentadore) (0 résultat)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (0 résultat)",
@@ -24,16 +25,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "3 échecs",
-   "laplandstaff": "130 échecs",
-   "skijobs_couk": "233 échecs",
+   "morganmallet": "4 échecs",
+   "laplandstaff": "131 échecs",
+   "skijobs_couk": "234 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "233 échecs",
-   "mailbox": "231 échecs",
-   "stararctic": "231 échecs",
-   "hunterchalets": "231 échecs",
-   "skiworld": "227 échecs",
-   "workingcouples": "231 échecs"
+   "gestioncamping": "234 échecs",
+   "mailbox": "232 échecs",
+   "stararctic": "232 échecs",
+   "hunterchalets": "232 échecs",
+   "skiworld": "228 échecs",
+   "workingcouples": "232 échecs"
   }
  },
  "offers": [
