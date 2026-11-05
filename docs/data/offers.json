@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-11-05T12:51+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
+  "run_at": "2026-11-05T21:16+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
   "examined": 302,
-  "new": 0,
-  "kept": 24,
+  "new": 1,
+  "kept": 25,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -18,23 +18,25 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
+   "Passe fine en échec sur « Couple de gardiens Vernouillet (78) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "4 échecs",
-   "laplandstaff": "131 échecs",
-   "skijobs_couk": "234 échecs",
+   "morganmallet": "5 échecs",
+   "laplandstaff": "132 échecs",
+   "skijobs_couk": "235 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "234 échecs",
-   "mailbox": "232 échecs",
-   "stararctic": "232 échecs",
-   "hunterchalets": "232 échecs",
-   "skiworld": "228 échecs",
-   "workingcouples": "232 échecs"
+   "gestioncamping": "235 échecs",
+   "mailbox": "233 échecs",
+   "stararctic": "233 échecs",
+   "hunterchalets": "233 échecs",
+   "skiworld": "229 échecs",
+   "workingcouples": "233 échecs"
   }
  },
  "offers": [
@@ -182,6 +184,30 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-11-04"
+  },
+  {
+   "title": "Couple de gardiens Vernouillet (78)",
+   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-vernouillet-78-4925.htm?p=9",
+   "src": "madameestservie",
+   "emitter": "Madame est Servie — couples de gardiens",
+   "geo": "fr",
+   "id": "5a7cbf9f1fc07e6b",
+   "score": 66,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [
+    "planque",
+    "couple"
+   ],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-11-05"
   },
   {
    "title": "Couple d'employés de maison Saint-Viâtre (41)",
