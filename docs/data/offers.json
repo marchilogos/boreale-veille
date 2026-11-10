@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-11-09T23:38+00:00",
-  "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
+  "run_at": "2026-11-10T13:09+00:00",
+  "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
   "examined": 302,
-  "new": 0,
-  "kept": 20,
+  "new": 2,
+  "kept": 10,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -18,75 +18,29 @@
    "Source muette/cassée : Star Arctic Hotel Saariselkä (0 résultat)",
    "Source muette/cassée : Hunter Chalets Morzine (403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/)",
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
-   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)"
+   "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
+   "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
+   "Passe fine en échec sur « Couple de gardiens Marseille (13) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Vernouillet (78) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "13 échecs",
-   "laplandstaff": "140 échecs",
-   "skijobs_couk": "243 échecs",
+   "morganmallet": "14 échecs",
+   "laplandstaff": "141 échecs",
+   "skijobs_couk": "244 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "243 échecs",
-   "mailbox": "241 échecs",
-   "stararctic": "241 échecs",
-   "hunterchalets": "241 échecs",
-   "skiworld": "237 échecs",
-   "workingcouples": "241 échecs"
+   "gestioncamping": "244 échecs",
+   "mailbox": "242 échecs",
+   "stararctic": "242 échecs",
+   "hunterchalets": "242 échecs",
+   "skiworld": "238 échecs",
+   "workingcouples": "242 échecs"
   }
  },
  "offers": [
-  {
-   "title": "Domaine viticole, site oenotouristique comprenant plusieurs gîtes et salle de réception de standing, recherche un couple de gardiens : Logés sur place (appartem",
-   "url": "https://www.madameestservie.net/offre-d-emploi-gardien-gard-4148.htm?p=165",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "ddde5ffd46a143d6",
-   "score": 84,
-   "provisoire": true,
-   "tier": "top",
-   "cat": [
-    "planque",
-    "maison",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-19"
-  },
-  {
-   "title": "Couple de gardiens Marcq-en-Baroeul (59)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-marcq-en-baroeul-59-4982.htm?p=5",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "510839e580f566a0",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-19"
-  },
   {
    "title": "Couple de gardiens Sologne",
    "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-sologne-5003.htm?p=13",
@@ -158,121 +112,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-11-05"
-  },
-  {
-   "title": "Domestic couple Bassin d'Arcachon",
-   "url": "https://www.madameestservie.net/offre-d-emploi-domestic-couple-bassin-d-arcachon-5025.htm?p=0",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "47dea5b878f2395a",
-   "score": 54,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-19"
-  },
-  {
-   "title": "Couple de régisseurs Méribel & Ramatuelle",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-regisseurs-meribel-&-ramatuelle-4445.htm?p=2",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "8a682584e9579ad1",
-   "score": 54,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-19"
-  },
-  {
-   "title": "Couple d'employés de maison Belgique",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-belgique-4977.htm?p=6",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "88a1cdea171f37ca",
-   "score": 54,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-19"
-  },
-  {
-   "title": "Couple d'employés de maison Montrieux (41)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-montrieux-41-3510.htm?p=21",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "1d6c2459391c0a28",
-   "score": 54,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-19"
-  },
-  {
-   "title": "Couple d'employés de maison Côme Italie",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-d-employes-de-maison-come-italie-2216.htm?p=22",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "52b3e85815754823",
-   "score": 54,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-19"
   },
   {
    "title": "Couple d'employés de maison Lyon (69)",
@@ -389,69 +228,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-10-28"
-  },
-  {
-   "title": "Employé de maison Brinon sur Sauldre (18)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-employe-de-maison-brinon-sur-sauldre-18-4750.htm?p=18",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "d1ae65e933c881e5",
-   "score": 40,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-19"
-  },
-  {
-   "title": "Employé de maison Le Touquet-Paris-Plage (62)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-employe-de-maison-le-touquet-paris-plage-62-4796.htm?p=46",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "c3d0dc9324b73fac",
-   "score": 40,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-19"
-  },
-  {
-   "title": "Guardian Saint-Tropez (83)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-guardian-saint-tropez-83-3367.htm?p=288",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "c8cc93ed14ba39f9",
-   "score": 40,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-19"
   },
   {
    "title": "Régisseur Vallauris (06)",
