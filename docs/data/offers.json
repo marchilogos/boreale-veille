@@ -1,9 +1,9 @@
 {
  "meta": {
-  "run_at": "2026-11-12T21:39+00:00",
+  "run_at": "2026-11-13T12:43+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
   "examined": 304,
-  "new": 20,
+  "new": 1,
   "kept": 19,
   "humans": 4,
   "rejected": 3,
@@ -19,12 +19,7 @@
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
    "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Couple de gardiens Brinon sur Sauldre (18) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Marseille (13) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Marseille (13) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Poste de gardiens, idéal pour couple // Possibilit » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Vernouillet (78) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Sologne » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Passe fine en échec sur « Couple de gardiens Brinon sur Sauldre (18) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -32,15 +27,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "146 échecs",
-   "skijobs_couk": "249 échecs",
+   "laplandstaff": "147 échecs",
+   "skijobs_couk": "250 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "249 échecs",
-   "mailbox": "247 échecs",
-   "stararctic": "247 échecs",
-   "hunterchalets": "247 échecs",
-   "skiworld": "243 échecs",
-   "workingcouples": "247 échecs"
+   "gestioncamping": "250 échecs",
+   "mailbox": "248 échecs",
+   "stararctic": "248 échecs",
+   "hunterchalets": "248 échecs",
+   "skiworld": "244 échecs",
+   "workingcouples": "248 échecs"
   }
  },
  "offers": [
