@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-11-18T22:25+00:00",
+  "run_at": "2026-11-19T14:01+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 302,
   "new": 0,
-  "kept": 27,
+  "kept": 26,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -24,16 +24,16 @@
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "2 échecs",
-   "laplandstaff": "158 échecs",
-   "skijobs_couk": "261 échecs",
+   "morganmallet": "3 échecs",
+   "laplandstaff": "159 échecs",
+   "skijobs_couk": "262 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "261 échecs",
-   "mailbox": "259 échecs",
-   "stararctic": "259 échecs",
-   "hunterchalets": "259 échecs",
-   "skiworld": "255 échecs",
-   "workingcouples": "259 échecs"
+   "gestioncamping": "262 échecs",
+   "mailbox": "260 échecs",
+   "stararctic": "260 échecs",
+   "hunterchalets": "260 échecs",
+   "skiworld": "256 échecs",
+   "workingcouples": "260 échecs"
   }
  },
  "offers": [
@@ -531,29 +531,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-11-17"
-  },
-  {
-   "title": "Offre d’emploi d’assistant(e) personnel(le) / intendant(e) (H/F) à Dorado, à Porto Rico",
-   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-assistante-personnelle-intendante-hf-dorado-porto-rico/",
-   "src": "morganmallet",
-   "emitter": "Morgan & Mallet — board France",
-   "geo": "fr",
-   "id": "59951abe5e222f04",
-   "score": 48,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "maison"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-10-28"
   },
   {
    "title": "Intendant Auvergne",
