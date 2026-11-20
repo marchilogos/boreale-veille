@@ -1,17 +1,16 @@
 {
  "meta": {
-  "run_at": "2026-11-20T13:44+00:00",
+  "run_at": "2026-11-20T22:03+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
-  "examined": 302,
-  "new": 1,
-  "kept": 26,
+  "examined": 304,
+  "new": 2,
+  "kept": 27,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
   "alerts": [
    "Supabase illisible (HTTPSConnectionPool(host='bljvehfncafnqrzetjyb.supabase.co', port=443): Max retr)",
    "Source muette/cassée : Boîte mail d'alertes (Indeed FR/CH, Jooble, leboncoin, EURES, jobs.ch…) (secrets MAIL_USER / MAIL_APP_PASSWORD absents)",
-   "Source muette/cassée : Morgan & Mallet — board France (0 résultat)",
    "Source muette/cassée : Lapland Hotels & Safaris (ATS Talentadore) (0 résultat)",
    "Source muette/cassée : Ski-Jobs.co.uk (0 résultat)",
    "Source muette/cassée : Gestion-Camping — gardiens (0 résultat)",
@@ -20,23 +19,24 @@
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
    "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Couple d'employés de maison Belgique » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Passe fine en échec sur « Offre d’emploi de couple de gardiens à Poncin, Fra » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Offre d’emploi de cuisinier(ère) / employé(e) de m » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
   "exclus_invisibles": 0,
   "sources_sante": {
    "madameestservie": "ok",
-   "morganmallet": "5 échecs",
-   "laplandstaff": "161 échecs",
-   "skijobs_couk": "264 échecs",
+   "morganmallet": "ok",
+   "laplandstaff": "162 échecs",
+   "skijobs_couk": "265 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "264 échecs",
-   "mailbox": "262 échecs",
-   "stararctic": "262 échecs",
-   "hunterchalets": "262 échecs",
-   "skiworld": "258 échecs",
-   "workingcouples": "262 échecs"
+   "gestioncamping": "265 échecs",
+   "mailbox": "263 échecs",
+   "stararctic": "263 échecs",
+   "hunterchalets": "263 échecs",
+   "skiworld": "259 échecs",
+   "workingcouples": "263 échecs"
   }
  },
  "offers": [
@@ -641,6 +641,27 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-11-17"
+  },
+  {
+   "title": "Offre d’emploi de cuisinier(ère) / employé(e) de maison (H/F) à Dubaï, Emirats-Arabes-Unis",
+   "url": "https://www.personneldemaison.agency/offres-d-emplois/offre-emploi-cuisnier-employee-maison-hf-dubai-emirats-arabes-unis/",
+   "src": "morganmallet",
+   "emitter": "Morgan & Mallet — board France",
+   "geo": "fr",
+   "id": "94824e78762c98f7",
+   "score": 40,
+   "provisoire": true,
+   "tier": "flow",
+   "cat": [],
+   "canal": "Board",
+   "verif": {
+    "lvl": "listed",
+    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
+   },
+   "badges": [],
+   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
+   "bars": {},
+   "nouveau": "2026-11-20"
   }
  ],
  "humans": [
