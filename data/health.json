@@ -1,56 +1,57 @@
 {
  "madameestservie": {
   "fails": 0,
-  "last_ok": "2026-11-22T12:56+00:00",
+  "last_ok": "2026-11-22T20:53+00:00",
   "last_count": 299
  },
  "morganmallet": {
   "fails": 0,
-  "last_ok": "2026-11-22T12:56+00:00",
+  "last_ok": "2026-11-22T20:53+00:00",
   "last_count": 2
  },
  "laplandstaff": {
-  "fails": 165,
-  "last_ok": "2026-11-22T12:56+00:00",
+  "fails": 166,
+  "last_ok": "2026-11-22T20:53+00:00",
   "last_count": 0
  },
  "skijobs_couk": {
-  "fails": 268,
-  "last_ok": "2026-11-22T12:56+00:00",
+  "fails": 269,
+  "last_ok": "2026-11-22T20:53+00:00",
   "last_count": 0
  },
  "francegardiennage": {
-  "fails": 0,
+  "fails": 1,
   "last_ok": "2026-11-22T12:56+00:00",
-  "last_count": 3
+  "last_count": 3,
+  "last_err": "500 Server Error: Internal Server Error for url: https://www.francegardiennageproprietes.com/gardien-de-propriete-privee-offres-d-emploi/"
  },
  "gestioncamping": {
-  "fails": 268,
-  "last_ok": "2026-11-22T12:56+00:00",
+  "fails": 269,
+  "last_ok": "2026-11-22T20:53+00:00",
   "last_count": 0
  },
  "mailbox": {
-  "fails": 266,
+  "fails": 267,
   "last_err": "secrets MAIL_USER / MAIL_APP_PASSWORD absents"
  },
  "stararctic": {
-  "fails": 266,
-  "last_ok": "2026-11-22T12:56+00:00",
+  "fails": 267,
+  "last_ok": "2026-11-22T20:53+00:00",
   "last_count": 0
  },
  "hunterchalets": {
-  "fails": 266,
+  "fails": 267,
   "last_ok": "2026-08-26T16:11+00:00",
   "last_count": 0,
   "last_err": "403 Client Error: Forbidden for url: https://hunterchalets.com/ski-season-jobs/"
  },
  "skiworld": {
-  "fails": 262,
-  "last_ok": "2026-11-22T12:56+00:00",
+  "fails": 263,
+  "last_ok": "2026-11-22T20:53+00:00",
   "last_count": 0
  },
  "workingcouples": {
-  "fails": 266,
+  "fails": 267,
   "last_err": "404 Client Error: Not Found for url: https://workingcouples.com/job-openings"
  }
 }
