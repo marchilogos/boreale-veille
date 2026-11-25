@@ -1,9 +1,9 @@
 {
  "meta": {
-  "run_at": "2026-11-24T15:26+00:00",
+  "run_at": "2026-11-25T15:12+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
-  "examined": 304,
-  "new": 281,
+  "examined": 303,
+  "new": 282,
   "kept": 28,
   "humans": 4,
   "rejected": 3,
@@ -21,10 +21,10 @@
    "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
    "Passe fine en échec sur « Domaine viticole, site oenotouristique comprenant  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
    "Passe fine en échec sur « Couple de gardiens Marseille (13) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Brinon sur Sauldre (18) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Couple de gardiens Marseille (13) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
+   "Passe fine en échec sur « Poste de gardiens, idéal pour couple // Possibilit » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
    "Passe fine en échec sur « Couple de gardiens Gien (45) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Vernouillet (78) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Yvelines » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Passe fine en échec sur « Couple de gardiens Vernouillet (78) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -32,15 +32,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "168 échecs",
-   "skijobs_couk": "271 échecs",
+   "laplandstaff": "169 échecs",
+   "skijobs_couk": "272 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "271 échecs",
-   "mailbox": "269 échecs",
-   "stararctic": "269 échecs",
-   "hunterchalets": "269 échecs",
-   "skiworld": "265 échecs",
-   "workingcouples": "269 échecs"
+   "gestioncamping": "272 échecs",
+   "mailbox": "270 échecs",
+   "stararctic": "270 échecs",
+   "hunterchalets": "270 échecs",
+   "skiworld": "266 échecs",
+   "workingcouples": "270 échecs"
   }
  },
  "offers": [
