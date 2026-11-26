@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-11-25T15:12+00:00",
+  "run_at": "2026-11-26T14:36+00:00",
   "run_type": "passage automatique — scoring IA (coarse en lot + fin sur les tops)",
-  "examined": 303,
-  "new": 282,
-  "kept": 28,
+  "examined": 304,
+  "new": 1,
+  "kept": 27,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -19,12 +19,7 @@
    "Source muette/cassée : Skiworld recruitment (0 résultat)",
    "Source muette/cassée : WorkingCouples.com (404 Client Error: Not Found for url: https://workingcouples.com/job-openings)",
    "Scoring coarse en échec (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages) — repli heuristique",
-   "Passe fine en échec sur « Domaine viticole, site oenotouristique comprenant  » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Marseille (13) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Marseille (13) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Poste de gardiens, idéal pour couple // Possibilit » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Gien (45) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)",
-   "Passe fine en échec sur « Couple de gardiens Vernouillet (78) » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
+   "Passe fine en échec sur « Pour un couple de particuliers avec 2 enfants de 9 » (401 Client Error: Unauthorized for url: https://api.anthropic.com/v1/messages)"
   ],
   "consignes": [],
   "feedback_total": 0,
@@ -32,15 +27,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "169 échecs",
-   "skijobs_couk": "272 échecs",
+   "laplandstaff": "170 échecs",
+   "skijobs_couk": "273 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "272 échecs",
-   "mailbox": "270 échecs",
-   "stararctic": "270 échecs",
-   "hunterchalets": "270 échecs",
-   "skiworld": "266 échecs",
-   "workingcouples": "270 échecs"
+   "gestioncamping": "273 échecs",
+   "mailbox": "271 échecs",
+   "stararctic": "271 échecs",
+   "hunterchalets": "271 échecs",
+   "skiworld": "267 échecs",
+   "workingcouples": "271 échecs"
   }
  },
  "offers": [
@@ -68,30 +63,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-11-17"
-  },
-  {
-   "title": "Couple de gardiens Marseille (13)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-marseille-13-3459.htm?p=10",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "da71644e3e3f526a",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-11-04"
   },
   {
    "title": "Couple de gardiens Vernouillet (78)",
