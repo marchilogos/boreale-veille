@@ -1,10 +1,10 @@
 {
  "meta": {
-  "run_at": "2026-11-26T23:24+00:00",
+  "run_at": "2026-11-27T14:31+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 304,
   "new": 0,
-  "kept": 27,
+  "kept": 26,
   "humans": 4,
   "rejected": 3,
   "calibrage": "v4",
@@ -25,15 +25,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "171 échecs",
-   "skijobs_couk": "274 échecs",
+   "laplandstaff": "172 échecs",
+   "skijobs_couk": "275 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "274 échecs",
-   "mailbox": "272 échecs",
-   "stararctic": "272 échecs",
-   "hunterchalets": "272 échecs",
-   "skiworld": "268 échecs",
-   "workingcouples": "272 échecs"
+   "gestioncamping": "275 échecs",
+   "mailbox": "273 échecs",
+   "stararctic": "273 échecs",
+   "hunterchalets": "273 échecs",
+   "skiworld": "269 échecs",
+   "workingcouples": "273 échecs"
   }
  },
  "offers": [
@@ -61,30 +61,6 @@
    "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
    "bars": {},
    "nouveau": "2026-11-17"
-  },
-  {
-   "title": "Couple de gardiens Vernouillet (78)",
-   "url": "https://www.madameestservie.net/offre-d-emploi-couple-de-gardiens-vernouillet-78-4925.htm?p=9",
-   "src": "madameestservie",
-   "emitter": "Madame est Servie — couples de gardiens",
-   "geo": "fr",
-   "id": "5a7cbf9f1fc07e6b",
-   "score": 66,
-   "provisoire": true,
-   "tier": "flow",
-   "cat": [
-    "planque",
-    "couple"
-   ],
-   "canal": "Board",
-   "verif": {
-    "lvl": "listed",
-    "txt": "◌ listée — trouvée au passage automatique, page non ouverte"
-   },
-   "badges": [],
-   "why": "Score provisoire sur le titre seul — la passe fine (modèle fort) détaillera au prochain passage.",
-   "bars": {},
-   "nouveau": "2026-11-05"
   },
   {
    "title": "Offre d’emploi de couple de gardiens à Saint-Nom-La Bretèche, France",
