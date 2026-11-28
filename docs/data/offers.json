@@ -1,6 +1,6 @@
 {
  "meta": {
-  "run_at": "2026-11-27T23:05+00:00",
+  "run_at": "2026-11-28T13:46+00:00",
   "run_type": "passage automatique — scoring heuristique (clé API absente — scores provisoires)",
   "examined": 304,
   "new": 0,
@@ -25,15 +25,15 @@
   "sources_sante": {
    "madameestservie": "ok",
    "morganmallet": "ok",
-   "laplandstaff": "173 échecs",
-   "skijobs_couk": "276 échecs",
+   "laplandstaff": "174 échecs",
+   "skijobs_couk": "277 échecs",
    "francegardiennage": "ok",
-   "gestioncamping": "276 échecs",
-   "mailbox": "274 échecs",
-   "stararctic": "274 échecs",
-   "hunterchalets": "274 échecs",
-   "skiworld": "270 échecs",
-   "workingcouples": "274 échecs"
+   "gestioncamping": "277 échecs",
+   "mailbox": "275 échecs",
+   "stararctic": "275 échecs",
+   "hunterchalets": "275 échecs",
+   "skiworld": "271 échecs",
+   "workingcouples": "275 échecs"
   }
  },
  "offers": [
